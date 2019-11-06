@@ -1,0 +1,104 @@
+# Site settings
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Angel Crawford | Profile Card"
+theme = "card"
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
+
+# Enter your tracking code to enable Google Analytics 
+#googleAnalytics = ""
+
+copyright = "| Angel Crawford"
+
+[languages]
+  [languages.en]
+    weight = 1
+    title = "Angel Crawford | Profile Card"
+    LanguageName = "English"
+  [languages.de]
+    weight = 2
+    title = "Angel Crawford | Profil Karte"
+    LanguageName = "Deutsch"
+    [languages.de.params]
+      [[languages.de.params.links]]
+        [languages.de.params.links.list1]
+          heading = "Kontakt"
+          [[languages.de.params.links.list1.link]]
+            text = "Blog"
+            url = "#"
+          [[languages.de.params.links.list1.link]]
+            text = "E-Mail"
+            url = "#"
+          [[languages.de.params.links.list1.link]]
+            text = "Newsletter"
+            url = "#"
+          [languages.de.params.links.list2]
+            heading = "Social"
+            [[languages.de.params.links.list2.link]]
+              text = "Twitter"
+              url = "#"
+            [[languages.de.params.links.list2.link]]
+              text = "Instagram"
+              url = "#"
+            [[languages.de.params.links.list2.link]]
+              text = "Dribbble"
+              url = "#"
+
+[params]
+  # Metadata for search engines and social sharing
+  author = "Angel Crawford"
+  description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
+  #shareImage = "images/social.jpg"
+  #twitterHandle = "onepagelove"
+  favicon = "favicon.png"
+
+  [params.visual]
+    [params.visual.image]
+      enable = true
+      file = "images/background_me.jpg"
+      position = "center center"
+    [params.visual.video]
+      enable = false
+      mute = true
+      file = "videos/background.mp4"
+      # youtubeId = "dk9uNWPP7EA"
+
+  # Links
+  [[params.links]]
+    [params.links.list1]
+      heading = "Connect"
+      [[params.links.list1.link]]
+        text = "Blog"
+        url = "#"
+      [[params.links.list1.link]]
+        text = "Email"
+        url = "#"
+      [[params.links.list1.link]]
+        text = "Newsletter"
+        url = "#"
+
+  [[params.links]]
+    [params.links.list2]
+      heading = "Social"
+      [[params.links.list2.link]]
+        text = "Twitter"
+        url = "#"
+      [[params.links.list2.link]]
+        text = "Instagram"
+        url = "#"
+      [[params.links.list2.link]]
+        text = "Dribbble"
+        url = "#"
+
+  [[params.links]]
+    [params.links.list3]
+      heading = "Network"
+      [[params.links.list3.link]]
+        text = "Link One"
+        url = "#"
+      [[params.links.list3.link]]
+        text = "Link Two"
+        url = "#"
+      [[params.links.list3.link]]
+        text = "Link Three"
+        url = "#"
