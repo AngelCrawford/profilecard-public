@@ -1,9 +1,12 @@
 <div class="split-credit">
-  <p>&copy; 2018 - {{ dateFormat "2006" now }} {{ .Site.Copyright | safeHTML }} - <a href="https://onepagelove.com/split">Split Template</a> by <a href="https://onepagelove.com">One Page Love</a></p>
-
   <p>
-    {{ range $.Site.Home.AllTranslations }}<a href="{{ .Permalink }}">{{ .Language.LanguageName }} </a>{{ end }}
+    &copy; 2018 - {{ dateFormat "2006" now }} {{ .Site.Copyright | safeHTML }}
+    <span class="split-languages">
+      {{ range $.Site.Home.AllTranslations }}<a href="{{ .Permalink }}">{{ .Language.LanguageName }} </a>{{ end }}
+    </span>
   </p>
+
+
 
   {{ "<!--" | safeHTML }}
   {{ "To edit this credit you can remove the CC3.0 license for only $5 here: https://onepagelove.com/split" | safeHTML }}

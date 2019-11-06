@@ -1,0 +1,38 @@
+@font-face {
+   font-family: 'Roboto-Light';
+   src: local('Roboto'), local('Roboto-Light'), url('../fonts/roboto/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Roboto-Regular';
+   src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Roboto-Bold';
+   src: local('Roboto'), local('Roboto-Bold'), url('../fonts/roboto/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Roboto-Black';
+   src: local('Roboto'), local('Roboto-Black'), url('../fonts/roboto/Roboto-Black.ttf') format('truetype');
+}
+
+@mixin font-family($family, $weight) {
+  @if $family {
+    font-family: $family, Helvetica, Arial, Verdana, sans-serif;
+  } else {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+  }
+  @if $weight { font-weight: $weight; }
+}
+
+@mixin font-light {
+  @include font-family('Roboto-Light', 300);
+}
+@mixin font-regular {
+  @include font-family('Roboto-Regular', 400);
+}
+@mixin font-bold {
+  @include font-family('Roboto-Bold', 700);
+}
+@mixin font-black {
+  @include font-family('Roboto-Black', 900);
+}

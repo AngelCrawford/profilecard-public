@@ -1,6 +1,9 @@
 +++
 title = "Angel Crawford"
-tagline = "Designer. Stylist. Nomad."
+tagline = "Developer. <br />Sun seeker. Goth."
 +++
 
-Donec at libero id lectus porta dapibus eu in nibh. Cras id mauris sapien. Fusce viverra [luctus urna]({{< ref "luctus-urna.md" >}}) ac rutrum. Duis semper elit eu mi facilisis eleifend. Donec semper, [ipsum in]({{< ref "ipsum-in.md" >}}) malesuada congue, [purus sem]({{< ref "purus-sem.md" >}}) ullamcorper massa, sit amet lacinia nibh enim sed massa.
+* Web developer
+* Music and Series addicted
+* Sun and warmth lover (over 25°C)
+* 32 years old

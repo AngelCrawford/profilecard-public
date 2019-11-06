@@ -5,10 +5,10 @@ title = "Angel Crawford | Profile Card"
 theme = "card"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
 
-# Enter your tracking code to enable Google Analytics 
+# Enter your tracking code to enable Google Analytics
 #googleAnalytics = ""
 
-copyright = "| Angel Crawford"
+copyright = "Angel Crawford"
 
 [languages]
   [languages.en]
@@ -24,25 +24,33 @@ copyright = "| Angel Crawford"
         [languages.de.params.links.list1]
           heading = "Kontakt"
           [[languages.de.params.links.list1.link]]
-            text = "Blog"
+            text = "<i class='fas fa-link'></i>Blog"
             url = "#"
           [[languages.de.params.links.list1.link]]
-            text = "E-Mail"
+            text = "<i class='far fa-envelope'></i>E-Mail"
             url = "#"
-          [[languages.de.params.links.list1.link]]
-            text = "Newsletter"
+        [languages.de.params.links.list2]
+          heading = "Social"
+          [[languages.de.params.links.list2.link]]
+            text = "<i class='fab fa-instagram'></i>Instagram"
+            url = "https://www.instagram.com/angel_crawford_ftw"
+          [[languages.de.params.links.list2.link]]
+            text = "<i class='fab fa-facebook'></i>Facebook"
+            url = "https://www.facebook.com/angel.crawford.ftw"
+          [[languages.de.params.links.list2.link]]
+          text = "<i class='fab fa-twitter'></i>Twitter"
+          url = "https://twitter.com/crawford_ftw"
+        [languages.de.params.links.list3]
+          heading = "Develop"
+          [[languages.de.params.links.list3.link]]
+            text = "<i class='fab fa-github'></i>Github"
             url = "#"
-          [languages.de.params.links.list2]
-            heading = "Social"
-            [[languages.de.params.links.list2.link]]
-              text = "Twitter"
-              url = "#"
-            [[languages.de.params.links.list2.link]]
-              text = "Instagram"
-              url = "#"
-            [[languages.de.params.links.list2.link]]
-              text = "Dribbble"
-              url = "#"
+          [[languages.de.params.links.list3.link]]
+            text = "<i class='fab fa-codepen'></i>CodePen"
+            url = "#"
+          [[languages.de.params.links.list3.link]]
+            text = "<i class='fab fa-stack-overflow'></i>Stack Overflow"
+            url = "#"
 
 [params]
   # Metadata for search engines and social sharing
@@ -55,7 +63,10 @@ copyright = "| Angel Crawford"
   [params.visual]
     [params.visual.image]
       enable = true
-      file = "images/background_me.jpg"
+      file0 = "images/background_3.jpg"
+      file1 = "images/background_1.jpg"
+      file2 = "images/background_2.jpg"
+      file3 = "images/background_old.jpg"
       position = "center center"
     [params.visual.video]
       enable = false
@@ -68,37 +79,34 @@ copyright = "| Angel Crawford"
     [params.links.list1]
       heading = "Connect"
       [[params.links.list1.link]]
-        text = "Blog"
+        text = "<i class='fas fa-link'></i>Blog"
         url = "#"
       [[params.links.list1.link]]
-        text = "Email"
-        url = "#"
-      [[params.links.list1.link]]
-        text = "Newsletter"
+        text = "<i class='far fa-envelope'></i>Email"
         url = "#"
 
   [[params.links]]
     [params.links.list2]
       heading = "Social"
       [[params.links.list2.link]]
-        text = "Twitter"
-        url = "#"
+        text = "<i class='fab fa-instagram'></i>Instagram"
+        url = "https://www.instagram.com/angel_crawford_ftw"
       [[params.links.list2.link]]
-        text = "Instagram"
-        url = "#"
+        text = "<i class='fab fa-facebook'></i>Facebook"
+        url = "https://www.facebook.com/angel.crawford.ftw"
       [[params.links.list2.link]]
-        text = "Dribbble"
-        url = "#"
+        text = "<i class='fab fa-twitter'></i>Twitter"
+        url = "https://twitter.com/crawford_ftw"
 
   [[params.links]]
     [params.links.list3]
-      heading = "Network"
+      heading = "Develop"
       [[params.links.list3.link]]
-        text = "Link One"
+        text = "<i class='fab fa-github'></i>Github"
         url = "#"
       [[params.links.list3.link]]
-        text = "Link Two"
+        text = "<i class='fab fa-codepen'></i>CodePen"
         url = "#"
       [[params.links.list3.link]]
-        text = "Link Three"
+        text = "<i class='fab fa-stack-overflow'></i>Stack Overflow"
         url = "#"

@@ -1,6 +1,6 @@
 +++
 title = "Angel Crawford"
-tagline = "Designer. Stylist. Nomad."
+tagline = "Entwickler. Sonnenlieb- haber. Goth."
 +++
 
 * Web developer
