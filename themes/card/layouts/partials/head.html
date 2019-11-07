@@ -38,69 +38,22 @@
 
 
 {{ if .Site.Params.visual.image.enable }}
-
   <style>
-    {{ if .Site.Params.visual.image.file }}
-      /* .fs-split .split-image { background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center{{ end }}; } */
-    {{ end }}
-
-    @keyframes slide {
-       0%{
-          opacity: 0;
-          background-image: url("{{ .Site.Params.visual.image.file0 | absURL }}");
-       }
-
-       20%{
-       opacity: 1;
-          background-image: url("{{ .Site.Params.visual.image.file0 | absURL }}");
-       }
-       25%{
-       opacity: 0;
-          background-image: url("{{ .Site.Params.visual.image.file0 | absURL }}");
-       }
-       25.1%{
-       opacity: 0;
-          background-image: url("{{ .Site.Params.visual.image.file1 | absURL }}");
-       }
-
-       45%{
-       opacity: 1;
-          background-image: url("{{ .Site.Params.visual.image.file1 | absURL }}");
-       }
-       50%{
-       opacity: 0;
-          background-image: url("{{ .Site.Params.visual.image.file1 | absURL }}");
-       }
-       50.01%{
-       opacity: 0;
-          background-image: url("{{ .Site.Params.visual.image.file2 | absURL }}");
-       }
-
-       70%{
-       opacity: 1;
-          background-image: url("{{ .Site.Params.visual.image.file2 | absURL }}");
-       }
-       75%{
-       opacity: 0;
-          background-image: url("{{ .Site.Params.visual.image.file2 | absURL }}");
-       }
-
-       75.01%{
-       opacity: 0;
-          background-image: url("{{ .Site.Params.visual.image.file3 | absURL }}");
-       }
-
-       95%{
-       opacity: 1;
-          background-image: url("{{ .Site.Params.visual.image.file3 | absURL }}");
-       }
-       100%{
-       opacity: 0;
-          background-image: url("{{ .Site.Params.visual.image.file3 | absURL }}");
-       }
-    }
-
-
+        {{ if .Site.Params.visual.image.file0 }}
+            .split-image .slide1 {
+                background-image: url("{{ .Site.Params.visual.image.file0 | absURL }}");
+            }
+            .split-image .slide2 {
+                background-image: url("{{ .Site.Params.visual.image.file1 | absURL }}");
+            }
+            .split-image .slide3 {
+                background-image: url("{{ .Site.Params.visual.image.file2 | absURL }}");
+            }
+            .split-image .slide1, .split-image .slide2, .split-image .slide3 {
+                background-size: {{ if .Site.Params.visual.image.size }}{{ .Site.Params.visual.image.size }}{{ else }}cover{{ end }};
+                background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center {{ end }};
+            }
+        {{ end }}
   </style>
 {{ end }}
 

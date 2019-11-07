@@ -66,8 +66,8 @@ copyright = "Angel Crawford"
       file0 = "images/background_3.jpg"
       file1 = "images/background_1.jpg"
       file2 = "images/background_2.jpg"
-      file3 = "images/background_old.jpg"
-      position = "center center"
+      position = "top center"
+      size = "cover"
     [params.visual.video]
       enable = false
       mute = true
