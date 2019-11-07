@@ -1,19 +1,10 @@
 //-------------------------------------------------------------------------------
-// Google Font Import
-//-------------------------------------------------------------------------------
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
-@import url('https://fonts.googleapis.com/css?family=Lora');
-
-//-------------------------------------------------------------------------------
 // Variables
 //-------------------------------------------------------------------------------
 
 // Colors
 $color-background : rgb(25,25,25);
 $color-text       : #f2ebe3;
-$color-link       : #f2ebe3;
-$color-link-hover : #b78846;
 $color-maverick   : #f2ebe3;
 $color-tagline    : #f2ebe3;
 $primary          : #17a2b8;
@@ -24,9 +15,6 @@ $accent           : #20c997;
 $bp-smallish      : 1200px;
 $bp-tablet        : 800px;
 $bp-mobile        : 500px;
-
-// Images
-// $image-background : url('../../images/background.jpg');
 
 //-------------------------------------------------------------------------------
 // Fade In
@@ -204,14 +192,14 @@ body.page-template-page-fullsingle-split {
   }
 
   a {
-    color: $color-link;
+    color: $color-text;
     transition-duration: 0.5s;
-    border-bottom: 1px dotted $color-link;
+    border-bottom: 1px dotted $color-text;
 
     &:hover {
-      color: $color-link-hover;
+      color: $secondary;
       transition-duration: 0.1s;
-      border-bottom: 1px dotted $color-link-hover;
+      border-bottom: 1px dotted $secondary;
     }
 
   }
@@ -376,11 +364,11 @@ body.page-template-page-fullsingle-split {
         margin-bottom: 12px;
 
         a {
-          color: $color-link;
+          color: $color-text;
           transition-duration: 0.5s;
 
           &:hover {
-            color: $color-link-hover;
+            color: $secondary;
             transition-duration: 0.1s;
           }
 
@@ -418,7 +406,7 @@ body.page-template-page-fullsingle-split {
     a {
       color: $color-text;
       &:hover {
-        color: $color-link-hover;
+        color: $secondary;
         opacity: 1 !important;
       }
     }
