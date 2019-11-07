@@ -8,40 +8,42 @@
 <body id="fullsingle" class="page-template-page-fullsingle-split">
 
   <div class="fs-split">
-
     <!-- Image -->
-    {{ if .Site.Params.visual.image.enable }}
+    <div class="split-image">
+      <div class="s-wrap" role="slider">
+        {{ range $index, $value := .Site.Params.visual.image.file }}
+          {{ $index :=add $index 1 }}
+          <input type="radio" id="s-{{ $index }}" name="slider-control" {{ if eq $index 1 }}checked="checked"{{ end }}>
+        {{ end }}
+        <ul class="s-content">
+          {{ range $index, $value := .Site.Params.visual.image.file }}
+            <li class="s-item s-item-{{ add $index 1 }}"></li>
+          {{ end }}
+        </ul>
+        <div class="s-control">
+          {{ range $index, $value := .Site.Params.visual.image.file }}
+            {{ $index :=add $index 1 }}
+            <label class="s-c-{{ $index }}" for="s-{{ $index }}"></label>
+          {{ end }}
+        </div>
+        <div class="s-nav">
+          {{ $list := (.Site.Params.visual.image.file) }}
+          {{ $len := (len $list) }}
 
-      <div class="split-image">
-        <div class="s-wrap" role="slider">
-          <input type="radio" id="s-1" name="slider-control" checked="checked">
-          <input type="radio" id="s-2" name="slider-control">
-          <input type="radio" id="s-3" name="slider-control">
-          <ul class="s-content">
-            <li class="s-item s-item-1"></li>
-            <li class="s-item s-item-2"></li>
-            <li class="s-item s-item-3"></li>
-          </ul>
-          <div class="s-control">
-            <label class="s-c-1" for="s-1"></label>
-            <label class="s-c-2" for="s-2"></label>
-            <label class="s-c-3" for="s-3"></label>
-          </div>
-          <div class="s-nav">
-            <label class="s-nav-1 right" for="s-2"></label>
-            <label class="s-nav-2 left" for="s-1"></label>
-            <label class="s-nav-2 right" for="s-3"></label>
-            <label class="s-nav-3 left" for="s-2"></label>
-          </div>
+          {{ range $index, $value := $list }}
+            {{ $index :=add $index 1 }}
+            {{ if eq $index 1 }}
+              <label class="s-nav-{{ $index }} right" for="s-{{ add $index 1 }}"></label>
+            {{ else if (eq $index $len) }}
+              <label class="s-nav-{{ $index }} left" for="s-{{ add $index -1 }}"></label>
+            {{ else }}
+              <label class="s-nav-{{ $index }} left" for="s-{{ add $index -1 }}"></label>
+              <label class="s-nav-{{ $index }} right" for="s-{{ add $index 1 }}"></label>
+            {{ end }}
+          {{ end }}
         </div>
       </div>
-
-    <!-- Video -->
-    {{ else if .Site.Params.visual.video.enable }}
-
-      {{ partial "video" . }}
-
-    {{ end }}
+    </div>
 
     <!-- Content Side -->
     <div class="split-content">

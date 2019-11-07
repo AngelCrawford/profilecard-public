@@ -22,46 +22,22 @@
 {{ with .Site.Params.favicon }}<link rel="icon" href="{{ . | absURL }}" />{{ end }}
 
 <!-- Styles -->
-{{ $sass := resources.Get "scss/main.scss" }}
+{{ $sass := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.scss" . }}
 {{ $style := $sass | resources.ToCSS | resources.Minify }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
 <!-- Image Styles -->
-{{ if .Site.Params.visual.image.enable }}
-  <style>
-    {{ if .Site.Params.visual.image.file0 }}
+<style>
+  .s-content .s-item {
+    background-size: {{ if .Site.Params.visual.image.size }}{{ .Site.Params.visual.image.size }}{{ else }}cover{{ end }};
+    background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center{{ end }};
+  }
 
-      .s-content .s-item {
-        background-size: {{ if .Site.Params.visual.image.size }}{{ .Site.Params.visual.image.size }}{{ else }}cover{{ end }};
-        background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center {{ end }};
-      }
-      .s-content .s-item.s-item-1 {background-image: url({{ .Site.Params.visual.image.file0 | absURL }});}
-      .s-content .s-item.s-item-2 {background-image: url({{ .Site.Params.visual.image.file1 | absURL }});}
-      .s-content .s-item.s-item-3 {background-image: url({{ .Site.Params.visual.image.file2 | absURL }});}
-    {{ end }}
-  </style>
-{{ end }}
-
-
-<!-- {{ range $key, $value := .Site.Params.links }}
-  {{ range $key, $list := $value }}
-
-  {{ if $list.link }}
-    <div class="split-list">
-      <h3>{{ $list.heading }}</h3>
-      <ul>
-        {{ range $list.link }}
-          <li><a href="{{ .url }}">{{ .text | safeHTML }}</a></li>
-        {{ end }}
-      </ul>
-    </div>
+  {{ range $index, $value := .Site.Params.visual.image.file }}
+    .s-content .s-item.s-item-{{ add $index 1 }} {background-image: url("{{ .url }}");}
   {{ end }}
-
-  {{ end }}
-{{ end }} -->
-
-
+</style>
 
 <!-- Google Analytics -->
 {{ if and (.Site.GoogleAnalytics) (not (in (printf "%#v" .Site.BaseURL) "localhost")) }}

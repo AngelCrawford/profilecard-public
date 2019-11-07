@@ -6,6 +6,10 @@ Template URI: https://onepagelove.com/split
 Description: Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content.
 */
 
+
+$slider-number: {{ .Site.Params.visual.image.count | default "3" }};
+$switch-speed: {{ .Site.Params.visual.image.speed | default "1s" }};
+
 @import "00-reset";
 @import "01-variables";
 @import "02-content";

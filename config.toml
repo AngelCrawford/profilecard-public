@@ -62,17 +62,18 @@ copyright = "Angel Crawford"
 
   [params.visual]
     [params.visual.image]
-      enable = true
-      file0 = "images/background_3.jpg"
-      file1 = "images/background_1.jpg"
-      file2 = "images/background_2.jpg"
-      position = "top center"
       size = "cover"
-    [params.visual.video]
-      enable = false
-      mute = true
-      file = "videos/background.mp4"
-      # youtubeId = "dk9uNWPP7EA"
+      position = "center center"
+      count = 4 # wird für das CSS benötigt!
+      speed = "1s"
+      [[params.visual.image.file]]
+        url = "images/background_3.jpg"
+      [[params.visual.image.file]]
+        url = "images/background_1.jpg"
+      [[params.visual.image.file]]
+        url = "images/background_2.jpg"
+      [[params.visual.image.file]]
+        url = "images/background_old.jpg"
 
   # Links
   [[params.links]]
