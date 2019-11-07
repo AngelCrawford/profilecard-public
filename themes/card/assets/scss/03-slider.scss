@@ -46,8 +46,8 @@ $slider-width: 100% / $slider-number;
       height: 12px;
       margin-right: 10px;
       border-radius: 50%;
-      border: 1px solid #999;
-      background-color: #efefe8;
+      border: 1px solid $secondary;
+      background-color: $color-text;
       cursor: pointer;
     }
   }
@@ -66,7 +66,7 @@ $slider-width: 100% / $slider-number;
       display: block;
       width: 8px;
       height: 24px;
-      background-color: #fff;
+      background-color: $color-text;
     }
 
     &::before {margin-bottom: -12px;}
@@ -89,7 +89,7 @@ $slider-width: 100% / $slider-number;
     #s-#{$i}:checked {
       & ~ .s-content {transform: translateX(-$slider-width * ($i - 1));}
 
-      & ~ .s-control .s-c-#{$i} {background-color: #333;}
+      & ~ .s-control .s-c-#{$i} {background-color: transparent;}
 
       & ~ .s-nav .s-nav-#{$i} {display: block;}
     }
