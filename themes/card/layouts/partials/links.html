@@ -1,20 +1,42 @@
 <div class="split-lists">
 
-  {{ range $key, $value := .Site.Params.links }}
-    {{ range $key, $list := $value }}
+  {{ if .Site.Params.list_type.list }}
 
-    {{ if $list.link }}
-      <div class="split-list">
-        <h3>{{ $list.heading }}</h3>
-        <ul>
+    {{ range $key, $value := .Site.Params.links }}
+      {{ range $key, $list := $value }}
+
+      {{ if $list.link }}
+        <div class="split-list">
+          <h3>{{ $list.heading }}</h3>
+          <ul>
+            {{ range $list.link }}
+              <li><a href="{{ .url }}" target="_blank">
+                {{ if isset . "icon" }}<i class="{{.icon}} fa-lg fa-fw"></i>{{ end }}{{ .text | safeHTML }}
+              </a></li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+
+      {{ end }}
+    {{ end }}
+
+  {{ else if .Site.Params.list_type.icons }}
+
+    <ul class="icons">
+      {{ range $key, $value := .Site.Params.links }}
+        {{ range $key, $list := $value }}
           {{ range $list.link }}
-            <li><a href="{{ .url }}" target="_blank">{{ .text | safeHTML }}</a></li>
-          {{ end }}
-        </ul>
-      </div>
-    {{ end }}
 
-    {{ end }}
+            <li class="info" aria-label="{{.text}}">
+              <a href="{{.url}}" target="_blank">
+                <i class="{{.icon}} fa-lg fa-fw"></i>
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </ul>
   {{ end }}
 
 </div>

@@ -45,39 +45,51 @@ copyright = "Angel Crawford"
           file = "videos/background.mp4"
           #youtubeId = "dk9uNWPP7EA"
 
-    [[languages.en.params.links]]
-      [languages.en.params.links.list1]
-        heading = "Connect"
-        [[languages.en.params.links.list1.link]]
-          text = "<i class='fas fa-link'></i>Blog"
-          url = "#"
-        [[languages.en.params.links.list1.link]]
-          text = "<i class='far fa-envelope'></i>Email"
-          url = "#"
+      [languages.en.params.list_type]
+        icons = true
+        list = false
 
-      [languages.en.params.links.list2]
-        heading = "Social"
-        [[languages.en.params.links.list2.link]]
-          text = "<i class='fab fa-instagram'></i>Instagram"
-          url = "https://www.instagram.com/angel_crawford_ftw"
-        [[languages.en.params.links.list2.link]]
-          text = "<i class='fab fa-facebook'></i>Facebook"
-          url = "https://www.facebook.com/angel.crawford.ftw"
-        [[languages.en.params.links.list2.link]]
-          text = "<i class='fab fa-twitter'></i>Twitter"
-          url = "https://twitter.com/crawford_ftw"
+      [[languages.en.params.links]]
+        [languages.en.params.links.list1]
+          heading = "Connect"
+          [[languages.en.params.links.list1.link]]
+            text = "Blog"
+            url = "#"
+            icon = "fas fa-link"
+          [[languages.en.params.links.list1.link]]
+            text = "Email"
+            url = "#"
+            icon = "far fa-envelope"
 
-      [languages.en.params.links.list3]
-        heading = "Develop"
-        [[languages.en.params.links.list3.link]]
-          text = "<i class='fab fa-github'></i>Github"
-          url = "https://github.com/AngelCrawford"
-        [[languages.en.params.links.list3.link]]
-          text = "<i class='fab fa-codepen'></i>CodePen"
-          url = "https://codepen.io/angel_crawford"
-        [[languages.en.params.links.list3.link]]
-          text = "<i class='fab fa-stack-overflow'></i>Stack Overflow"
-          url = "https://stackoverflow.com/u/3206211"
+        [languages.en.params.links.list2]
+          heading = "Social"
+          [[languages.en.params.links.list2.link]]
+            text = "Instagram"
+            url = "https://www.instagram.com/angel_crawford_ftw"
+            icon = "fab fa-instagram"
+          [[languages.en.params.links.list2.link]]
+            text = "Facebook"
+            url = "https://www.facebook.com/angel.crawford.ftw"
+            icon = "fab fa-facebook"
+          [[languages.en.params.links.list2.link]]
+            text = "Twitter"
+            url = "https://twitter.com/crawford_ftw"
+            icon = "fab fa-twitter"
+
+        [languages.en.params.links.list3]
+          heading = "Develop"
+          [[languages.en.params.links.list3.link]]
+            text = "Github"
+            url = "https://github.com/AngelCrawford"
+            icon = "fab fa-github"
+          [[languages.en.params.links.list3.link]]
+            text = "CodePen"
+            url = "https://codepen.io/angel_crawford"
+            icon = "fab fa-codepen"
+          [[languages.en.params.links.list3.link]]
+            text = "Stack Overflow"
+            url = "https://stackoverflow.com/u/3206211"
+            icon = "fab fa-stack-overflow"
 
   [languages.de]
     weight = 2
@@ -117,32 +129,32 @@ copyright = "Angel Crawford"
         [languages.de.params.links.list1]
           heading = "Kontakt"
           [[languages.de.params.links.list1.link]]
-            text = "<i class='fas fa-link'></i>Blog"
+            text = "<i class='fas fa-link fa-fw'></i>Blog"
             url = "#"
           [[languages.de.params.links.list1.link]]
-            text = "<i class='far fa-envelope'></i>E-Mail"
+            text = "<i class='far fa-envelope fa-fw'></i>E-Mail"
             url = "#"
 
         [languages.de.params.links.list2]
-          heading = "Social"
+          heading = "Social Media"
           [[languages.de.params.links.list2.link]]
-            text = "<i class='fab fa-instagram'></i>Instagram"
+            text = "<i class='fab fa-instagram fa-fw'></i>Instagram"
             url = "https://www.instagram.com/angel_crawford_ftw"
           [[languages.de.params.links.list2.link]]
-            text = "<i class='fab fa-facebook'></i>Facebook"
+            text = "<i class='fab fa-facebook fa-fw'></i>Facebook"
             url = "https://www.facebook.com/angel.crawford.ftw"
           [[languages.de.params.links.list2.link]]
-          text = "<i class='fab fa-twitter'></i>Twitter"
+          text = "<i class='fab fa-twitter fa-fw'></i>Twitter"
           url = "https://twitter.com/crawford_ftw"
 
         [languages.de.params.links.list3]
-          heading = "Develop"
+          heading = "Entwicklung"
           [[languages.de.params.links.list3.link]]
-            text = "<i class='fab fa-github'></i>Github"
+            text = "<i class='fab fa-github fa-fw'></i>Github"
             url = "https://github.com/AngelCrawford"
           [[languages.de.params.links.list3.link]]
-            text = "<i class='fab fa-codepen'></i>CodePen"
+            text = "<i class='fab fa-codepen fa-fw'></i>CodePen"
             url = "https://codepen.io/angel_crawford"
           [[languages.de.params.links.list3.link]]
-            text = "<i class='fab fa-stack-overflow'></i>Stack Overflow"
+            text = "<i class='fab fa-stack-overflow fa-fw'></i>Stack Overflow"
             url = "https://stackoverflow.com/u/3206211"

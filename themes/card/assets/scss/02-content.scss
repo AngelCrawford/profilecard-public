@@ -305,6 +305,71 @@ body.page-template-page-fullsingle-split {
 //-------------------------------------------------------------------------------
 
 .split-lists {
+  ul.icons {
+    list-style-type: none;
+    margin: 3em 0;
+    padding: 0;
+    // overflow: hidden;
+    width: 100%;
+    margin-bottom: 40px;
+    // opacity: .7;
+    &:hover li {
+      opacity: 0.2;
+    }
+    li {
+      display: inline;
+      transition-duration: 0.2s;
+      &:hover  {
+        opacity: 1;
+      }
+      a {
+        color: darken($secondary, 20%);
+        padding-right: .7em;
+        transition-duration: .2s;
+        &:hover {
+          opacity: 1;
+          // color: $secondary;
+        }
+      }
+    }
+
+    .info {
+      position: relative;
+      box-sizing: border-box;
+      border: 0;
+      padding: 0;
+    }
+    // .info:hover:before, .info:focus:before{
+    //   content: '';
+    //   position: absolute;
+    //   z-index: 55;
+    //   width: 0;
+    //   height: 0;
+    //   border: 4px solid transparent;
+    //   border-top-color: black;
+    //   border-bottom: 0;
+    //   top: -41px;
+    //   bottom: 0;
+    //   margin: auto 0;
+    //   left: 0;
+    // }
+    .info:hover:after, .info:focus:after{
+      content: attr(aria-label);
+      position: absolute;
+      bottom: 35px;
+      left: -35px;
+      height: 32px;
+      line-height: 32px;
+      padding: 0 10px;
+      text-align: left;
+      background: rgba($color-text, .5);
+      border-radius: 3px;
+      white-space: nowrap;
+      color: black;
+      @include font-light;
+      font-size: 80%;
+    }
+  }
 
   .split-list {
     width: 30%;
@@ -344,7 +409,7 @@ body.page-template-page-fullsingle-split {
           }
 
           i {
-            padding: 0 0.4em 0.3rem 0;
+            padding: 0 0.3em 0.3rem 0;
             font-size: 0.9em;
             opacity: 0.5;
           }
