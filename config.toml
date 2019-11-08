@@ -62,6 +62,7 @@ copyright = "Angel Crawford"
 
   [params.visual]
     [params.visual.image]
+      enable = true
       size = "cover"
       position = "center center"
       count = 4 # wird für das CSS benötigt!
@@ -74,6 +75,11 @@ copyright = "Angel Crawford"
         url = "images/background_2.jpg"
       [[params.visual.image.file]]
         url = "images/background_old.jpg"
+    [params.visual.video]
+      enable = false
+      mute = true
+      file = "videos/background.mp4"
+      #youtubeId = "dk9uNWPP7EA"
 
   # Links
   [[params.links]]

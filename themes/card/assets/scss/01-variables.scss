@@ -31,7 +31,7 @@
   @include font-family('Roboto-Regular', 300);
 }
 @mixin font-bold {
-  @include font-family('Roboto-Bold', 600);
+  @include font-family('Roboto-Bold', 500);
 }
 @mixin font-black {
   @include font-family('Roboto-Black', 900);
