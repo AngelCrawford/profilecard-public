@@ -28,8 +28,8 @@
         {{ range $key, $list := $value }}
           {{ range $list.link }}
 
-            <li class="info" aria-label="{{.text}}">
-              <a href="{{.url}}" target="_blank">
+            <li class="info">
+              <a href="{{.url}}" target="_blank" class="tooltip" data-tooltip="{{.text}}">
                 <i class="{{.icon}} fa-lg fa-fw"></i>
               </a>
             </li>
