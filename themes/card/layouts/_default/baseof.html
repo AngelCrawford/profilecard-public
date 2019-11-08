@@ -11,54 +11,13 @@
 
     <!-- Image -->
     {{ if .Site.Params.visual.image.enable }}
-        {{ $list := (.Site.Params.visual.image.file) }}
-        {{ $len := (len $list) }}
 
-        <div class="split-image">
-          <div class="s-wrap" role="slider">
-            {{ $len := (len .Site.Params.visual.image.file) }}
-            {{ range $index, $value := .Site.Params.visual.image.file }}
-              {{ $index :=add $index 1 }}
-
-              {{ if not (eq $len 1) }}
-                <input type="radio" id="s-{{ $index }}" name="slider-control" {{ if eq $index 1 }}checked="checked"{{ end }}>
-              {{ end }}
-            {{ end }}
-            <ul class="s-content">
-              {{ range $index, $value := .Site.Params.visual.image.file }}
-                <li class="s-item s-item-{{ add $index 1 }}"></li>
-              {{ end }}
-            </ul>
-
-            {{ if not (eq $len 1) }}
-                <div class="s-control">
-                  {{ range $index, $value := .Site.Params.visual.image.file }}
-                    {{ $index :=add $index 1 }}
-                    <label class="s-c-{{ $index }}" for="s-{{ $index }}"></label>
-                  {{ end }}
-                </div>
-
-                <div class="s-nav">
-                  {{ range $index, $value := $list }}
-                    {{ $index :=add $index 1 }}
-                    {{ if eq $index 1 }}
-                      <label class="s-nav-{{ $index }} right" for="s-{{ add $index 1 }}"></label>
-                    {{ else if (eq $index $len) }}
-                      <label class="s-nav-{{ $index }} left" for="s-{{ add $index -1 }}"></label>
-                    {{ else }}
-                      <label class="s-nav-{{ $index }} left" for="s-{{ add $index -1 }}"></label>
-                      <label class="s-nav-{{ $index }} right" for="s-{{ add $index 1 }}"></label>
-                    {{ end }}
-                  {{ end }}
-                </div>
-            {{ end }}
-          </div>
-        </div>
+      {{ partial "image" . }}
 
     <!-- Video -->
     {{ else if .Site.Params.visual.video.enable }}
 
-    {{ partial "video" . }}
+      {{ partial "video" . }}
 
     {{ end }}
 

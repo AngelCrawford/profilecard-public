@@ -15,11 +15,104 @@ copyright = "Angel Crawford"
     weight = 1
     title = "Angel Crawford | Profile Card"
     LanguageName = "English"
+
+    [languages.en.params]
+      # Metadata for search engines and social sharing
+      author = "Angel Crawford"
+      description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
+      #shareImage = "images/social.jpg"
+      #twitterHandle = "onepagelove"
+      favicon = "favicon.png"
+
+      [languages.en.params.visual]
+        [languages.en.params.visual.image]
+          enable = true
+          size = "cover"
+          position = "center center"
+          count = 4 # wird für das CSS benötigt!
+          speed = "1s"
+          [[languages.en.params.visual.image.file]]
+            url = "images/background_3.jpg"
+          [[languages.en.params.visual.image.file]]
+            url = "images/background_1.jpg"
+          [[languages.en.params.visual.image.file]]
+            url = "images/background_2.jpg"
+          [[languages.en.params.visual.image.file]]
+            url = "images/background_old.jpg"
+        [languages.en.params.visual.video]
+          enable = false
+          mute = true
+          file = "videos/background.mp4"
+          #youtubeId = "dk9uNWPP7EA"
+
+    [[languages.en.params.links]]
+      [languages.en.params.links.list1]
+        heading = "Connect"
+        [[languages.en.params.links.list1.link]]
+          text = "<i class='fas fa-link'></i>Blog"
+          url = "#"
+        [[languages.en.params.links.list1.link]]
+          text = "<i class='far fa-envelope'></i>Email"
+          url = "#"
+
+      [languages.en.params.links.list2]
+        heading = "Social"
+        [[languages.en.params.links.list2.link]]
+          text = "<i class='fab fa-instagram'></i>Instagram"
+          url = "https://www.instagram.com/angel_crawford_ftw"
+        [[languages.en.params.links.list2.link]]
+          text = "<i class='fab fa-facebook'></i>Facebook"
+          url = "https://www.facebook.com/angel.crawford.ftw"
+        [[languages.en.params.links.list2.link]]
+          text = "<i class='fab fa-twitter'></i>Twitter"
+          url = "https://twitter.com/crawford_ftw"
+
+      [languages.en.params.links.list3]
+        heading = "Develop"
+        [[languages.en.params.links.list3.link]]
+          text = "<i class='fab fa-github'></i>Github"
+          url = "https://github.com/AngelCrawford"
+        [[languages.en.params.links.list3.link]]
+          text = "<i class='fab fa-codepen'></i>CodePen"
+          url = "https://codepen.io/angel_crawford"
+        [[languages.en.params.links.list3.link]]
+          text = "<i class='fab fa-stack-overflow'></i>Stack Overflow"
+          url = "https://stackoverflow.com/u/3206211"
+
   [languages.de]
     weight = 2
     title = "Angel Crawford | Profil Karte"
     LanguageName = "Deutsch"
+
     [languages.de.params]
+      # Metadata for search engines and social sharing
+      author = "Angel Crawford"
+      description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
+      #shareImage = "images/social.jpg"
+      #twitterHandle = "onepagelove"
+      favicon = "favicon.png"
+
+      [languages.de.params.visual]
+        [languages.de.params.visual.image]
+          enable = true
+          size = "cover"
+          position = "center center"
+          count = 4 # wird für das CSS benötigt!
+          speed = "1s"
+          [[languages.de.params.visual.image.file]]
+            url = "/images/background_3.jpg"
+          [[languages.de.params.visual.image.file]]
+            url = "/images/background_1.jpg"
+          [[languages.de.params.visual.image.file]]
+            url = "/images/background_2.jpg"
+          [[languages.de.params.visual.image.file]]
+            url = "/images/background_old.jpg"
+        [languages.de.params.visual.video]
+          enable = false
+          mute = true
+          file = "videos/background.mp4"
+          #youtubeId = "dk9uNWPP7EA"
+
       [[languages.de.params.links]]
         [languages.de.params.links.list1]
           heading = "Kontakt"
@@ -29,6 +122,7 @@ copyright = "Angel Crawford"
           [[languages.de.params.links.list1.link]]
             text = "<i class='far fa-envelope'></i>E-Mail"
             url = "#"
+
         [languages.de.params.links.list2]
           heading = "Social"
           [[languages.de.params.links.list2.link]]
@@ -40,6 +134,7 @@ copyright = "Angel Crawford"
           [[languages.de.params.links.list2.link]]
           text = "<i class='fab fa-twitter'></i>Twitter"
           url = "https://twitter.com/crawford_ftw"
+
         [languages.de.params.links.list3]
           heading = "Develop"
           [[languages.de.params.links.list3.link]]
@@ -51,69 +146,3 @@ copyright = "Angel Crawford"
           [[languages.de.params.links.list3.link]]
             text = "<i class='fab fa-stack-overflow'></i>Stack Overflow"
             url = "https://stackoverflow.com/u/3206211"
-
-[params]
-  # Metadata for search engines and social sharing
-  author = "Angel Crawford"
-  description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
-  #shareImage = "images/social.jpg"
-  #twitterHandle = "onepagelove"
-  favicon = "favicon.png"
-
-  [params.visual]
-    [params.visual.image]
-      enable = true
-      size = "cover"
-      position = "center center"
-      count = 4 # wird für das CSS benötigt!
-      speed = "1s"
-      [[params.visual.image.file]]
-        url = "images/background_3.jpg"
-      [[params.visual.image.file]]
-        url = "images/background_1.jpg"
-      [[params.visual.image.file]]
-        url = "images/background_2.jpg"
-      [[params.visual.image.file]]
-        url = "images/background_old.jpg"
-    [params.visual.video]
-      enable = false
-      mute = true
-      file = "videos/background.mp4"
-      #youtubeId = "dk9uNWPP7EA"
-
-  # Links
-  [[params.links]]
-    [params.links.list1]
-      heading = "Connect"
-      [[params.links.list1.link]]
-        text = "<i class='fas fa-link'></i>Blog"
-        url = "#"
-      [[params.links.list1.link]]
-        text = "<i class='far fa-envelope'></i>Email"
-        url = "#"
-
-  [[params.links]]
-    [params.links.list2]
-      heading = "Social"
-      [[params.links.list2.link]]
-        text = "<i class='fab fa-instagram'></i>Instagram"
-        url = "https://www.instagram.com/angel_crawford_ftw"
-      [[params.links.list2.link]]
-        text = "<i class='fab fa-facebook'></i>Facebook"
-        url = "https://www.facebook.com/angel.crawford.ftw"
-      [[params.links.list2.link]]
-        text = "<i class='fab fa-twitter'></i>Twitter"
-        url = "https://twitter.com/crawford_ftw"
-
-  [[params.links]]
-    [params.links.list3]
-      heading = "Develop"
-      [[params.links.list3.link]]
-        text = "<i class='fab fa-github'></i>Github"
-        url = "https://github.com/AngelCrawford"
-      [[params.links.list3.link]]
-        text = "<i class='fab fa-codepen'></i>CodePen"
-        url = "https://codepen.io/angel_crawford"
-      [[params.links.list3.link]]
-        text = "<i class='fab fa-stack-overflow'></i>Stack Overflow"
-        url = "https://stackoverflow.com/u/3206211"
