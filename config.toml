@@ -28,17 +28,17 @@ copyright = "Angel Crawford"
         [languages.en.params.visual.image]
           enable = true
           size = "cover"
-          position = "center center"
+          position = "center left"
           count = 4 # wird für das CSS benötigt!
           speed = "1s"
-          [[languages.en.params.visual.image.file]]
-            url = "images/background_3.jpg"
           [[languages.en.params.visual.image.file]]
             url = "images/background_1.jpg"
           [[languages.en.params.visual.image.file]]
             url = "images/background_2.jpg"
           [[languages.en.params.visual.image.file]]
-            url = "images/background_old.jpg"
+            url = "images/background_3.jpg"
+          [[languages.en.params.visual.image.file]]
+            url = "images/background_4.jpg"
         [languages.en.params.visual.video]
           enable = false
           mute = true
@@ -112,49 +112,61 @@ copyright = "Angel Crawford"
           count = 4 # wird für das CSS benötigt!
           speed = "1s"
           [[languages.de.params.visual.image.file]]
-            url = "/images/background_3.jpg"
-          [[languages.de.params.visual.image.file]]
             url = "/images/background_1.jpg"
           [[languages.de.params.visual.image.file]]
             url = "/images/background_2.jpg"
           [[languages.de.params.visual.image.file]]
-            url = "/images/background_old.jpg"
+            url = "/images/background_3.jpg"
+          [[languages.de.params.visual.image.file]]
+            url = "/images/background_4.jpg"
         [languages.de.params.visual.video]
           enable = false
           mute = true
           file = "videos/background.mp4"
           #youtubeId = "dk9uNWPP7EA"
 
+      [languages.de.params.list_type]
+        icons = true
+        list = false
+
       [[languages.de.params.links]]
         [languages.de.params.links.list1]
           heading = "Kontakt"
           [[languages.de.params.links.list1.link]]
-            text = "<i class='fas fa-link fa-fw'></i>Blog"
+            text = "Blog"
             url = "#"
+            icon = "fas fa-link"
           [[languages.de.params.links.list1.link]]
-            text = "<i class='far fa-envelope fa-fw'></i>E-Mail"
+            text = "E-Mail"
             url = "#"
+            icon = "far fa-envelope"
 
         [languages.de.params.links.list2]
           heading = "Social Media"
           [[languages.de.params.links.list2.link]]
-            text = "<i class='fab fa-instagram fa-fw'></i>Instagram"
+            text = "Instagram"
             url = "https://www.instagram.com/angel_crawford_ftw"
+            icon = "fab fa-instagram"
           [[languages.de.params.links.list2.link]]
-            text = "<i class='fab fa-facebook fa-fw'></i>Facebook"
+            text = "Facebook"
             url = "https://www.facebook.com/angel.crawford.ftw"
+            icon = "fab fa-facebook"
           [[languages.de.params.links.list2.link]]
-          text = "<i class='fab fa-twitter fa-fw'></i>Twitter"
+          text = "Twitter"
           url = "https://twitter.com/crawford_ftw"
+          icon = "fab fa-twitter"
 
         [languages.de.params.links.list3]
           heading = "Entwicklung"
           [[languages.de.params.links.list3.link]]
-            text = "<i class='fab fa-github fa-fw'></i>Github"
+            text = "Github"
             url = "https://github.com/AngelCrawford"
+            icon = "fab fa-github"
           [[languages.de.params.links.list3.link]]
-            text = "<i class='fab fa-codepen fa-fw'></i>CodePen"
+            text = "CodePen"
             url = "https://codepen.io/angel_crawford"
+            icon = "fab fa-codepen"
           [[languages.de.params.links.list3.link]]
-            text = "<i class='fab fa-stack-overflow fa-fw'></i>Stack Overflow"
+            text = "Stack Overflow"
             url = "https://stackoverflow.com/u/3206211"
+            icon = "fab fa-stack-overflow"

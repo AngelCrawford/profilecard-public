@@ -43,15 +43,24 @@
 //-------------------------------------------------------------------------------
 
 // Colors
-$color-background : rgb(25,25,25);
-$color-text       : #f2ebe3;
-$color-maverick   : #f2ebe3;
-$color-tagline    : #f2ebe3;
-$primary          : #17a2b8;
-$secondary        : #b78846;
-$accent           : #20c997;
+$color-background   : rgb(25,25,25);
+$color-text         : #f2ebe3;
+$color-maverick     : #f2ebe3;
+$color-tagline      : #f2ebe3;
+$primary            : #17a2b8;
+$secondary          : #b78846;
+$accent             : #20c997;
 
 // Breakpoints
-$bp-smallish      : 1200px;
-$bp-tablet        : 800px;
-$bp-mobile        : 500px;
+$bp-smallish        : 1200px;
+$bp-tablet          : 800px;
+$bp-mobile          : 500px;
+
+// Tooltip
+$tt-width           : 100px;
+$tt-triangle-height : 10px;
+$tt-v-offset-start  : 12px;
+$tt-v-offset-end    : 5px;
+$tt-bg-color        : rgba(0, 0, 0, 0.5);
+$tt-anim-duration   : 0s;
+$tt-anim-delay      : .2s;

@@ -28,6 +28,10 @@ $slider-width: 100% / $slider-number;
       width: $slider-width;
       height: 100%;
       background-repeat: no-repeat;
+
+      @media (min-width: $bp-smallish + 1px ) {
+        background-position: center top !important;
+      }
     }
   }
   .s-control {
@@ -60,11 +64,14 @@ $slider-width: 100% / $slider-number;
 
     &::before,
     &::after {
+      // font-family: "Font Awesome 5 Free";
+      // content: "\f105";
       content: "";
       display: block;
       width: 8px;
       height: 24px;
       background-color: $color-text;
+      // border: 1px solid $secondary;
     }
 
     &::before {margin-bottom: -12px;}
@@ -87,7 +94,7 @@ $slider-width: 100% / $slider-number;
     #s-#{$i}:checked {
       & ~ .s-content {transform: translateX(-$slider-width * ($i - 1));}
 
-      & ~ .s-control .s-c-#{$i} {background-color: transparent;}
+      & ~ .s-control .s-c-#{$i} {background-color: $color-background;}
 
       & ~ .s-nav .s-nav-#{$i} {display: block;}
     }
