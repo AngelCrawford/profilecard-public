@@ -1,6 +1,6 @@
 <div class="split-lists">
 
-  {{ if .Site.Params.list_type.list }}
+  {{ if not (.Site.Params.list_type.icons) }}
 
     {{ range $key, $value := .Site.Params.links }}
       {{ range $key, $list := $value }}
@@ -11,7 +11,7 @@
           <ul>
             {{ range $list.link }}
               <li><a href="{{ .url }}" target="_blank">
-                {{ if isset . "icon" }}<i class="{{.icon}} fa-lg fa-fw"></i>{{ end }}{{ .text | safeHTML }}
+                {{ if isset . "icon" }}<i class="{{.icon}} fa-lg fa-fw" {{ if (not $.Site.Params.list_type.hover_color) }} style="color:{{.color}}" {{ end }}></i>{{ end }}{{ .text | safeHTML }}
               </a></li>
             {{ end }}
           </ul>
@@ -30,7 +30,14 @@
 
             <li class="info">
               <a href="{{.url}}" target="_blank" class="tooltip" data-tooltip="{{.text}}">
-                <i class="{{.icon}} fa-lg fa-fw"></i>
+                {{ if $.Site.Params.list_type.round_icons }}
+                  <span class="round-icons fa-stack">
+                    <i class="fas fa-circle fa-stack-2x {{ .text }}" {{ if (not $.Site.Params.list_type.hover_color) }} style="color:{{.color}}" {{ end }}></i>
+                    <i class="{{.icon}} fa-stack-1x"></i>
+                  </span>
+                {{ else }}
+                  <i class="{{.icon}} fa-lg fa-fw {{ .text }}" {{ if (not $.Site.Params.list_type.hover_color) }} style="color:{{.color}}" {{ end }}></i>
+                {{ end }}
               </a>
             </li>
           {{ end }}

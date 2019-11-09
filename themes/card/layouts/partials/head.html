@@ -27,33 +27,7 @@
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<!-- Image Styles -->
-{{ if .Site.Params.visual.image.enable }}
-    <style>
-      .s-content .s-item {
-        background-size: {{ if .Site.Params.visual.image.size }}{{ .Site.Params.visual.image.size }}{{ else }}cover{{ end }};
-        background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center{{ end }};
-      }
-      {{ range $index, $value := .Site.Params.visual.image.file }}
-        .s-content .s-item.s-item-{{ add $index 1 }} { background-image: url("{{ .url }}"); }
-        {{ if isset . "url_smallish" }}
-          @media (max-width: {{ $.Site.Params.breakpoints.bp_smallish }} ) {
-            .s-content .s-item.s-item-{{ add $index 1 }} { background-image: url("{{ .url_smallish }}"); }
-          }
-        {{ end }}
-        {{ if isset . "url_tablet" }}
-          @media (max-width: {{ $.Site.Params.breakpoints.bp_tablet }} ) {
-            .s-content .s-item.s-item-{{ add $index 1 }} { background-image: url("{{ .url_tablet }}"); }
-          }
-        {{ end }}
-        {{ if isset . "url_mobile" }}
-          @media (max-width: {{ $.Site.Params.breakpoints.bp_mobile }} ) {
-            .s-content .s-item.s-item-{{ add $index 1 }} { background-image: url("{{ .url_mobile }}"); }
-          }
-        {{ end }}
-      {{ end }}
-    </style>
-{{ end }}
+{{ partial "style" . }}
 
 <!-- Google Analytics -->
 {{ if and (.Site.GoogleAnalytics) (not (in (printf "%#v" .Site.BaseURL) "localhost")) }}

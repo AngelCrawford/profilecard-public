@@ -1,8 +1,31 @@
 <div class="split-credit">
   <p>
-    &copy; 2018 - {{ dateFormat "2006" now }} {{ .Site.Copyright | safeHTML }}
-    <span class="split-languages">
-      {{ range $.Site.Home.AllTranslations }}<a href="{{ .Permalink }}">{{ .Language.LanguageName }} </a>{{ end }}
+    <span class="split-copyright">&copy; 2018 - {{ dateFormat "2006" now }} {{ .Site.Copyright | safeHTML }}</span>
+
+    {{ $currentPage := . }}
+
+    <span class="split-languages" role="navigation">
+      {{ range $.Site.Home.AllTranslations }}
+        <a href="{{ .Permalink }}" title="{{ .Site.Params.flag_title }} '{{ .Language.LanguageName }}'">
+          {{ if not (eq .Language $.Language) }}
+            <img src="{{ .Site.Params.flag_file }}" />
+          {{ end }}
+        </a>
+      {{ end }}
+    </span>
+    <!-- Rounded switch -->
+  <!-- <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label> -->
+    <span class="footer-menu" role="navigation">
+      {{ range .Site.Menus.footer }}
+        {{ if eq $currentPage.URL .URL }}
+          <span class="active">{{ .Name }}</span>
+        {{ else }}
+          <a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+        {{ end }}
+      {{ end }}
     </span>
   </p>
 </div>
