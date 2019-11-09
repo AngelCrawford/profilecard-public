@@ -5,25 +5,35 @@
     {{ $currentPage := . }}
 
     <span class="split-languages" role="navigation">
-      {{ range $.Site.Home.AllTranslations }}
-        <a href="{{ .Permalink }}" title="{{ .Site.Params.flag_title }} '{{ .Language.LanguageName }}'">
-          {{ if not (eq .Language $.Language) }}
-            <img src="{{ .Site.Params.flag_file }}" />
-          {{ end }}
-        </a>
+
+      {{ if .IsTranslated }}
+
+        {{ range .Translations }}
+          <a href="{{ .Permalink }}" title='{{ i18n "language_title" }} "{{ .Language.LanguageName }}"'>
+            {{ if not (eq .Language $.Language) }}
+              <img src="{{ .Site.Params.flag_file }}" />
+            {{ end }}
+          </a>
+        {{ end }}
+      {{ else }}
+        {{ range $.Site.Home.AllTranslations }}
+          <a href="{{ .Permalink }}" title="{{ .Site.Params.flag_title }} '{{ .Language.LanguageName }}'">
+            {{ if not (eq .Language $.Language) }}
+              <img src="{{ .Site.Params.flag_file }}" />
+            {{ end }}
+          </a>
+        {{ end }}
       {{ end }}
+
+
+
     </span>
-    <!-- Rounded switch -->
-  <!-- <label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
-  </label> -->
     <span class="footer-menu" role="navigation">
       {{ range .Site.Menus.footer }}
         {{ if eq $currentPage.URL .URL }}
           <span class="active">{{ .Name }}</span>
         {{ else }}
-          <a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+          <a href="{{ .URL | absLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
         {{ end }}
       {{ end }}
     </span>

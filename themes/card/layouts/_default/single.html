@@ -3,7 +3,7 @@
 
     {{ .Content }}
 
-    <a class="back-button" href="{{ .Site.Params.baseURL | absLangURL }}">Back</a>
+    <a class="back-button" href="{{ .Site.Params.baseURL | absLangURL }}">{{ i18n "back" }}</a>
 
   </div>
   {{  partial "links" . }}

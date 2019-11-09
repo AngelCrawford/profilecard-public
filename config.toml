@@ -1,19 +1,20 @@
 # Site settings
 baseURL = "http://example.org/"
-title = "Profile Card"
 theme = "card"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
-
+copyright = "Angel Crawford"
 # Enter your tracking code to enable Google Analytics
 #googleAnalytics = ""
-
-copyright = "Angel Crawford"
 
 [languages]
   [languages.en]
     weight = 1
     title = "Angel Crawford | Profile Card"
     LanguageName = "English"
+  [languages.de]
+    weight = 2
+    title = "Angel Crawford | Profil Karte"
+    LanguageName = "Deutsch"
 
     [languages.en.menu]
       [[languages.en.menu.footer]]
@@ -21,9 +22,14 @@ copyright = "Angel Crawford"
         name       = "Legal Notice"
         url        = "/legal-notice/"
         weight     = 0
+    [languages.de.menu]
+      [[languages.de.menu.footer]]
+        identifier = "legal-notice"
+        name       = "Impressum"
+        url        = "/de/impressum/"
+        weight     = 0
 
     [languages.en.params]
-      # Metadata for search engines and social sharing
       author = "Angel Crawford"
       description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
       #shareImage = "images/social.jpg"
@@ -31,109 +37,7 @@ copyright = "Angel Crawford"
       favicon = "favicon.png"
       flag_file = "/images/en.png"
       flag_title = "Change the Language to"
-
-      [languages.en.breakpoints]
-        bp_smallish = "1200px"
-        bp_tablet = "800px"
-        bp_mobile = "500px"
-
-      [languages.en.params.visual]
-        [languages.en.params.visual.image]
-          enable = true
-          size = "cover"
-          position = "center top"
-          count = 4 # Anzahl der Bilder im Slider, wird für das CSS benötigt!
-          speed = "1s" # Sekunden die der Slider zum Wechsel der Bilder benötigt
-          [[languages.en.params.visual.image.file]]
-            url = "/images/background_1_2000px.jpg"
-            url_smallish = "/images/background_1_1200px.jpg"
-            url_tablet = "/images/background_1_800px.jpg"
-            url_mobile = "/images/background_1_500px.jpg"
-          [[languages.en.params.visual.image.file]]
-            url = "/images/background_2_2000px.jpg"
-            url_smallish = "/images/background_2_1200px.jpg"
-            url_tablet = "/images/background_2_800px.jpg"
-            url_mobile = "/images/background_2_500px.jpg"
-          [[languages.en.params.visual.image.file]]
-            url = "/images/background_3_2000px.jpg"
-            url_smallish = "/images/background_3_1200px.jpg"
-            url_tablet = "/images/background_3_800px.jpg"
-            url_mobile = "/images/background_3_500px.jpg"
-          [[languages.en.params.visual.image.file]]
-            url = "/images/background_4.jpg"
-        [languages.en.params.visual.video]
-          enable = false
-          mute = true
-          file = "videos/background.mp4"
-          #youtubeId = "dk9uNWPP7EA"
-
-      [languages.en.params.list_type]
-        icons = true
-        round_icons = false
-        hover_color = false
-
-      [[languages.en.params.links]]
-        [languages.en.params.links.list1]
-          heading = "Connect"
-          # [[languages.en.params.links.list1.link]]
-          #   text = "Blog"
-          #   url = "#"
-          #   icon = "fas fa-link"
-          [[languages.en.params.links.list1.link]]
-            text = "Email"
-            url = "#"
-            icon = "far fa-envelope"
-
-        [languages.en.params.links.list2]
-          heading = "Social"
-          [[languages.en.params.links.list2.link]]
-            text = "Instagram"
-            url = "https://www.instagram.com/angel_crawford_ftw"
-            icon = "fab fa-instagram"
-            color = "#c13584"
-          [[languages.en.params.links.list2.link]]
-            text = "Facebook"
-            url = "https://www.facebook.com/angel.crawford.ftw"
-            icon = "fab fa-facebook"
-            color = "#4267B2"
-          [[languages.en.params.links.list2.link]]
-            text = "Twitter"
-            url = "https://twitter.com/crawford_ftw"
-            icon = "fab fa-twitter"
-            color = "#1da1f2"
-
-        [languages.en.params.links.list3]
-          heading = "Develop"
-          [[languages.en.params.links.list3.link]]
-            text = "Github"
-            url = "https://github.com/AngelCrawford"
-            icon = "fab fa-github"
-            color = "#555"
-          [[languages.en.params.links.list3.link]]
-            text = "CodePen"
-            url = "https://codepen.io/angel_crawford"
-            icon = "fab fa-codepen"
-            color = "#888"
-          [[languages.en.params.links.list3.link]]
-            text = "Stack Overflow"
-            url = "https://stackoverflow.com/u/3206211"
-            icon = "fab fa-stack-overflow"
-            color= "#f48024"
-
-  [languages.de]
-    weight = 2
-    title = "Angel Crawford | Profil Karte"
-    LanguageName = "Deutsch"
-
-    [languages.de.menu]
-      [[languages.de.menu.footer]]
-        identifier = "legal-notice"
-        name       = "Impressum"
-        url        = "/de/legal-notice/"
-        weight     = 0
-
     [languages.de.params]
-      # Metadata for search engines and social sharing
       author = "Angel Crawford"
       description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
       #shareImage = "images/social.jpg"
@@ -142,90 +46,183 @@ copyright = "Angel Crawford"
       flag_file = "/images/de.png"
       flag_title = "Ändere die Sprache zu"
 
-      [languages.de.breakpoints]
-        bp_smallish = "1200px"
-        bp_tablet = "800px"
-        bp_mobile = "500px"
+    [languages.en.breakpoints]
+      bp_smallish = "1200px"
+      bp_tablet = "800px"
+      bp_mobile = "500px"
+    [languages.de.breakpoints]
+      bp_smallish = "1200px"
+      bp_tablet = "800px"
+      bp_mobile = "500px"
 
-      [languages.de.params.visual]
-        [languages.de.params.visual.image]
-          enable = true
-          size = "cover"
-          position = "center center"
-          count = 4 # wird für das CSS benötigt!
-          speed = "1s"
-          [[languages.de.params.visual.image.file]]
-            url = "/images/background_1_2000px.jpg"
-            url_smallish = "/images/background_1_1200px.jpg"
-            url_tablet = "/images/background_1_800px.jpg"
-            url_mobile = "/images/background_1_500px.jpg"
-          [[languages.de.params.visual.image.file]]
-            url = "/images/background_2_2000px.jpg"
-            url_smallish = "/images/background_2_1200px.jpg"
-            url_tablet = "/images/background_2_800px.jpg"
-            url_mobile = "/images/background_2_500px.jpg"
-          [[languages.de.params.visual.image.file]]
-            url = "/images/background_3_2000px.jpg"
-            url_smallish = "/images/background_3_1200px.jpg"
-            url_tablet = "/images/background_3_800px.jpg"
-            url_mobile = "/images/background_3_500px.jpg"
-          [[languages.de.params.visual.image.file]]
-            url = "/images/background_4.jpg"
-        [languages.de.params.visual.video]
-          enable = false
-          mute = true
-          file = "videos/background.mp4"
-          #youtubeId = "dk9uNWPP7EA"
+    [languages.en.params.visual]
+      [languages.en.params.visual.image]
+        enable = true
+        size = "cover"
+        position = "center top"
+        count = 4 # Anzahl der Bilder im Slider, wird für das CSS benötigt!
+        speed = "1s" # Sekunden die der Slider zum Wechsel der Bilder benötigt
+    [languages.de.params.visual]
+      [languages.de.params.visual.image]
+        enable = true
+        size = "cover"
+        position = "center center"
+        count = 4 # wird für das CSS benötigt!
+        speed = "1s"
 
-      [languages.de.params.list_type]
-        icons = true
-        round_icons = false
-        hover_color = false
+    [[languages.en.params.visual.image.file]]
+      url = "/images/background_1_2000px.jpg"
+      url_smallish = "/images/background_1_1200px.jpg"
+      url_tablet = "/images/background_1_800px.jpg"
+      url_mobile = "/images/background_1_500px.jpg"
+    [[languages.de.params.visual.image.file]]
+      url = "/images/background_1_2000px.jpg"
+      url_smallish = "/images/background_1_1200px.jpg"
+      url_tablet = "/images/background_1_800px.jpg"
+      url_mobile = "/images/background_1_500px.jpg"
 
-      [[languages.de.params.links]]
-        [languages.de.params.links.list1]
-          heading = "Kontakt"
-          # [[languages.de.params.links.list1.link]]
-          #   text = "Blog"
-          #   url = "#"
-          #   icon = "fas fa-link"
-          [[languages.de.params.links.list1.link]]
-            text = "E-Mail"
-            url = "#"
-            icon = "far fa-envelope"
+    [[languages.en.params.visual.image.file]]
+      url = "/images/background_2_2000px.jpg"
+      url_smallish = "/images/background_2_1200px.jpg"
+      url_tablet = "/images/background_2_800px.jpg"
+      url_mobile = "/images/background_2_500px.jpg"
+    [[languages.de.params.visual.image.file]]
+      url = "/images/background_2_2000px.jpg"
+      url_smallish = "/images/background_2_1200px.jpg"
+      url_tablet = "/images/background_2_800px.jpg"
+      url_mobile = "/images/background_2_500px.jpg"
 
-        [languages.de.params.links.list2]
-          heading = "Social Media"
-          [[languages.de.params.links.list2.link]]
-            text = "Instagram"
-            url = "https://www.instagram.com/angel_crawford_ftw"
-            icon = "fab fa-instagram"
-            color = "#c13584"
-          [[languages.de.params.links.list2.link]]
-            text = "Facebook"
-            url = "https://www.facebook.com/angel.crawford.ftw"
-            icon = "fab fa-facebook"
-            color = "#4267B2"
-          [[languages.de.params.links.list2.link]]
-            text = "Twitter"
-            url = "https://twitter.com/crawford_ftw"
-            icon = "fab fa-twitter"
-            color = "#1da1f2"
+    [[languages.en.params.visual.image.file]]
+      url = "/images/background_3_2000px.jpg"
+      url_smallish = "/images/background_3_1200px.jpg"
+      url_tablet = "/images/background_3_800px.jpg"
+      url_mobile = "/images/background_3_500px.jpg"
+    [[languages.de.params.visual.image.file]]
+      url = "/images/background_3_2000px.jpg"
+      url_smallish = "/images/background_3_1200px.jpg"
+      url_tablet = "/images/background_3_800px.jpg"
+      url_mobile = "/images/background_3_500px.jpg"
 
-        [languages.de.params.links.list3]
-          heading = "Entwicklung"
-          [[languages.de.params.links.list3.link]]
-            text = "Github"
-            url = "https://github.com/AngelCrawford"
-            icon = "fab fa-github"
-            color = "#555"
-          [[languages.de.params.links.list3.link]]
-            text = "CodePen"
-            url = "https://codepen.io/angel_crawford"
-            icon = "fab fa-codepen"
-            color = "#888"
-          [[languages.de.params.links.list3.link]]
-            text = "Stack Overflow"
-            url = "https://stackoverflow.com/u/3206211"
-            icon = "fab fa-stack-overflow"
-            color= "#f48024"
+    [[languages.en.params.visual.image.file]]
+      url = "/images/background_4.jpg"
+    [[languages.de.params.visual.image.file]]
+      url = "/images/background_4.jpg"
+
+    [languages.en.params.visual.video]
+      enable = false
+      mute = true
+      file = "videos/background.mp4"
+      #youtubeId = "dk9uNWPP7EA"
+    [languages.de.params.visual.video]
+      enable = false
+      mute = true
+      file = "videos/background.mp4"
+      #youtubeId = "dk9uNWPP7EA"
+
+    [languages.en.params.list_type]
+      icons = true
+      round_icons = false
+      hover_color = false
+    [languages.de.params.list_type]
+      icons = true
+      round_icons = false
+      hover_color = false
+
+    [[languages.en.params.links]]
+      [languages.en.params.links.list1]
+        heading = "Connect"
+        # [[languages.en.params.links.list1.link]]
+        #   text = "Blog"
+        #   url = "#"
+        #   icon = "fas fa-link"
+        [[languages.en.params.links.list1.link]]
+          text = "Email"
+          url = "#"
+          icon = "far fa-envelope"
+    [[languages.de.params.links]]
+      [languages.de.params.links.list1]
+        heading = "Kontakt"
+        # [[languages.de.params.links.list1.link]]
+        #   text = "Blog"
+        #   url = "#"
+        #   icon = "fas fa-link"
+        [[languages.de.params.links.list1.link]]
+          text = "E-Mail"
+          url = "#"
+          icon = "far fa-envelope"
+
+    [languages.en.params.links.list2]
+      heading = "Social"
+    [languages.de.params.links.list2]
+      heading = "Social Media"
+
+      [[languages.en.params.links.list2.link]]
+        text = "Instagram"
+        url = "https://www.instagram.com/angel_crawford_ftw"
+        icon = "fab fa-instagram"
+        color = "#c13584"
+      [[languages.de.params.links.list2.link]]
+        text = "Instagram"
+        url = "https://www.instagram.com/angel_crawford_ftw"
+        icon = "fab fa-instagram"
+        color = "#c13584"
+
+      [[languages.en.params.links.list2.link]]
+        text = "Facebook"
+        url = "https://www.facebook.com/angel.crawford.ftw"
+        icon = "fab fa-facebook"
+        color = "#4267B2"
+      [[languages.de.params.links.list2.link]]
+        text = "Facebook"
+        url = "https://www.facebook.com/angel.crawford.ftw"
+        icon = "fab fa-facebook"
+        color = "#4267B2"
+
+      [[languages.en.params.links.list2.link]]
+        text = "Twitter"
+        url = "https://twitter.com/crawford_ftw"
+        icon = "fab fa-twitter"
+        color = "#1da1f2"
+      [[languages.de.params.links.list2.link]]
+        text = "Twitter"
+        url = "https://twitter.com/crawford_ftw"
+        icon = "fab fa-twitter"
+        color = "#1da1f2"
+
+    [languages.en.params.links.list3]
+      heading = "Develop"
+    [languages.de.params.links.list3]
+      heading = "Entwicklung"
+
+      [[languages.en.params.links.list3.link]]
+        text = "Github"
+        url = "https://github.com/AngelCrawford"
+        icon = "fab fa-github"
+        color = "#555"
+      [[languages.de.params.links.list3.link]]
+        text = "Github"
+        url = "https://github.com/AngelCrawford"
+        icon = "fab fa-github"
+        color = "#555"
+
+      [[languages.en.params.links.list3.link]]
+        text = "CodePen"
+        url = "https://codepen.io/angel_crawford"
+        icon = "fab fa-codepen"
+        color = "#888"
+      [[languages.de.params.links.list3.link]]
+        text = "CodePen"
+        url = "https://codepen.io/angel_crawford"
+        icon = "fab fa-codepen"
+        color = "#888"
+
+      [[languages.en.params.links.list3.link]]
+        text = "Stack Overflow"
+        url = "https://stackoverflow.com/u/3206211"
+        icon = "fab fa-stack-overflow"
+        color= "#f48024"
+      [[languages.de.params.links.list3.link]]
+        text = "Stack Overflow"
+        url = "https://stackoverflow.com/u/3206211"
+        icon = "fab fa-stack-overflow"
+        color= "#f48024"
