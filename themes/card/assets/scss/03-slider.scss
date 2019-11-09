@@ -62,30 +62,29 @@ $slider-width: 100% / $slider-number;
     transform: translateY(-50%);
     cursor: pointer;
 
-    &::before,
-    &::after {
-      // font-family: "Font Awesome 5 Free";
-      // content: "\f105";
-      content: "";
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      font-size: 2.7em;
       display: block;
-      width: 8px;
-      height: 24px;
-      background-color: $color-text;
-      // border: 1px solid $secondary;
+      height: 100%;
+      -webkit-text-fill-color: $color-text;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $secondary;
     }
 
-    &::before {margin-bottom: -12px;}
+    &::before {
+      margin-bottom: -12px;
+    }
 
     &.left {
-      left: 20px;
-      &::before {transform: rotate(45deg);}
-      &::after {transform: rotate(-45deg);}
+      left: 5px;
+      &::before { content: "\f104"; }
     }
 
     &.right {
-      right: 20px;
-      &::before {transform: rotate(-45deg);}
-      &::after {transform: rotate(45deg);}
+      right: 5px;
+      &::before { content: "\f105"; }
     }
 
   }
@@ -94,7 +93,7 @@ $slider-width: 100% / $slider-number;
     #s-#{$i}:checked {
       & ~ .s-content {transform: translateX(-$slider-width * ($i - 1));}
 
-      & ~ .s-control .s-c-#{$i} {background-color: $color-background;}
+      & ~ .s-control .s-c-#{$i} {background-color: transparent;}
 
       & ~ .s-nav .s-nav-#{$i} {display: block;}
     }
