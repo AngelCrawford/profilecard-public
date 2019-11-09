@@ -24,19 +24,33 @@ copyright = "Angel Crawford"
       #twitterHandle = "onepagelove"
       favicon = "favicon.png"
 
+      [languages.en.breakpoints]
+        bp_smallish = "1200px"
+        bp_tablet = "800px"
+        bp_mobile = "500px"
+
       [languages.en.params.visual]
         [languages.en.params.visual.image]
           enable = true
           size = "cover"
-          position = "center left"
-          count = 4 # wird für das CSS benötigt!
-          speed = "1s"
+          position = "center top"
+          count = 4 # Anzahl der Bilder im Slider, wird für das CSS benötigt!
+          speed = "1s" # Sekunden die der Slider zum Wechsel der Bilder benötigt
           [[languages.en.params.visual.image.file]]
-            url = "images/background_1.jpg"
+            url = "images/background_1_2000px.jpg"
+            url_smallish = "images/background_1_1200px.jpg"
+            url_tablet = "images/background_1_800px.jpg"
+            url_mobile = "images/background_1_500px.jpg"
           [[languages.en.params.visual.image.file]]
-            url = "images/background_2.jpg"
+            url = "images/background_2_2000px.jpg"
+            url_smallish = "images/background_2_1200px.jpg"
+            url_tablet = "images/background_2_800px.jpg"
+            url_mobile = "images/background_2_500px.jpg"
           [[languages.en.params.visual.image.file]]
-            url = "images/background_3.jpg"
+            url = "images/background_3_2000px.jpg"
+            url_smallish = "images/background_3_1200px.jpg"
+            url_tablet = "images/background_3_800px.jpg"
+            url_mobile = "images/background_3_500px.jpg"
           [[languages.en.params.visual.image.file]]
             url = "images/background_4.jpg"
         [languages.en.params.visual.video]
@@ -103,6 +117,11 @@ copyright = "Angel Crawford"
       #shareImage = "images/social.jpg"
       #twitterHandle = "onepagelove"
       favicon = "favicon.png"
+
+      [languages.de.breakpoints]
+        bp_smallish = "1200px"
+        bp_tablet = "800px"
+        bp_mobile = "500px"
 
       [languages.de.params.visual]
         [languages.de.params.visual.image]

@@ -13,11 +13,6 @@
 
 html {
   background-color: $color-background;
-  background: rgba(#2B2F32, 1);
-  background: -moz-linear-gradient(top, rgba(#2B2F32, 1) 0%, rgba(#000000, 1) 100%);
-  background: -webkit-linear-gradient(top, rgba(#2B2F32, 1) 0%, rgba(#000000, 1) 100%);
-  background: linear-gradient(to bottom, rgba(#2B2F32, 1) 0%, rgba(#000000, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2B2F32', endColorstr='#000000',GradientType=0 );
 }
 
 body.page-template-page-fullsingle-split {
