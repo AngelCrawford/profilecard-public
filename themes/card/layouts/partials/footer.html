@@ -1,6 +1,8 @@
 <div class="split-credit">
   <p>
-    <span class="split-copyright">&copy; 2018 - {{ dateFormat "2006" now }} {{ .Site.Copyright | safeHTML }}</span>
+    <span class="split-copyright">&copy; 2018 - {{ dateFormat "2006" now }}
+      <span class="split-copyright-config">{{ .Site.Copyright | safeHTML }}</span>
+    </span>
 
     {{ $currentPage := . }}
 

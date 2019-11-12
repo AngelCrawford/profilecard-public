@@ -528,6 +528,11 @@ body.page-template-page-fullsingle-split {
         font-size: 18px;
         color: rgba($color-text, .2);
       }
+      .split-copyright-config:before  {
+        content: " | ";
+        font-size: 18px;
+        color: rgba($color-text, .2);
+      }
     }
   }
   span.split-languages, span.footer-menu {
