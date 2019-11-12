@@ -9,17 +9,13 @@
 
 ::-moz-selection {
     background: #000000;
-    // color: $color-background;
 }
 ::selection {
     background: #000000;
-    // color: $color-background;
 }
 
 a[href^="http://"]:not([href*="localhost"]):not([href*="crawford"])::after,
 a[href^="https://"]:not([href*="localhost"]):not([href*="crawford"])::after {
-// a[href^="http://"]:not([href*="crawford"])::after,
-// a[href^="https://"]:not([href*="crawford"])::after {
   content: "\f35d";
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
