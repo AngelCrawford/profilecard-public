@@ -516,9 +516,8 @@ body.page-template-page-fullsingle-split {
     color: rgba($color-text, .5);
     a {
       color: rgba($color-text, .5);
-      // border-bottom: 1px dotted $secondary;
       &:hover {
-        color: rgba($secondary, .5);
+        color: rgba($secondary, .6);
         opacity: 1 !important;
       }
     }
@@ -534,7 +533,7 @@ body.page-template-page-fullsingle-split {
   span.split-languages, span.footer-menu {
     padding-left: 0;
     .active {
-      color: rgba($secondary, .4);
+      color: rgba($secondary, .6);
       &:before {
         content: " | ";
         font-size: 18px;
