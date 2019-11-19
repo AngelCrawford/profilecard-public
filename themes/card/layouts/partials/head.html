@@ -26,6 +26,7 @@
 {{ $style := $sass | resources.ToCSS | resources.Minify }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
+<!-- Scripts -->
 {{ $js := resources.Get "js/main.js" }}
 {{ $script := $js | resources.Minify }}
 <script src="{{ $script.Permalink }}"></script>
