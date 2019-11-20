@@ -47,6 +47,16 @@ a[href$=".pdf"]:after {
 
 html {
   background-color: $color-background;
+  scrollbar-color: rgba($secondary, .5) rgba(0, 0, 0, .4);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, .4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba($secondary, .5);
 }
 
 body.page-template-page-fullsingle-split {
