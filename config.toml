@@ -75,6 +75,7 @@ copyright = "Angel Crawford"
       url_smallish = "/images/background_1_1200px.jpg"
       url_tablet = "/images/background_1_800px.jpg"
       url_mobile = "/images/background_1_500px.jpg"
+      credit = "Fotografin/Bearbeitung: Licht- und Schattenspiel | Visa: Kara Michelle MakeUp"
     [[languages.de.params.visual.image.file]]
       url = "/images/background_1_2000px.jpg"
       url_smallish = "/images/background_1_1200px.jpg"

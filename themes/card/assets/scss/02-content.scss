@@ -105,6 +105,23 @@ body.page-template-page-fullsingle-split {
       height: 80vh;
       width: 100%;
     }
+
+    span.image-credit {
+      position: absolute;
+      bottom: .2em;
+      right: .2em;
+      padding: 0 .5em;
+      background: rgba($color-background, .7);
+      color: $color-text;
+      @include font-light;
+      font-size: 80%;
+      i {
+        color: $secondary;
+        padding-right: .4em;
+        font-size: 95%;
+      }
+
+    }
   }
 
   //-------------------------------------------------------------------------------
