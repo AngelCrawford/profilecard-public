@@ -44,7 +44,7 @@
   {{ range $index, $value := .Site.Params.visual.image.file }}
     {{ if isset . "credit" }}
       <span class="s-credit-{{ add $index 1 }}">
-        <span class="s-text-credit">{{ .credit }}</span>
+        <span class="s-text-credit">{{ .credit | safeHTML }}</span>
       </span>
     {{ end }}
   {{ end }}

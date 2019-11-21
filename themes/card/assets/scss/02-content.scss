@@ -108,31 +108,40 @@ body.page-template-page-fullsingle-split {
 
     span[class^="s-credit-"] {
       position: absolute;
-      bottom: .2em;
-      left: .2em;
-      padding: 0 .5em;
+      top: 0;
+      left: 0;
+      padding: .2em 1.3em 0 .7em;
       background: rgba($color-background, .7);
-      color: $secondary;
-      font-size: 80%;
+      color: $color-text;
+      font-size: 60%;
       max-width: 1em;
-      transition: max-width 1s;
-      -webkit-transition: max-width 1s;
-      vertical-align: top;
+      transition: all .6s;
+      -webkit-transition: all .6s;
       white-space: nowrap;
       overflow: hidden;
       &:before {
         content: "\f05a";
         font-family: "Font Awesome 5 Free";
         font-weight: 600;
-        padding-right: .5em;
+        padding-right: .6em;
+        font-size: 18px;
       }
       span.s-text-credit {
         color: $color-text;
         @include font-light;
+        a {
+          color: $color-text;
+          border-bottom: 1px dotted $color-text;
+          &:hover {
+            color: $secondary;
+            border-bottom: 1px dotted $secondary;
+          }
+        }
       }
       &:hover {
         width: auto;
-        max-width: 70%;
+        max-width: 90%;
+        color: $secondary;
       }
     }
 
