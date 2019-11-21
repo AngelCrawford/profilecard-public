@@ -39,12 +39,16 @@
         {{ end }}
       </div>
     {{ end }}
-  </div>
+
 
   {{ range $index, $value := .Site.Params.visual.image.file }}
     {{ if isset . "credit" }}
-      <span class="image-credit"><i class="fas fa-info-circle"></i>{{ .credit }}</span>
+      <span class="s-credit-{{ add $index 1 }}">
+        <span class="s-text-credit">{{ .credit }}</span>
+      </span>
     {{ end }}
   {{ end }}
+
+  </div>
 
 </div>

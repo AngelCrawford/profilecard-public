@@ -87,6 +87,7 @@ copyright = "Angel Crawford"
       url_smallish = "/images/background_2_1200px.jpg"
       url_tablet = "/images/background_2_800px.jpg"
       url_mobile = "/images/background_2_500px.jpg"
+      credit = "test2"
     [[languages.de.params.visual.image.file]]
       url = "/images/background_2_2000px.jpg"
       url_smallish = "/images/background_2_1200px.jpg"

@@ -89,6 +89,10 @@ $slider-width: 100% / $slider-number;
 
   }
 
+  span[class^="s-credit-"] {
+    display: none;
+  }
+
   @for $i from 1 through $slider-number {
     #s-#{$i}:checked {
       & ~ .s-content {transform: translateX(-$slider-width * ($i - 1));}
@@ -96,6 +100,8 @@ $slider-width: 100% / $slider-number;
       & ~ .s-control .s-c-#{$i} {background-color: transparent;}
 
       & ~ .s-nav .s-nav-#{$i} {display: block;}
+
+      & ~ span.s-credit-#{$i} {display: inline-block;}
     }
   }
 }

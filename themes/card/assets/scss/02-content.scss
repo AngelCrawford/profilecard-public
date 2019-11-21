@@ -106,22 +106,37 @@ body.page-template-page-fullsingle-split {
       width: 100%;
     }
 
-    span.image-credit {
+    span[class^="s-credit-"] {
       position: absolute;
       bottom: .2em;
-      right: .2em;
+      left: .2em;
       padding: 0 .5em;
       background: rgba($color-background, .7);
-      color: $color-text;
-      @include font-light;
+      color: $secondary;
       font-size: 80%;
-      i {
-        color: $secondary;
-        padding-right: .4em;
-        font-size: 95%;
+      max-width: 1em;
+      transition: max-width 1s;
+      -webkit-transition: max-width 1s;
+      vertical-align: top;
+      white-space: nowrap;
+      overflow: hidden;
+      &:before {
+        content: "\f05a";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        padding-right: .5em;
       }
-
+      span.s-text-credit {
+        color: $color-text;
+        @include font-light;
+      }
+      &:hover {
+        width: auto;
+        max-width: 70%;
+      }
     }
+
+
   }
 
   //-------------------------------------------------------------------------------
@@ -146,6 +161,7 @@ body.page-template-page-fullsingle-split {
       max-width: 640px;
       margin-top: auto;
       margin-bottom: auto;
+      overflow: inherit;
 
       @media (max-width: $bp-smallish ) {
         padding: 60px;
