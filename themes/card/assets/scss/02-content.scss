@@ -29,16 +29,16 @@ a[href^="https://"]:not([href*="localhost"]):not([href*="crawford"])::after {
 }
 
 a[href$=".pdf"]:after {
-    content: "\f1c1";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
-    font-size: 70%;
-    color: $secondary;
-    padding-left: 0.3em;
-    margin-top: -0.3em;
-    height:  2em;
-    vertical-align: top;
-    display: inline-block;
+  content: "\f1c1";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 70%;
+  color: $secondary;
+  padding-left: 0.3em;
+  margin-top: -0.3em;
+  height:  2em;
+  vertical-align: top;
+  display: inline-block;
 }
 
 //-------------------------------------------------------------------------------
@@ -362,6 +362,21 @@ body.page-template-page-fullsingle-split {
     }
   }
 
+  ul li ul li {
+    font-size: 80%;
+    @include font-light;
+    line-height: 1.4;
+    color: rgba($color-text, .5);
+    &:before {
+      content: "▪️";
+      color: darken($primary, 15%);
+      padding-right: 0.4em;
+    }
+    a {
+      color: rgba($color-text, .5);
+    }
+  }
+
   ul {
     margin-left: 0.02em;
   }
@@ -628,7 +643,9 @@ body.page-template-page-fullsingle-split {
 //-------------------------------------------------------------------------------
 // Videos - shout out to my bud https://twitter.com/manuelmoreale for the Ninja skills
 //-------------------------------------------------------------------------------
-
+iframe:first-of-type {
+  padding-left: 1.3em;
+}
 // YouTube
 
 .split-video {
