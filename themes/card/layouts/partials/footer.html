@@ -27,19 +27,17 @@
         {{ end }}
       {{ end }}
 
-
-
     </span>
     <span class="footer-menu" role="navigation">
       {{ range .Site.Menus.footer }}
-        {{ if eq $currentPage.URL .URL }}
+        {{ if eq $currentPage.RelPermalink .URL }}
           <span class="active">{{ .Name }}</span>
         {{ else }}
           <a href="{{ .URL | absLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
         {{ end }}
       {{ end }}
 
-      
+
     </span>
   </p>
 </div>

@@ -216,6 +216,8 @@ body.page-template-page-fullsingle-split {
   }
 
   .tagline {
+    font-size: .8em;
+    line-height: 1.25em;
     color: $color-tagline;
     background: -moz-linear-gradient(left, $primary 0%, $accent 100%);
     background: -webkit-linear-gradient(left, $primary 0%, $accent 100%);
@@ -387,7 +389,7 @@ body.page-template-page-fullsingle-split {
   }
 
   ul ul, ol ul, ul ol, ol ol {
-    margin-left: 1.25em;
+    margin-left: 1.1em;
     margin-bottom: 0;
   }
 
@@ -645,6 +647,7 @@ body.page-template-page-fullsingle-split {
 //-------------------------------------------------------------------------------
 iframe:first-of-type {
   padding-left: 1.3em;
+  padding-top: .3em;
 }
 // YouTube
 
