@@ -3,3 +3,6 @@
 
   [language_title]
     other = "Ändere die Sprache zu"
+
+  [404]
+    other = "404<br />Page Not Found"

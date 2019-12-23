@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <div class="split-bio">
+
+    <div class="split-intro">
+      <h1>Angel Crawford</h1>
+      <h2 class="tagline">{{ i18n "404" | safeHTML }}</h2>
+    </div>
+
+    <a class="back-button" href="{{ .Site.Params.baseURL | absLangURL }}">{{ i18n "back" }}</a>
+
+  </div>
+  {{  partial "links" . }}
+{{ end }}

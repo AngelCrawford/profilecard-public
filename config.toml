@@ -81,46 +81,46 @@ copyright = "Angel Crawford"
       url_smallish = "/images/background_1_1200px.jpg"
       url_tablet = "/images/background_1_800px.jpg"
       url_mobile = "/images/background_1_500px.jpg"
-      credit = "Photographer/Editing: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
+      credit = "2015-01-11 | Photographer/Editing: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
     [[languages.de.params.visual.image.file]]
       url = "/images/background_1_2000px.jpg"
       url_smallish = "/images/background_1_1200px.jpg"
       url_tablet = "/images/background_1_800px.jpg"
       url_mobile = "/images/background_1_500px.jpg"
-      credit = "Fotografin/Bearbeitung: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
+      credit = "2015-01-11 | Fotografin/Bearbeitung: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
 
     [[languages.en.params.visual.image.file]]
       url = "/images/background_2_2000px.jpg"
       url_smallish = "/images/background_2_1200px.jpg"
       url_tablet = "/images/background_2_800px.jpg"
       url_mobile = "/images/background_2_500px.jpg"
-      credit = "Photographer/Editing: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: Me"
+      credit = "2013-05-14 | Photographer/Editing: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: Me"
     [[languages.de.params.visual.image.file]]
       url = "/images/background_2_2000px.jpg"
       url_smallish = "/images/background_2_1200px.jpg"
       url_tablet = "/images/background_2_800px.jpg"
       url_mobile = "/images/background_2_500px.jpg"
-      credit = "Fotografin/Bearbeitung: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: Ich"
+      credit = "2013-05-14 | Fotografin/Bearbeitung: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: Ich"
 
     [[languages.en.params.visual.image.file]]
       url = "/images/background_3_2000px.jpg"
       url_smallish = "/images/background_3_1200px.jpg"
       url_tablet = "/images/background_3_800px.jpg"
       url_mobile = "/images/background_3_500px.jpg"
-      credit = "Photographer/Editing: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
+      credit = "2015-01-11 | Photographer/Editing: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
     [[languages.de.params.visual.image.file]]
       url = "/images/background_3_2000px.jpg"
       url_smallish = "/images/background_3_1200px.jpg"
       url_tablet = "/images/background_3_800px.jpg"
       url_mobile = "/images/background_3_500px.jpg"
-      credit = "Fotografin/Bearbeitung: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
+      credit = "2015-01-11 | Fotografin/Bearbeitung: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
 
     [[languages.en.params.visual.image.file]]
       url = "/images/background_4.jpg"
-      credit = "Photographer: Me | Visa: Me"
+      credit = "2019-09-28 | Photographer: Me | Visa: Me"
     [[languages.de.params.visual.image.file]]
       url = "/images/background_4.jpg"
-      credit = "Fotografin/Bearbeitung: Ich | Visa: Ich"
+      credit = "2019-09-28 | Fotografin/Bearbeitung: Ich | Visa: Ich"
 
     [languages.en.params.visual.video]
       enable = false
