@@ -149,10 +149,10 @@ copyright = "Angel Crawford"
         #   text = "Blog"
         #   url = "#"
         #   icon = "fas fa-link"
-        [[languages.en.params.links.list1.link]]
-          text = "Email"
-          url = "#"
-          icon = "far fa-envelope"
+        # [[languages.en.params.links.list1.link]]
+        #   text = "Email"
+        #   url = "#"
+        #   icon = "far fa-envelope"
     [[languages.de.params.links]]
       [languages.de.params.links.list1]
         heading = "Kontakt"
@@ -160,10 +160,10 @@ copyright = "Angel Crawford"
         #   text = "Blog"
         #   url = "#"
         #   icon = "fas fa-link"
-        [[languages.de.params.links.list1.link]]
-          text = "E-Mail"
-          url = "#"
-          icon = "far fa-envelope"
+        # [[languages.de.params.links.list1.link]]
+        #   text = "E-Mail"
+        #   url = "#"
+        #   icon = "far fa-envelope"
 
     [languages.en.params.links.list2]
       heading = "Social"
@@ -202,6 +202,17 @@ copyright = "Angel Crawford"
         url = "https://twitter.com/crawford_ftw"
         icon = "fab fa-twitter"
         color = "#1da1f2"
+
+      [[languages.en.params.links.list2.link]]
+        text = "Spotify"
+        url = "https://open.spotify.com/user/l73ksvrl7vnidevukda1z0kwj"
+        icon = "fab fa-spotify"
+        color = "#1DB954"
+      [[languages.de.params.links.list2.link]]
+        text = "Spotify"
+        url = "https://open.spotify.com/user/l73ksvrl7vnidevukda1z0kwj"
+        icon = "fab fa-spotify"
+        color = "#1DB954"
 
     [languages.en.params.links.list3]
       heading = "Develop"

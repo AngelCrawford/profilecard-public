@@ -6,3 +6,15 @@
 
 [404]
   other = "404<br />Seite Nicht Gefunden"
+
+[modalHeader]
+  other = "Diese Seite nutzt keine Cookies oder Analyse Tools"
+
+[modalBody]
+  other = "Wenn Du allerdings auf den Verstanden-Button klickst, dann erklärst Du Dich damit einverstanden, dass von Spotify Google Analytics benutzt wird."
+
+[accept]
+  other = "Verstanden"
+
+[abort]
+  other = "Abbrechen"

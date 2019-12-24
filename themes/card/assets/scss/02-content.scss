@@ -423,6 +423,17 @@ body.page-template-page-fullsingle-split {
       border: 1px solid rgba($secondary, 1);
     }
   }
+
+  .spotify-overlay {
+    // background: url("/images/spotify-overlay.png") no-repeat;
+    height: 80px;
+    width: 300px;
+    display: block;
+    margin-left: 1.3em;
+    margin-top: .3em;
+    background-color: $color-background;
+    cursor: pointer;
+  }
 }
 
 //-------------------------------------------------------------------------------
@@ -645,12 +656,8 @@ body.page-template-page-fullsingle-split {
 //-------------------------------------------------------------------------------
 // Videos - shout out to my bud https://twitter.com/manuelmoreale for the Ninja skills
 //-------------------------------------------------------------------------------
-iframe:first-of-type {
-  padding-left: 1.3em;
-  padding-top: .3em;
-}
-// YouTube
 
+// YouTube
 .split-video {
   overflow:hidden;
   position:relative;

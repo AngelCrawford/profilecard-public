@@ -1,0 +1,53 @@
+<div class="spotify-overlay" id="remove-img">
+  <img id="overlay-img" src="/images/spotify-overlay.png" />
+</div>
+
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+
+    <div class="modal-body">
+      <i class="fas fa-info-circle fa-2x fa-pull-left"></i>
+      <h3>{{ "modalHeader" | i18n }}</h3>
+      <p>{{ "modalBody" | i18n }}</p>
+    </div>
+
+    <div class="modal-footer">
+        <span class="button-modal" id="accept">{{ "accept" | i18n }}</span>
+        <span class="button-modal" id="abort">{{ "abort" | i18n }}</span>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  var modal = document.getElementById("myModal");
+
+  document.getElementById("remove-img").onclick = function(e) {
+    modal.style.display = "block";
+  }
+
+  var accept = document.getElementById("accept");
+  accept.onclick = function() {
+
+    modal.style.display = "none";
+    var removeimg = document.getElementById('remove-img');
+    var overlayimg = document.getElementById('overlay-img');
+    removeimg.removeChild(overlayimg);
+
+    document.getElementById('remove-img').innerHTML =
+    '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
+  }
+
+  var abort = document.getElementById("abort");
+  abort.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>

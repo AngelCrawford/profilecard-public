@@ -41,6 +41,7 @@ $switch-speed: {{ .Site.Params.visual.image.speed | default "1s" }};
 @import "01-fonts";
 @import "02-content";
 @import "03-slider";
+@import "04-modal";
 
 @import "fontawesome/fontawesome";
 @import "fontawesome/solid.scss";
