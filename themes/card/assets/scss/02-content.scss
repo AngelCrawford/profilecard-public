@@ -113,14 +113,15 @@ body.page-template-page-fullsingle-split {
       position: absolute;
       top: 0;
       left: 0;
-      padding: .2em 1.3em 0 .7em;
+      padding: .2em 1.3em .5em .7em;
       background: rgba($color-background, .7);
       color: $color-text;
       font-size: 60%;
       max-width: 1em;
-      transition: all .6s;
-      -webkit-transition: all .6s;
+      // transition: max-width .6s;
+      // -webkit-transition: max-width .6s;
       white-space: nowrap;
+      line-height: 20px;
       overflow: hidden;
       &:before {
         content: "\f05a";
@@ -145,6 +146,7 @@ body.page-template-page-fullsingle-split {
         width: auto;
         max-width: 90%;
         color: $secondary;
+        white-space: inherit;
       }
     }
 
