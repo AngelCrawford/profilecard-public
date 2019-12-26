@@ -17,8 +17,8 @@
   font-size: 21px;
 }
 
-a[href^="http://"]:not([href*="localhost"]):not([href*="crawford"])::after,
-a[href^="https://"]:not([href*="localhost"]):not([href*="crawford"])::after {
+a[href^="http://"]:not([href*="localhost"]):not([href*="crawford"]):not(.split-list > a)::after,
+a[href^="https://"]:not([href*="localhost"]):not([href*="crawford"]):not(.split-list > a)::after {
   content: "\f35d";
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
@@ -454,6 +454,10 @@ body.page-template-page-fullsingle-split {
     margin-top: .3em;
     background-color: $color-background;
     cursor: pointer;
+    @media (max-width: 388px ) {
+      width: 80px;
+      overflow: auto;
+    }
   }
 }
 

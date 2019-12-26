@@ -21,7 +21,6 @@
   </div>
 </div>
 
-
 <script>
   var modal = document.getElementById("myModal");
 
@@ -37,8 +36,13 @@
     var overlayimg = document.getElementById('overlay-img');
     removeimg.removeChild(overlayimg);
 
-    document.getElementById('remove-img').innerHTML =
-    '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
+    if (window.innerWidth > 388) {
+      document.getElementById('remove-img').innerHTML =
+      '<iframe src="{{ .Site.Params.spotifyPlaylist }}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
+    } else {
+      document.getElementById('remove-img').innerHTML =
+      '<iframe src="{{ .Site.Params.spotifyPlaylist }}" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
+    }
   }
 
   var abort = document.getElementById("abort");

@@ -43,6 +43,7 @@ copyright = "Angel Crawford"
       favicon = "favicon.png"
       flag_file = "/images/en.png"
       flag_title = "Change the Language to"
+      spotifyPlaylist = "https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd"
     [languages.de.params]
       author = "Angel Crawford"
       description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
@@ -51,6 +52,7 @@ copyright = "Angel Crawford"
       favicon = "favicon.png"
       flag_file = "/images/de.png"
       flag_title = "Ändere die Sprache zu"
+      spotifyPlaylist = "https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd"
 
     [languages.en.breakpoints]
       bp_smallish = "1200px"
