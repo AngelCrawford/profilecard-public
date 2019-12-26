@@ -13,6 +13,9 @@
 ::selection {
     background: #000000;
 }
+:root {
+  font-size: 21px;
+}
 
 a[href^="http://"]:not([href*="localhost"]):not([href*="crawford"])::after,
 a[href^="https://"]:not([href*="localhost"]):not([href*="crawford"])::after {
@@ -62,7 +65,7 @@ html {
 body.page-template-page-fullsingle-split {
   background-color: $color-background;
   @include font-regular;
-  font-size: 21px;
+  font-size: 1rem;
   line-height: 33px;
   letter-spacing: -0.2px;
   color: $color-text;
@@ -124,7 +127,7 @@ body.page-template-page-fullsingle-split {
         font-family: "Font Awesome 5 Free";
         font-weight: 600;
         padding-right: .6em;
-        font-size: 18px;
+        font-size: 0.8571rem;
       }
       span.s-text-credit {
         color: $color-text;
@@ -177,8 +180,7 @@ body.page-template-page-fullsingle-split {
       }
 
       @media (max-width: $bp-tablet ) {
-        // padding: 40px;
-        margin-top: 150px;
+        margin-top: 170px;
       }
 
       @media (max-width: $bp-mobile ) {
@@ -201,14 +203,14 @@ body.page-template-page-fullsingle-split {
 
 .split-intro {
   @include font-bold;
-  font-size: 64px;
+  font-size: 3.048rem;
   line-height: 80px;
   letter-spacing: -2px;
 
   h1 {
     @include font-regular;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 0.7619rem;
     line-height: 16px;
     margin-bottom: 40px;
     letter-spacing: 0.4px;
@@ -216,7 +218,6 @@ body.page-template-page-fullsingle-split {
   }
 
   .tagline {
-    font-size: .8em;
     line-height: 1.25em;
     color: $color-tagline;
     background: -moz-linear-gradient(left, $primary 0%, $accent 100%);
@@ -227,7 +228,21 @@ body.page-template-page-fullsingle-split {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
+  @media (min-width: $bp-smallish + 1px ) {
+    .tagline {
+      font-size: 4vw;
+    }
+  }
+  @media (max-width: $bp-smallish ) {
+    .tagline {
+      font-size: 2.429rem;
+    }
+  }
+  @media (max-width: $bp-mobile ) {
+    .tagline {
+      font-size: 1.9rem;
+    }
+  }
 }
 
 //-------------------------------------------------------------------------------
@@ -476,7 +491,7 @@ body.page-template-page-fullsingle-split {
         }
         i:nth-of-type(2) {
           color: $color-background;
-          font-size: 30px;
+          font-size: 1.429rem;
         }
       }
     }
@@ -546,7 +561,7 @@ body.page-template-page-fullsingle-split {
 
     h3 {
       text-transform: uppercase;
-      font-size: 11px;
+      font-size: 0.5238rem;
       line-height: 11px;
       margin-bottom: 31px;
       color: $color-text;
@@ -557,7 +572,7 @@ body.page-template-page-fullsingle-split {
     ul {
 
       li {
-        font-size: 16px;
+        font-size: 0.7619rem;
         line-height: 16px;
         margin-bottom: 12px;
 
@@ -597,7 +612,7 @@ body.page-template-page-fullsingle-split {
 .split-credit {
 
   p {
-    font-size: 12px;
+    font-size: 0.5714rem;
     line-height: 14px;
     @include font-light;
     color: rgba($color-text, .5);
@@ -612,12 +627,12 @@ body.page-template-page-fullsingle-split {
       color: rgba($color-text, .5);
       &:after {
         content: " | ";
-        font-size: 18px;
+        font-size: 0.8571rem;
         color: rgba($color-text, .2);
       }
       .split-copyright-config:before  {
         content: " | ";
-        font-size: 18px;
+        font-size: 0.8571rem;
         color: rgba($color-text, .2);
       }
     }
@@ -628,7 +643,7 @@ body.page-template-page-fullsingle-split {
       color: rgba($secondary, .6);
       &:before {
         content: " | ";
-        font-size: 18px;
+        font-size: 0.8571rem;
         color: rgba($color-text, .2);
       }
     }
@@ -641,7 +656,7 @@ body.page-template-page-fullsingle-split {
   }
   span.footer-menu a:before {
     content: " | ";
-    font-size: 18px;
+    font-size: 0.8571rem;
     color: rgba($color-text, .2);
   }
   span.split-languages {

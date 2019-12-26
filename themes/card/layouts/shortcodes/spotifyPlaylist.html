@@ -6,10 +6,12 @@
   <!-- Modal content -->
   <div class="modal-content">
 
-    <div class="modal-body">
+    <div class="modal-header">
       <i class="fas fa-info-circle fa-2x fa-pull-left"></i>
       <h3>{{ "modalHeader" | i18n }}</h3>
-      <p>{{ "modalBody" | i18n }}</p>
+    </div>
+    <div class="modal-body">
+      <p>{{ i18n "modalBody" | safeHTML }}</p>
     </div>
 
     <div class="modal-footer">

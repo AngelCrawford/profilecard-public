@@ -8,10 +8,10 @@
   other = "404<br />Page Not Found"
 
 [modalHeader]
-  other = "This Page uses no Cookies or Analytic Tools"
+  other = "Allow Google Analytics from Spotify"
 
 [modalBody]
-  other = "Wenn Du allerdings auf den Akzeptieren-Button klickst, dann erklärst Du Dich damit einverstanden, dass von Spotify Google Analytics benutzt wird."
+  other = "I do not use cookies or analysis tools on this page. However, if you want to listen to the Spotify playlist, you unfortunately have to agree that Spotify uses Google Analytics. Click on \"Accept\" and get started. <br />\"Cancel\" is of course also possible, but then the player won't work ;)"
 
 [accept]
   other = "Accept"
