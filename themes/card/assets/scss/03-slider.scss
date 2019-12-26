@@ -30,7 +30,7 @@ $slider-width: 100% / $slider-number;
       background-repeat: no-repeat;
 
       @media (min-width: $bp-smallish + 1px ) {
-        background-position: center top !important;
+        background-position: center 10% !important;
       }
     }
   }

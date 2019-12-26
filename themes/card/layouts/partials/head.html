@@ -11,10 +11,10 @@
 <!-- Social & Open Graph -->
 <meta property="og:title" content="{{ if .IsPage }}{{ .Title }} - {{ end }}{{ .Site.Title }}" />
 {{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}
-<meta property="og:url" content="{{ .Site.BaseURL }}" />
+  <meta property="og:url" content="{{ .Site.BaseURL }}" />
 {{ with .Site.Params.shareImage }}
-<meta property="og:image" content="{{ . | absURL }}" />
-<meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="{{ . | absURL }}" />
+  <meta name="twitter:card" content="summary_large_image" />
 {{ end }}
 {{ with .Site.Params.twitterHandle }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
 
