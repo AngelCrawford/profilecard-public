@@ -24,6 +24,7 @@
       i {
         font-style: normal;
         color: rgba($secondary, .5);
+        font-size: 1.2rem;
       }
     }
     .modal-footer {
@@ -62,7 +63,7 @@
 
 @media (min-width: $bp-smallish + 1px ) {
   .modal {
-    font-size: 90%;
+    font-size: 100%;
     .modal-content {
       width: 60%;
       .modal-header {
@@ -90,6 +91,7 @@
       }
       .modal-footer {
         padding: 0 1.5em 1.5em 1.5em;
+        font-size: 110%;
       }
     }
   }
@@ -107,6 +109,7 @@
       }
       .modal-footer {
         padding: 0 1.5em 1.5em 1.5em;
+        font-size: 110%;
       }
     }
   }

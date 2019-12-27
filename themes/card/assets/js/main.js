@@ -1,7 +1,7 @@
 window.onload = function() {
   // Make links load asynchronously
   document.querySelector("body").addEventListener("click", function(event) {
-    if (event.target.tagName !== "A")
+    if (event.target.tagName !== "A" || event.target.getElementById("spotifyModal") )
       return;
     // History API needed to make sure back and forward still work
     if (history === null)

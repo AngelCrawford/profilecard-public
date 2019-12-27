@@ -113,7 +113,7 @@ body.page-template-page-fullsingle-split {
       position: absolute;
       top: 0;
       left: 0;
-      padding: .2em 1.3em .5em .7em;
+      padding: .6em 1.3em .6em .7em;
       background: rgba($color-background, .7);
       color: $color-text;
       font-size: 60%;
@@ -133,6 +133,7 @@ body.page-template-page-fullsingle-split {
       span.s-text-credit {
         color: $color-text;
         @include font-light;
+        line-height: 0px;
         a {
           color: $color-text;
           border-bottom: 1px dotted $color-text;
@@ -144,7 +145,7 @@ body.page-template-page-fullsingle-split {
       }
       &:hover {
         width: auto;
-        max-width: 90%;
+        max-width: 100%;
         color: $secondary;
         white-space: inherit;
       }

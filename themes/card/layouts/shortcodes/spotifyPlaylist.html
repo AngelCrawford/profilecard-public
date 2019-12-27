@@ -2,7 +2,7 @@
   <img id="overlay-img" src="/images/spotify-overlay.png" />
 </div>
 
-<div id="myModal" class="modal">
+<div id="spotifyModal" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
 
@@ -22,19 +22,33 @@
 </div>
 
 <script>
-  var modal = document.getElementById("myModal");
+  var modal = document.getElementById("spotifyModal");
 
+  document.getElementById("accept").onclick = function() {
+    modal.style.display = "none";
+    removeOverlay();
+    setCookie("spotifyWidget", "true", 13);
+  }
+  document.getElementById("abort").onclick = function() {
+    modal.style.display = "none";
+  }
   document.getElementById("remove-img").onclick = function(e) {
     modal.style.display = "block";
   }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 
-  var accept = document.getElementById("accept");
-  accept.onclick = function() {
+  if (getCookie("spotifyWidget")) {
+    removeOverlay();
+  }
 
-    modal.style.display = "none";
+  function removeOverlay() {
     var removeimg = document.getElementById('remove-img');
-    var overlayimg = document.getElementById('overlay-img');
-    removeimg.removeChild(overlayimg);
+    removeimg.removeChild(document.getElementById('overlay-img'));
 
     if (window.innerWidth > 388) {
       document.getElementById('remove-img').innerHTML =
@@ -45,15 +59,27 @@
     }
   }
 
-  var abort = document.getElementById("abort");
-  abort.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+  // Cookie
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days*24*60*60*1000));
+      expires = "; expires=" + date.toUTCString();
     }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+  }
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+  }
+  function eraseCookie(name) {
+    document.cookie = name+'=; Max-Age=-99999999;';
   }
 </script>
