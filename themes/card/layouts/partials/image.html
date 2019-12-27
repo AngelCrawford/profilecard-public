@@ -2,7 +2,7 @@
 {{ $len := (len $list) }}
 
 <div class="split-image">
-  <div class="s-wrap" role="slider" aria-valuemin="1" aria-valuemax="{{ $len }}">
+  <div class="s-wrap" id="image-slider" role="slider" aria-valuemin="1" aria-valuemax="{{ $len }}">
     {{ $len := (len .Site.Params.visual.image.file) }}
     {{ range $index, $value := .Site.Params.visual.image.file }}
       {{ $index :=add $index 1 }}

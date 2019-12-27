@@ -13,7 +13,7 @@
         {{ range .Translations }}
           <a href="{{ .Permalink }}" title='{{ i18n "language_title" }} "{{ .Language.LanguageName }}"'>
             {{ if not (eq .Language $.Language) }}
-              <img src="{{ .Site.Params.flag_file }}" />
+              <img src="{{ .Site.Params.flag_file }}" alt="{{ .Language.LanguageName }} Image" />
             {{ end }}
           </a>
         {{ end }}
@@ -21,7 +21,7 @@
         {{ range $.Site.Home.AllTranslations }}
           <a href="{{ .Permalink }}" title="{{ .Site.Params.flag_title }} '{{ .Language.LanguageName }}'">
             {{ if not (eq .Language $.Language) }}
-              <img src="{{ .Site.Params.flag_file }}" />
+              <img src="{{ .Site.Params.flag_file }}" alt="{{ .Language.LanguageName }} Image" />
             {{ end }}
           </a>
         {{ end }}
