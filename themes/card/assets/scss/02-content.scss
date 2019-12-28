@@ -182,11 +182,11 @@ body.page-template-page-fullsingle-split {
       }
 
       @media (max-width: $bp-tablet ) {
-        margin-top: 130px;
+        margin-top: 160px;
       }
 
       @media (max-width: $bp-mobile ) {
-        margin-top: 110px;
+        margin-top: 160px;
         padding: 40px;
       }
 
@@ -383,10 +383,20 @@ body.page-template-page-fullsingle-split {
 
   li {
     font-size: inherit;
-    &:before {
-      content: "▪️";
+    list-style: none;
+    position: relative;
+    padding-left: .7em;
+    margin-left: .1em;
+    &::before {
+      content: "\f45c";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      position: absolute;
+      font-size: 26%;
       color: $primary;
-      padding-right: 0.4em;
+      top: 0;
+      bottom: 0;
+      left: 0;
     }
   }
 
@@ -395,10 +405,10 @@ body.page-template-page-fullsingle-split {
     @include font-light;
     line-height: 1.4;
     color: rgba($color-text, .5);
-    &:before {
-      content: "▪️";
+    list-style: none;
+    &::before {
+      top: 1.8em;
       color: darken($primary, 15%);
-      padding-right: 0.4em;
     }
     a {
       color: rgba($color-text, .5);
@@ -415,7 +425,7 @@ body.page-template-page-fullsingle-split {
   }
 
   ul ul, ol ul, ul ol, ol ol {
-    margin-left: 1.1em;
+    margin-left: .3em;
     margin-bottom: 0;
   }
 
@@ -455,11 +465,14 @@ body.page-template-page-fullsingle-split {
     height: 80px;
     width: 300px;
     display: block;
-    margin-left: .8em;
-    margin-top: -1em;
+    padding-top: .4em;
     background-color: $color-background;
     cursor: pointer;
     @media (max-width: 388px ) {
+      width: 80px;
+      overflow: auto;
+    }
+    @media (min-width: 800px) and (max-width: 868px) {
       width: 80px;
       overflow: auto;
     }
@@ -492,6 +505,9 @@ body.page-template-page-fullsingle-split {
     li {
       display: inline;
       transition-duration: 0.2s;
+      &:last-of-type a {
+        width: auto;
+      }
       &:hover  {
         opacity: 1;
       }
