@@ -33,6 +33,11 @@
 {{ $style := $sass | resources.ToCSS | resources.Minify }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
+{{ $jQuery := resources.Get "js/jquery-3.4.1.js" }}
+{{ $script := $jQuery | resources.Minify }}
+<script src="{{ $script.Permalink }}"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
 <!-- Scripts -->
 {{ $js := resources.Get "js/main.js" }}
 {{ $script := $js | resources.Minify }}

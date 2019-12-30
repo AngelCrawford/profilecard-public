@@ -22,67 +22,28 @@
 </div>
 
 <script>
-  var modal = document.getElementById("spotifyModal");
+  $(document).ready(function () {
+    if ($('img#overlay-img').length) {
+      $("#remove-img").on("click", function() {
+        $("#spotifyModal").css("display", "block");
+      });
+    };
 
-  document.getElementById("accept").onclick = function() {
-    modal.style.display = "none";
-    removeOverlay();
-    setCookie("spotifyWidget", "true", 13);
-  }
-  document.getElementById("abort").onclick = function() {
-    modal.style.display = "none";
-  }
-  document.getElementById("remove-img").onclick = function(e) {
-    modal.style.display = "block";
-  }
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
+    $("#accept").on("click", function() {
+      $("#spotifyModal").css("display", "none");
+      removeOverlay();
+      setCookie("spotifyWidget", "true", 13);
+    });
 
-  if (getCookie("spotifyWidget")) {
-    removeOverlay();
-  }
+    $("#abort").on("click", function() {
+      $("#spotifyModal").css("display", "none");
+    });
 
-  function removeOverlay() {
-    var removeimg = document.getElementById('remove-img');
-    removeimg.removeChild(document.getElementById('overlay-img'));
-
-    if (window.innerWidth > 800 && window.innerWidth < 868) {
-      document.getElementById('remove-img').innerHTML =
-      '<iframe src="{{ .Site.Params.spotifyPlaylist }}" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
-    } else if (window.innerWidth > 388) {
-      document.getElementById('remove-img').innerHTML =
-      '<iframe src="{{ .Site.Params.spotifyPlaylist }}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
-    } else {
-      document.getElementById('remove-img').innerHTML =
-      '<iframe src="{{ .Site.Params.spotifyPlaylist }}" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
-    }
-  }
-
-  // Cookie
-  function setCookie(name, value, days) {
-    var expires = "";
-    if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days*24*60*60*1000));
-      expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-  }
-  function getCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-      var c = ca[i];
-      while (c.charAt(0)==' ') c = c.substring(1,c.length);
-      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    }
-    return null;
-  }
-  function eraseCookie(name) {
-    document.cookie = name+'=; Max-Age=-99999999;';
-  }
+    // When the user clicks anywhere outside of the modal, close it
+    $("body").on("click", function(event) {
+      if (event.target == $("#spotifyModal").get(0) ) {
+        $("#spotifyModal").css("display", "none");
+      }
+    });
+  });
 </script>

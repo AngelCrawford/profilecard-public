@@ -10,6 +10,9 @@ copyright = "Angel Crawford"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+[mediaTypes]
+  [mediaTypes."js/main.js"]
+    suffixes = ["js"]
 
 [languages]
   [languages.en]
