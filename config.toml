@@ -47,6 +47,7 @@ copyright = "Angel Crawford"
       spotifyPlaylist = "https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd"
     [languages.de.params]
       author = "Angel Crawford"
+      birthdate = "1987-02-05"
       description = "Webcard (Kurzprofil) für Angel Crawford. Entwickler. Sonnenliebhaber. Goth."
       keywords = "Webcard, Profil Karte, Angel Crawford"
       shareImage = "images/social.jpg"
