@@ -61,6 +61,9 @@ function loadPage(newUrl) {
         $("#spotifyModal").css("display", "none");
       }
     });
+    if (getCookie("spotifyWidget")) {
+      removeOverlay();
+    };
   }
   httpRequest.responseType = "document";
   httpRequest.open("GET", newUrl);
@@ -89,21 +92,4 @@ function getCookie(name) {
 };
 function eraseCookie(name) {
   document.cookie = name+'=; Max-Age=-99999999;';
-};
-
-function removeOverlay() {
-  if ($('img#overlay-img').length) {
-    $("img#overlay-img").remove;
-  }
-
-  if (window.innerWidth > 800 && window.innerWidth < 868) {
-    document.getElementById('remove-img').innerHTML =
-    '<iframe src="{{ .Site.Params.spotifyPlaylist }}" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
-  } else if (window.innerWidth > 388) {
-    document.getElementById('remove-img').innerHTML =
-    '<iframe src="{{ .Site.Params.spotifyPlaylist }}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
-  } else {
-    document.getElementById('remove-img').innerHTML =
-    '<iframe src="{{ .Site.Params.spotifyPlaylist }}" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
-  }
 };
