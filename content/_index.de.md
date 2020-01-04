@@ -1,6 +1,6 @@
 +++
 title = "Angel Crawford"
-tagline = "Entwickler. Sonnenliebhaber. Goth."
+tagline = "Entwickler. Sonnen-<br>liebhaber. Goth."
 +++
 
 * Sonne und Wärme Liebhaber | <small>über 25°C | 77 °F</small>

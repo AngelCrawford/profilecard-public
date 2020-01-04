@@ -1,7 +1,7 @@
 # Site settings
 baseURL = "http://example.org/"
 theme = "card"
-disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
 copyright = "Angel Crawford"
 # Enter your tracking code to enable Google Analytics
 #googleAnalytics = ""
@@ -37,18 +37,20 @@ copyright = "Angel Crawford"
     [languages.en.params]
       author = "Angel Crawford"
       birthdate = "1987-02-05"
-      description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
+      description = "Webcard (Short Profile) for Angel Crawford. Developer. Sun lover. Goth."
+      keywords = "Webcard, Profile Card, Angel Crawford"
       shareImage = "images/social.jpg"
-      #twitterHandle = "onepagelove"
+      twitterHandle = "crawford_ftw" #Twitter name, to bind shared cards to your profile
       favicon = "favicon.png"
       flag_file = "/images/en.png"
       flag_title = "Change the Language to"
       spotifyPlaylist = "https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd"
     [languages.de.params]
       author = "Angel Crawford"
-      description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
-      #shareImage = "images/social.jpg"
-      #twitterHandle = "onepagelove"
+      description = "Webcard (Kurzprofil) für Angel Crawford. Entwickler. Sonnenliebhaber. Goth."
+      keywords = "Webcard, Profil Karte, Angel Crawford"
+      shareImage = "images/social.jpg"
+      twitterHandle = "crawford_ftw" #Twitter name, to bind shared cards to your profile
       favicon = "favicon.png"
       flag_file = "/images/de.png"
       flag_title = "Ändere die Sprache zu"
