@@ -31,10 +31,13 @@
 <!-- Styles -->
 {{ $sass := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.scss" . }}
 {{ $style := $sass | resources.ToCSS | resources.Minify }}
+<!-- {{ $style := resources.Get "sass/main.scss" | toCSS | postCSS | minify | fingerprint }} -->
+<!-- TODO: {{ $styleFingerprinted := $style | resources.Fingerprint }} -->
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
 {{ $jQuery := resources.Get "js/jquery-3.4.1.js" }}
 {{ $script := $jQuery | resources.Minify }}
+<!-- TODO: {{ $scriptFingerprinted := $script | resources.Fingerprint }} -->
 <script src="{{ $script.Permalink }}"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
