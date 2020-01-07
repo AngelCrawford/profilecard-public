@@ -1,6 +1,6 @@
 +++
 title = "Angel Crawford"
-tagline = "Developer. <br />Sun lover. Goth."
+tagline = "Series and Movies.<br> Genres"
 +++
 
-Somwe test
+{{< pieChartGenres >}}
