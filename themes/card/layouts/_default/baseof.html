@@ -22,7 +22,7 @@
     <!-- Content Side -->
     <div class="split-content" id="mainContent">
       <div class="split-content-vertically-center">
-        {{ if not (eq .URL "404.html") }}
+        {{ if not (eq .RelPermalink "404.html") }}
           {{ partial "intro" . }}
         {{ end }}
 
