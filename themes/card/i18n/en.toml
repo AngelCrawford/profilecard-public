@@ -20,6 +20,22 @@
   other = "Cancel"
 
 [pieChart_header_1]
-    other = "Genre"
+  other = "Genre"
 [pieChart_header_2]
-    other = "Number of episodes"
+  other = "Number of<br>episodes"
+[pieChart_drama]
+  other = "Drama"
+[pieChart_scienceFiction]
+  other = "Science Fiction"
+[pieChart_fantasy]
+  other = "Fantasy"
+[pieChart_comedy]
+  other = "Comedy"
+[pieChart_action]
+  other = "Action"
+[pieChart_mysterie]
+  other = "Mysterie"
+[pieChart_crime]
+  other = "Crime"
+[pieChart_thriller]
+  other = "Thriller"

@@ -172,8 +172,8 @@ body.page-template-page-fullsingle-split {
 
     .split-content-vertically-center {
       padding: 80px;
-      max-width: 640px;
-      margin-top: auto;
+      width: 640px;
+      // margin-top: auto;
       margin-bottom: auto;
       overflow: inherit;
 
@@ -273,14 +273,14 @@ body.page-template-page-fullsingle-split {
   }
 
   a {
-    color: $color-text;
+    color: $secondary;
     transition-duration: 0.5s;
-    border-bottom: 1px dotted $color-text;
+    border-bottom: 1px dotted $secondary;
 
     &:hover {
-      color: $secondary;
+      color: $color-text;
       transition-duration: 0.1s;
-      border-bottom: 1px dotted $secondary;
+      border-bottom: 1px dotted $color-text;
     }
 
   }
@@ -409,7 +409,7 @@ body.page-template-page-fullsingle-split {
       color: darken($primary, 15%);
     }
     a {
-      color: rgba($color-text, .5);
+      color: $secondary;
     }
   }
 

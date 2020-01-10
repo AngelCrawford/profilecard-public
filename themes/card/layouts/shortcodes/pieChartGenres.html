@@ -1,41 +1,45 @@
 <div class="pieChart">
-    <div class="pieID pie"></div>
+    <div class="pie-wrapper">
+      <div class="pieID pie"></div>
+    </div>
     <div class="ul-wrapper">
         <ul class="pieID legend-header">
+          <li>
             <em>{{ i18n "pieChart_header_1" }}</em>
-            <span>{{ i18n "pieChart_header_2" }}</span>
+            <span>{{ i18n "pieChart_header_2" | safeHTML }}</span>
+          </li>
         </ul>
         <ul class="pieID legend">
           <li>
-            <em>Drama</em>
+            <em>{{ i18n "pieChart_drama" }}</em>
             <span>143</span>
           </li>
           <li>
-            <em>Science Fiction</em>
+            <em>{{ i18n "pieChart_scienceFiction" }}</em>
             <span>89</span>
           </li>
           <li>
-            <em>Fantasy</em>
+            <em>{{ i18n "pieChart_fantasy" }}</em>
             <span>89</span>
           </li>
           <li>
-            <em>Comedy</em>
+            <em>{{ i18n "pieChart_comedy" }}</em>
             <span>45</span>
           </li>
           <li>
-            <em>Action</em>
+            <em>{{ i18n "pieChart_action" }}</em>
             <span>42</span>
           </li>
           <li>
-            <em>Mysterie</em>
+            <em>{{ i18n "pieChart_mysterie" }}</em>
             <span>18</span>
           </li>
           <li>
-            <em>Crime</em>
+            <em>{{ i18n "pieChart_crime" }}</em>
             <span>8</span>
           </li>
           <li>
-            <em>Thriller</em>
+            <em>{{ i18n "pieChart_thriller" }}</em>
             <span>3</span>
           </li>
         </ul>
@@ -43,58 +47,5 @@
 </div>
 
 <script>
-  function sliceSize(dataNum, dataTotal) {
-    return (dataNum / dataTotal) * 360;
-  }
-  function addSlice(sliceSize, pieElement, offset, sliceID, color) {
-    $(pieElement).append("<div class='slice "+sliceID+"'><span></span></div>");
-    var offset = offset - 1;
-    var sizeRotation = -179 + sliceSize;
-    $("."+sliceID).css({
-      "transform": "rotate("+offset+"deg) translate3d(0,0,0)"
-    });
-    $("."+sliceID+" span").css({
-      "transform"       : "rotate("+sizeRotation+"deg) translate3d(0,0,0)",
-      "background-color": color
-    });
-  }
-  function iterateSlices(sliceSize, pieElement, offset, dataCount, sliceCount, color) {
-    var sliceID = "s"+dataCount+"-"+sliceCount;
-    var maxSize = 179;
-    if(sliceSize<=maxSize) {
-      addSlice(sliceSize, pieElement, offset, sliceID, color);
-    } else {
-      addSlice(maxSize, pieElement, offset, sliceID, color);
-      iterateSlices(sliceSize-maxSize, pieElement, offset+maxSize, dataCount, sliceCount+1, color);
-    }
-  }
-  function createPie(dataElement, pieElement) {
-    var listData = [];
-    $(dataElement+" span").each(function() {
-      listData.push(Number($(this).html()));
-    });
-    var listTotal = 0;
-    for(var i=0; i<listData.length; i++) {
-      listTotal += listData[i];
-    }
-    var offset = 0;
-    var color = [
-      "#3f3f3f",
-      "#717171",
-      "#b6b6b6",
-      "#ffffff",
-      "#137457",
-      "#10634b",
-      "#17a2b8",
-      "#0f6674",
-    ];
-    for(var i=0; i<listData.length; i++) {
-      var size = sliceSize(listData[i], listTotal);
-      iterateSlices(size, pieElement, offset, i, 0, color[i]);
-      $(dataElement+" li:nth-child("+(i+1)+")").css("border-color", color[i]);
-      offset += size;
-    }
-  }
   createPie(".pieID.legend", ".pieID.pie");
-
 </script>
