@@ -1,3 +1,6 @@
+.pieChart {
+    width: 100%;
+}
 .pieID {
   display: inline-block;
   vertical-align: top;
@@ -6,7 +9,7 @@
   height: 200px;
   width: 200px;
   position: relative;
-  margin: 0 30px 30px 0;
+  margin: 30px 30px 30px 0;
   padding-bottom: 3em;
   &:before {
     content: "";
@@ -51,15 +54,38 @@
   }
 }
 
+.ul-wrapper {
+    width: 50%;
+    float: right;
+}
+
+ul.legend-header {
+    font-size: 70%;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 0 0 15px;
+    width: 100%;
+    line-height: 1;
+    li {
+      width: 150px;
+    }
+    em {
+      font-style: normal;
+    }
+    span {
+      float: right;
+    }
+}
+
 ul.legend {
   list-style-type: none;
-  padding: 0;
   margin: 0;
   padding: 0 0 0 15px;
   font-size: 13px;
+  width: 100%;
   li {
     list-style-type: none;
-    width: 150px;
+    // width: 150px;
     height: 1.25em;
     margin-bottom: 0.7em;
     padding-left: 0.5em;

@@ -18,3 +18,8 @@
 
 [abort]
   other = "Cancel"
+
+[pieChart_header_1]
+    other = "Genre"
+[pieChart_header_2]
+    other = "Number of episodes"

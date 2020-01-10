@@ -1,39 +1,46 @@
-<div class="pieID pie"></div>
-<ul class="pieID legend">
-  <li>
-    <em>Drama</em>
-    <span>143</span>
-  </li>
-  <li>
-    <em>Science Fiction</em>
-    <span>89</span>
-  </li>
-  <li>
-    <em>Fantasy</em>
-    <span>89</span>
-  </li>
-  <li>
-    <em>Comedy</em>
-    <span>45</span>
-  </li>
-  <li>
-    <em>Action</em>
-    <span>42</span>
-  </li>
-  <li>
-    <em>Mysterie</em>
-    <span>18</span>
-  </li>
-  <li>
-    <em>Crime</em>
-    <span>8</span>
-  </li>
-  <li>
-    <em>Thriller</em>
-    <span>3</span>
-  </li>
-</ul>
-
+<div class="pieChart">
+    <div class="pieID pie"></div>
+    <div class="ul-wrapper">
+        <ul class="pieID legend-header">
+            <em>{{ i18n "pieChart_header_1" }}</em>
+            <span>{{ i18n "pieChart_header_2" }}</span>
+        </ul>
+        <ul class="pieID legend">
+          <li>
+            <em>Drama</em>
+            <span>143</span>
+          </li>
+          <li>
+            <em>Science Fiction</em>
+            <span>89</span>
+          </li>
+          <li>
+            <em>Fantasy</em>
+            <span>89</span>
+          </li>
+          <li>
+            <em>Comedy</em>
+            <span>45</span>
+          </li>
+          <li>
+            <em>Action</em>
+            <span>42</span>
+          </li>
+          <li>
+            <em>Mysterie</em>
+            <span>18</span>
+          </li>
+          <li>
+            <em>Crime</em>
+            <span>8</span>
+          </li>
+          <li>
+            <em>Thriller</em>
+            <span>3</span>
+          </li>
+        </ul>
+    </div>
+</div>
 
 <script>
   function sliceSize(dataNum, dataTotal) {
