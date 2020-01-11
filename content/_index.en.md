@@ -9,7 +9,7 @@ tagline = "Developer. <br />Sun lover. Goth."
   * PHP, Ruby, CSS (Sass), HTML, JavaScript
   * Rails, WordPress, Hugo, Grav
   * Photoshop, Gimp, Krita, Filmora 9
-* Addicted to music, [series and movies](series_movies)
+* Addicted to music, series and movies
   * [Genres](genres): Action, Anime, Horror, Sci-Fi, Fantasy, Thriller ...
   * Currently looking through Korean series, subtitles ftw
   * {{< spotifyPlaylist >}}

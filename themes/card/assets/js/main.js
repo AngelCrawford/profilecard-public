@@ -3,20 +3,13 @@ $(document).ready(function () {
   $('#mainContent').on('scroll', onScroll);
   $('body').on('touchmove', onScroll); // for mobile
 
-  // callback
   function onScroll(){
-    console.log("HUKJSDHKAIHNKSJNJAKLSKL");
-
-    if ($('#mainContent').scrollTop() + window.innerHeight >= document.body.scrollHeight ) {
+    if ($('#mainContent').scrollTop() >= 300 ) {
       $('#back-to-top-button').addClass('show');
     } else {
       $('#back-to-top-button').removeClass('show');
     }
   }
-
-  // $('#mainContent').on('touchmove', function() {
-  //
-  // });
 
   // Make links load asynchronously
   $("body").on("click", function(event) {
