@@ -27,6 +27,19 @@ $(document).ready(function () {
   };
 });
 
+var btn = $('#back-to-top');
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 100) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '100');
+});
+
 function loadPage(newUrl) {
   var httpRequest = new XMLHttpRequest();
   httpRequest.onreadystatechange = function() {

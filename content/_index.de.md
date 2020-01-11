@@ -9,7 +9,7 @@ tagline = "Entwickler. Sonnen-<br>liebhaber. Goth."
   * PHP, Ruby, CSS (Sass), HTML, JavaScript
   * Rails, WordPress, Hugo, Grav
   * Photoshop, Gimp, Krita, Filmora 9
-* Musik- und Seriensüchtig. Filme ebenfalls.
+* Musik-, [Serien- und Filmsüchtig](series_movies).
   * [Genres](genres): Action, Anime, Horror, Sci-Fi, Fantasy, Thriller ...
   * Momentan sind Koreanische Serien dran, Untertitel ftw.
   * {{< spotifyPlaylist >}}
