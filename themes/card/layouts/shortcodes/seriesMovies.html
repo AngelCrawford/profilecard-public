@@ -1,6 +1,4 @@
 <div class="movie-wrapper">
-
-
   {{ range $key, $e := $.Site.Data.movies }}
     {{ if ne $.Site.LanguagePrefix "" }}
       {{ $.Scratch.Set "lang" (print "." (replace $.Site.LanguagePrefix "/" "")) }}

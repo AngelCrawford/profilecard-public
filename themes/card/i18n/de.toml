@@ -20,22 +20,6 @@
   other = "Abbrechen"
 
 [pieChart_header_1]
-    other = "Genre"
+  other = "Genre"
 [pieChart_header_2]
-    other = "Folgen-<br>anzahl"
-  [pieChart_drama]
-    other = "Drama"
-  [pieChart_scienceFiction]
-    other = "Science-Fiction"
-  [pieChart_fantasy]
-    other = "Fantasie"
-  [pieChart_comedy]
-    other = "Komödien"
-  [pieChart_action]
-    other = "Abenteuer"
-  [pieChart_mysterie]
-    other = "Mysterie"
-  [pieChart_crime]
-    other = "Crime"
-  [pieChart_thriller]
-    other = "Thriller"
+  other = "Folgen-<br>anzahl"

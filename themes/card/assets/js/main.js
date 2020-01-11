@@ -1,4 +1,15 @@
 $(document).ready(function () {
+
+
+  $('#mainContent').on('scroll', function() {
+    console.log("HUKJSDHKAIHNKSJNJAKLSKL");
+    if ($('#mainContent').scrollTop() >= 10) {
+      $('#back-to-top-button').addClass('show');
+    } else {
+      $('#back-to-top-button').removeClass('show');
+    }
+  });
+
   // Make links load asynchronously
   $("body").on("click", function(event) {
     if (event.target.tagName !== "A")
@@ -25,19 +36,6 @@ $(document).ready(function () {
   if (getCookie("spotifyWidget")) {
     removeOverlay();
   };
-});
-
-var btn = $('#back-to-top');
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 100) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '100');
 });
 
 function loadPage(newUrl) {
@@ -78,6 +76,14 @@ function loadPage(newUrl) {
       removeOverlay();
     };
     createPie(".pieID.legend", ".pieID.pie");
+
+    $('#mainContent').scroll(function() {
+      if ($('#mainContent').scrollTop() >= 10) {
+        $('#back-to-top-button').addClass('show');
+      } else {
+        $('#back-to-top-button').removeClass('show');
+      }
+    });
   }
   httpRequest.responseType = "document";
   httpRequest.open("GET", newUrl);
@@ -150,7 +156,7 @@ function createPie(dataElement, pieElement) {
     "#b6b6b6",
     "#ffffff",
     "#137457",
-    "#10634b",
+    "#0c4836",
     "#17a2b8",
     "#0f6674",
   ];

@@ -82,11 +82,10 @@ copyright = "Angel Crawford"
         speed = "1s"
 
     [[languages.en.params.visual.image.file]]
-      # url = "/images/background_1_2000px.jpg"
-      # url_smallish = "/images/background_1_1200px.jpg"
-      # url_tablet = "/images/background_1_800px.jpg"
-      # url_mobile = "/images/background_1_500px.jpg"
-      url = "https://i.picsum.photos/id/1002/2000/3000.jpg"
+      url = "/images/background_1_2000px.jpg"
+      url_smallish = "/images/background_1_1200px.jpg"
+      url_tablet = "/images/background_1_800px.jpg"
+      url_mobile = "/images/background_1_500px.jpg"
       credit = "2015-01-11 | Photographer/Editing: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
     [[languages.de.params.visual.image.file]]
       url = "/images/background_1_2000px.jpg"
