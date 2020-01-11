@@ -1,14 +1,22 @@
 $(document).ready(function () {
+  // Back to Top Scroll Button
+  $('#mainContent').on('scroll', onScroll);
+  $('body').on('touchmove', onScroll); // for mobile
 
-
-  $('#mainContent').on('scroll', function() {
+  // callback
+  function onScroll(){
     console.log("HUKJSDHKAIHNKSJNJAKLSKL");
-    if ($('#mainContent').scrollTop() >= 10) {
+
+    if ($('#mainContent').scrollTop() + window.innerHeight >= document.body.scrollHeight ) {
       $('#back-to-top-button').addClass('show');
     } else {
       $('#back-to-top-button').removeClass('show');
     }
-  });
+  }
+
+  // $('#mainContent').on('touchmove', function() {
+  //
+  // });
 
   // Make links load asynchronously
   $("body").on("click", function(event) {
