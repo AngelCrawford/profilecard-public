@@ -32,6 +32,11 @@ copyright = "Angel Crawford"
         identifier = "legal-notice"
         name       = "Impressum"
         url        = "/de/impressum/"
+        weight     = 1
+      [[languages.de.menu.footer]]
+        identifier = "datenschutz"
+        name       = "Datenschutz"
+        url        = "/de/datenschutz/"
         weight     = 0
 
     [languages.en.params]

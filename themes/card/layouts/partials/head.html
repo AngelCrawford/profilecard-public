@@ -7,7 +7,12 @@
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}" />{{ end }}
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}" />{{ end }}
 {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}" />{{ end }}
-<meta name="robots" content="index, follow" />
+<!-- <meta name="robots" content="index, follow" /> -->
+{{ with .Params.robotsdisallow }}
+  <meta name="robots" content="noindex, nofollow, noarchive">
+{{ else }}
+  <meta name="robots" content="index, follow, archive">
+{{ end }}
 <meta name="referrer" content="always" />
 
 <!-- Social & Open Graph -->

@@ -1,7 +1,6 @@
 +++
 title = "Angel Crawford"
-tagline = "Legal Notice"
-translationKey = "legal-notice"
+tagline = "Datenschutz"
 robotsdisallow = true
 +++
 
