@@ -1,9 +1,13 @@
 {{ define "main" }}
-  <div class="split-bio">
+  {{ with .Params.smallBodyText }}
+    <div class="split-bio small-body-text">
+  {{ else }}
+    <div class="split-bio">
+  {{ end }}
 
-    {{ .Content }}
+  {{ .Content }}
 
-    <a class="back-button" href="{{ .Site.Params.baseURL | absLangURL }}">{{ i18n "back" }}</a>
+  <a class="back-button" href="{{ .Site.Params.baseURL | absLangURL }}">{{ i18n "back" }}</a>
 
   </div>
   {{  partial "links" . }}

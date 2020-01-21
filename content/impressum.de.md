@@ -4,6 +4,7 @@ tagline = "Impressum"
 translationKey = "legal-notice"
 slug = "impressum"
 robotsdisallow = true
+smallBodyText = true
 +++
 
 ### Angaben gemäß § 5 TMG
