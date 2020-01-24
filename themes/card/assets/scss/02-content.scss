@@ -137,6 +137,10 @@ body.page-template-page-fullsingle-split {
             border-bottom: 1px dotted $secondary;
           }
         }
+        small {
+          color: rgba($color-text, .5);
+          padding: 0 .2em;
+        }
       }
       &:hover {
         width: auto;
