@@ -26,6 +26,11 @@ copyright = "Angel Crawford"
         identifier = "legal-notice"
         name       = "Legal Notice"
         url        = "/legal-notice/"
+        weight     = 1
+      [[languages.en.menu.footer]]
+        identifier = "privacy-policy"
+        name       = "Privacy Policy"
+        url        = "/privacy-policy/"
         weight     = 0
     [languages.de.menu]
       [[languages.de.menu.footer]]
@@ -91,13 +96,13 @@ copyright = "Angel Crawford"
       url_smallish = "/images/background_1_1200px.jpg"
       url_tablet = "/images/background_1_800px.jpg"
       url_mobile = "/images/background_1_500px.jpg"
-      credit = "2015-01-11 | Photographer/Editing: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
+      credit = "2015-01-11 | Photographer/Editing: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
     [[languages.de.params.visual.image.file]]
       url = "/images/background_1_2000px.jpg"
       url_smallish = "/images/background_1_1200px.jpg"
       url_tablet = "/images/background_1_800px.jpg"
       url_mobile = "/images/background_1_500px.jpg"
-      credit = "2015-01-11 | Fotografin/Bearbeitung: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
+      credit = "2015-01-11 | Fotografin/Bearbeitung: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
 
     [[languages.en.params.visual.image.file]]
       url = "/images/background_2_2000px.jpg"
@@ -117,13 +122,13 @@ copyright = "Angel Crawford"
       url_smallish = "/images/background_3_1200px.jpg"
       url_tablet = "/images/background_3_800px.jpg"
       url_mobile = "/images/background_3_500px.jpg"
-      credit = "2015-01-11 | Photographer/Editing: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
+      credit = "2015-01-11 | Photographer/Editing: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
     [[languages.de.params.visual.image.file]]
       url = "/images/background_3_2000px.jpg"
       url_smallish = "/images/background_3_1200px.jpg"
       url_tablet = "/images/background_3_800px.jpg"
       url_mobile = "/images/background_3_500px.jpg"
-      credit = "2015-01-11 | Fotografin/Bearbeitung: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Michelle MakeUp</a>"
+      credit = "2015-01-11 | Fotografin/Bearbeitung: <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> | Visa: <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
 
     [[languages.en.params.visual.image.file]]
       url = "/images/background_4.jpg"
