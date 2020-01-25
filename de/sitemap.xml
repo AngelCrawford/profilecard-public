@@ -3,72 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/de/</loc>
+    <loc>https://angelcrawford.github.io/profilecard-public/de/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/"
+                href="https://angelcrawford.github.io/profilecard-public/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://example.org/de/"
+                href="https://angelcrawford.github.io/profilecard-public/de/"
                 />
   </url>
   
   <url>
-    <loc>http://example.org/de/datenschutz/</loc>
+    <loc>https://angelcrawford.github.io/profilecard-public/de/datenschutz/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/privacy-policy/"
+                href="https://angelcrawford.github.io/profilecard-public/privacy-policy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://example.org/de/datenschutz/"
+                href="https://angelcrawford.github.io/profilecard-public/de/datenschutz/"
                 />
   </url>
   
   <url>
-    <loc>http://example.org/de/genres/</loc>
+    <loc>https://angelcrawford.github.io/profilecard-public/de/genres/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/genres/"
+                href="https://angelcrawford.github.io/profilecard-public/genres/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://example.org/de/genres/"
+                href="https://angelcrawford.github.io/profilecard-public/de/genres/"
                 />
   </url>
   
   <url>
-    <loc>http://example.org/de/impressum/</loc>
+    <loc>https://angelcrawford.github.io/profilecard-public/de/impressum/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/legal-notice/"
+                href="https://angelcrawford.github.io/profilecard-public/legal-notice/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://example.org/de/impressum/"
+                href="https://angelcrawford.github.io/profilecard-public/de/impressum/"
                 />
   </url>
   
   <url>
-    <loc>http://example.org/de/series_movies/</loc>
+    <loc>https://angelcrawford.github.io/profilecard-public/de/series_movies/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/series_movies/"
+                href="https://angelcrawford.github.io/profilecard-public/series_movies/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://example.org/de/series_movies/"
+                href="https://angelcrawford.github.io/profilecard-public/de/series_movies/"
                 />
   </url>
   
