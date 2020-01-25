@@ -3,13 +3,9 @@
     <span class="split-copyright">&copy; 2018 - {{ dateFormat "2006" now }}
       <span class="split-copyright-config">{{ .Site.Copyright | safeHTML }}</span>
     </span>
-
     {{ $currentPage := . }}
-
     <span class="split-languages" role="navigation">
-
       {{ if .IsTranslated }}
-
         {{ range .Translations }}
           <a href="{{ .Permalink }}" title='{{ i18n "language_title" }} "{{ .Language.LanguageName }}"'>
             {{ if not (eq .Language $.Language) }}
@@ -26,14 +22,13 @@
           </a>
         {{ end }}
       {{ end }}
-
     </span>
     <span class="footer-menu" role="navigation">
       {{ range .Site.Menus.footer }}
         {{ if eq $currentPage.RelPermalink .URL }}
           <span class="active">{{ .Name }}</span>
         {{ else }}
-          <a href="{{ .URL | absLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+          <a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
         {{ end }}
       {{ end }}
     </span>

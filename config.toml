@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "//angelcrawford.github.io/profilecard-public"
+baseURL = "//angelcrawford.github.io/profilecard-public/"
 theme = "card"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
 copyright = "Angel Crawford"
@@ -25,23 +25,23 @@ copyright = "Angel Crawford"
       [[languages.en.menu.footer]]
         identifier = "legal-notice"
         name       = "Legal Notice"
-        url        = "/legal-notice/"
+        url        = "legal-notice/"
         weight     = 1
       [[languages.en.menu.footer]]
         identifier = "privacy-policy"
         name       = "Privacy Policy"
-        url        = "/privacy-policy/"
+        url        = "privacy-policy/"
         weight     = 0
     [languages.de.menu]
       [[languages.de.menu.footer]]
         identifier = "legal-notice"
         name       = "Impressum"
-        url        = "/de/impressum/"
+        url        = "impressum/"
         weight     = 1
       [[languages.de.menu.footer]]
         identifier = "datenschutz"
         name       = "Datenschutz"
-        url        = "/de/datenschutz/"
+        url        = "datenschutz/"
         weight     = 0
 
     [languages.en.params]
@@ -49,10 +49,10 @@ copyright = "Angel Crawford"
       birthdate = "1987-02-05"
       description = "Webcard (Short Profile) for Angel Crawford. Developer. Sun lover. Goth."
       keywords = "Webcard, Profile Card, Angel Crawford"
-      shareImage = "images/social.jpg"
+      shareImage = "images/social.en.jpg"
       twitterHandle = "crawford_ftw" #Twitter name, to bind shared cards to your profile
-      favicon = "favicon.ico"
-      flag_file = "/images/en.png"
+      favicon = "favicon.en.ico"
+      flag_file = "images/en.en.png"
       flag_title = "Change the Language to"
       spotifyPlaylist = "https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd"
     [languages.de.params]
@@ -60,10 +60,10 @@ copyright = "Angel Crawford"
       birthdate = "1987-02-05"
       description = "Webcard (Kurzprofil) für Angel Crawford. Entwickler. Sonnenliebhaber. Goth."
       keywords = "Webcard, Profil Karte, Angel Crawford"
-      shareImage = "images/social.jpg"
+      shareImage = "images/social.de.jpg"
       twitterHandle = "crawford_ftw" #Twitter name, to bind shared cards to your profile
-      favicon = "favicon.ico"
-      flag_file = "/images/de.png"
+      favicon = "favicon.de.ico"
+      flag_file = "images/de.de.png"
       flag_title = "Ändere die Sprache zu"
       spotifyPlaylist = "https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd"
 
@@ -92,49 +92,49 @@ copyright = "Angel Crawford"
         speed = "1s"
 
     [[languages.en.params.visual.image.file]]
-      url = "/images/background_1_2000px.jpg"
-      url_smallish = "/images/background_1_1200px.jpg"
-      url_tablet = "/images/background_1_800px.jpg"
-      url_mobile = "/images/background_1_500px.jpg"
+      url = "images/slider/background_1_2000px.en.jpg"
+      url_smallish = "images/slider/background_1_1200px.en.jpg"
+      url_tablet = "images/slider/background_1_800px.en.jpg"
+      url_mobile = "images/slider/background_1_500px.en.jpg"
       credit = "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
     [[languages.de.params.visual.image.file]]
-      url = "/images/background_1_2000px.jpg"
-      url_smallish = "/images/background_1_1200px.jpg"
-      url_tablet = "/images/background_1_800px.jpg"
-      url_mobile = "/images/background_1_500px.jpg"
+      url = "images/slider/background_1_2000px.de.jpg"
+      url_smallish = "images/slider/background_1_1200px.de.jpg"
+      url_tablet = "images/slider/background_1_800px.de.jpg"
+      url_mobile = "images/slider/background_1_500px.de.jpg"
       credit = "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
 
     [[languages.en.params.visual.image.file]]
-      url = "/images/background_2_2000px.jpg"
-      url_smallish = "/images/background_2_1200px.jpg"
-      url_tablet = "/images/background_2_800px.jpg"
-      url_mobile = "/images/background_2_500px.jpg"
+      url = "images/slider/background_2_2000px.en.jpg"
+      url_smallish = "images/slider/background_2_1200px.en.jpg"
+      url_tablet = "images/slider/background_2_800px.en.jpg"
+      url_mobile = "images/slider/background_2_500px.en.jpg"
       credit = "📅 2013-05-14 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 Me"
     [[languages.de.params.visual.image.file]]
-      url = "/images/background_2_2000px.jpg"
-      url_smallish = "/images/background_2_1200px.jpg"
-      url_tablet = "/images/background_2_800px.jpg"
-      url_mobile = "/images/background_2_500px.jpg"
+      url = "images/slider/background_2_2000px.de.jpg"
+      url_smallish = "images/slider/background_2_1200px.de.jpg"
+      url_tablet = "images/slider/background_2_800px.de.jpg"
+      url_mobile = "images/slider/background_2_500px.de.jpg"
       credit = "📅 2013-05-14 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 Ich"
 
     [[languages.en.params.visual.image.file]]
-      url = "/images/background_3_2000px.jpg"
-      url_smallish = "/images/background_3_1200px.jpg"
-      url_tablet = "/images/background_3_800px.jpg"
-      url_mobile = "/images/background_3_500px.jpg"
+      url = "images/slider/background_3_2000px.en.jpg"
+      url_smallish = "images/slider/background_3_1200px.en.jpg"
+      url_tablet = "images/slider/background_3_800px.en.jpg"
+      url_mobile = "images/slider/background_3_500px.en.jpg"
       credit = "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
     [[languages.de.params.visual.image.file]]
-      url = "/images/background_3_2000px.jpg"
-      url_smallish = "/images/background_3_1200px.jpg"
-      url_tablet = "/images/background_3_800px.jpg"
-      url_mobile = "/images/background_3_500px.jpg"
+      url = "images/slider/background_3_2000px.de.jpg"
+      url_smallish = "images/slider/background_3_1200px.de.jpg"
+      url_tablet = "images/slider/background_3_800px.de.jpg"
+      url_mobile = "images/slider/background_3_500px.de.jpg"
       credit = "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
 
     [[languages.en.params.visual.image.file]]
-      url = "/images/background_4.jpg"
+      url = "images/slider/background_4.en.jpg"
       credit = "📅 2019-09-28 <small>|</small> 📷 Me <small>|</small> 💄 Me"
     [[languages.de.params.visual.image.file]]
-      url = "/images/background_4.jpg"
+      url = "images/slider/background_4.de.jpg"
       credit = "📅 2019-09-28 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
 
     [languages.en.params.visual.video]
