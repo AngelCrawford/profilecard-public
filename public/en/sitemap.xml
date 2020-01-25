@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://example.org/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/genres/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://example.org/de/genres/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/genres/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/legal-notice/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://example.org/de/impressum/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/legal-notice/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/privacy-policy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://example.org/de/datenschutz/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/privacy-policy/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/series_movies/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://example.org/de/series_movies/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/series_movies/"
+                />
+  </url>
+  
+</urlset>
