@@ -1,1 +1,11 @@
 User-agent: *
+
+
+Disallow: /profilecard-public/legal-notice/
+
+Disallow: /profilecard-public/privacy-policy/
+
+Disallow: /profilecard-public/series_movies/
+
+
+Sitemap: https://angelcrawford.github.io/profilecard-public/sitemap.xml

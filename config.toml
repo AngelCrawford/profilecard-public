@@ -1,11 +1,15 @@
 # Site settings
-baseURL = "//angelcrawford.github.io/profilecard-public/"
+baseURL = "https://angelcrawford.github.io/profilecard-public/"
 theme = "card"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
 copyright = "Angel Crawford"
 enableRobotsTXT = true
 # Enter your tracking code to enable Google Analytics
 #googleAnalytics = ""
+
+[sitemap]
+  ChangeFreq = "weekly"
+  Priority = "0.9"
 
 [markup]
   [markup.goldmark]
