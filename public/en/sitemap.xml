@@ -3,72 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://angelcrawford.github.io/profilecard-public/</loc>
+    <loc>//angelcrawford.github.io/profilecard-public/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://angelcrawford.github.io/profilecard-public/de/"
+                href="//angelcrawford.github.io/profilecard-public/de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://angelcrawford.github.io/profilecard-public/"
+                href="//angelcrawford.github.io/profilecard-public/"
                 />
   </url>
   
   <url>
-    <loc>https://angelcrawford.github.io/profilecard-public/genres/</loc>
+    <loc>//angelcrawford.github.io/profilecard-public/genres/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://angelcrawford.github.io/profilecard-public/de/genres/"
+                href="//angelcrawford.github.io/profilecard-public/de/genres/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://angelcrawford.github.io/profilecard-public/genres/"
+                href="//angelcrawford.github.io/profilecard-public/genres/"
                 />
   </url>
   
   <url>
-    <loc>https://angelcrawford.github.io/profilecard-public/legal-notice/</loc>
+    <loc>//angelcrawford.github.io/profilecard-public/legal-notice/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://angelcrawford.github.io/profilecard-public/de/impressum/"
+                href="//angelcrawford.github.io/profilecard-public/de/impressum/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://angelcrawford.github.io/profilecard-public/legal-notice/"
+                href="//angelcrawford.github.io/profilecard-public/legal-notice/"
                 />
   </url>
   
   <url>
-    <loc>https://angelcrawford.github.io/profilecard-public/privacy-policy/</loc>
+    <loc>//angelcrawford.github.io/profilecard-public/privacy-policy/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://angelcrawford.github.io/profilecard-public/de/datenschutz/"
+                href="//angelcrawford.github.io/profilecard-public/de/datenschutz/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://angelcrawford.github.io/profilecard-public/privacy-policy/"
+                href="//angelcrawford.github.io/profilecard-public/privacy-policy/"
                 />
   </url>
   
   <url>
-    <loc>https://angelcrawford.github.io/profilecard-public/series_movies/</loc>
+    <loc>//angelcrawford.github.io/profilecard-public/series_movies/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://angelcrawford.github.io/profilecard-public/de/series_movies/"
+                href="//angelcrawford.github.io/profilecard-public/de/series_movies/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://angelcrawford.github.io/profilecard-public/series_movies/"
+                href="//angelcrawford.github.io/profilecard-public/series_movies/"
                 />
   </url>
   

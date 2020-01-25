@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "https://angelcrawford.github.io/profilecard-public/"
+baseURL = "//angelcrawford.github.io/profilecard-public/"
 theme = "card"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
 copyright = "Angel Crawford"
