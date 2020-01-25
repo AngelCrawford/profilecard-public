@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/de/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://example.org/de/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/de/datenschutz/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/privacy-policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://example.org/de/datenschutz/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/de/genres/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/genres/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://example.org/de/genres/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/de/impressum/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/legal-notice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://example.org/de/impressum/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://example.org/de/series_movies/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://example.org/series_movies/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://example.org/de/series_movies/"
+                />
+  </url>
+  
+</urlset>
