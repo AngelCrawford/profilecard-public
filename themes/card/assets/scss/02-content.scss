@@ -717,9 +717,10 @@ body.page-template-page-fullsingle-split {
     @include font-light;
     color: rgba($color-text, .5);
     a {
-      color: rgba($color-text, .5);
+      color: rgba($secondary, .6);
+      transition-duration: 0.5s;
       &:hover {
-        color: rgba($secondary, .6);
+        color: $color-text;
         opacity: 1 !important;
       }
     }
