@@ -1,8 +1,13 @@
 #!/bin/bash
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-# Empty the public folder
-rm -rf public
+Red="\033[0;31m"          # Red
+Green="\033[0;32m"        # Green
+Color_Off="\033[0m"       # Text Reset
+
+echo -e "$Green Deploying updates to GitHub...$Color_Off"
+
+# Empty the public folder.
+rm -rf public/*
 
 # Build the project.
 hugo
@@ -11,12 +16,21 @@ hugo
 git add --all
 
 # Commit changes.
-msg="rebuilding site `date`"
-if [ $# -eq 1 ]
+if [ "$1" ]
   then msg="$1"
+else
+  msg="rebuilding site `date`"
 fi
 git commit -am "$msg"
 
+# Add a git tag, to show on the main repository that the site is live.
+if [ "$2" ]
+  then version="$2"
+else
+  read -p "$(echo -e $Red"Enter Tag Version: "$Color_Off)" version
+fi
+git tag v$version
+
 # Push source and build repos.
-git push origin master
+git push origin master --tags
 git subtree push --prefix=public git@github.com:AngelCrawford/profilecard-public.git gh-pages
