@@ -1,6 +1,9 @@
 #!/bin/bash
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+# Empty the public folder
+rm -rf public
+
 # Build the project.
 hugo
 
