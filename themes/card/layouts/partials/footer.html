@@ -1,6 +1,13 @@
 <div class="split-credit">
   <p>
-    <span class="split-copyright">&copy; 2019 - {{ dateFormat "2006" now }}
+    <span class="split-copyright">
+      &copy; 2019 - {{ dateFormat "2006" now }}
+        {{ if not .Site.BuildDrafts }}
+          - <abbr title='{{ readFile "buildDate.txt" }}'>v{{ readFile "version.txt" }}</abbr>
+        {{ else }}
+          - <abbr title='{{ readFile "static/buildDate.txt" }}'>v{{ readFile "static/version.txt" }}</abbr>
+        {{ end }}
+
       <span class="split-copyright-config">{{ .Site.Copyright | safeHTML }}</span>
     </span>
     {{ $currentPage := . }}

@@ -6,6 +6,24 @@ Color_Off="\033[0m"       # Text Reset
 
 echo -e "$Green Deploying updates to GitHub...$Color_Off"
 
+if [ "$1" ]
+  then msg="$1"
+else
+  msg="rebuilding site `date`"
+fi
+
+if [ "$2" ]
+  then version="$2"
+else
+  read -p "$(echo -e $Red"Enter Tag Version: "$Color_Off)" version
+fi
+
+# Change the version file
+rm static/version.txt
+rm static/buildDate.txt
+echo "$version" >> static/version.txt
+echo "`date`" >> static/buildDate.txt
+
 # Empty the public folder.
 rm -rf public/*
 
@@ -16,19 +34,9 @@ hugo
 git add --all
 
 # Commit changes.
-if [ "$1" ]
-  then msg="$1"
-else
-  msg="rebuilding site `date`"
-fi
 git commit -am "$msg"
 
 # Add a git tag, to show on the main repository that the site is live.
-if [ "$2" ]
-  then version="$2"
-else
-  read -p "$(echo -e $Red"Enter Tag Version: "$Color_Off)" version
-fi
 git tag v$version
 
 # Push source and build repos.
