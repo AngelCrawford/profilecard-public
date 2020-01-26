@@ -1,0 +1,11 @@
+User-agent: *
+
+
+Disallow: /de/datenschutz/
+
+Disallow: /de/impressum/
+
+Disallow: /de/series_movies/
+
+
+Sitemap: https://angel-crawford.de/de/sitemap.xml

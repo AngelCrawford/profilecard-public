@@ -18,14 +18,14 @@ else
   read -p "$(echo -e $Red"Enter Tag Version: "$Color_Off)" version
 fi
 
-# Change the version file
-rm static/version.txt
-rm static/buildDate.txt
-echo "$version" >> static/version.txt
-echo "`date`" >> static/buildDate.txt
-
 # Empty the public folder.
 rm -rf public/*
+
+# Change the version file
+rm version.txt
+rm buildDate.txt
+echo "$version" >> version.txt
+echo "`date`" >> buildDate.txt
 
 # Build the project.
 hugo
