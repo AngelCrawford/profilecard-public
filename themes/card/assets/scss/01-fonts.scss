@@ -1,18 +1,22 @@
 @font-face {
    font-family: 'Roboto-Light';
    src: local('Roboto'), local('Roboto-Light'), url('fonts/roboto/Roboto-Light.ttf') format('truetype');
+   font-display: swap;
 }
 @font-face {
    font-family: 'Roboto-Regular';
    src: local('Roboto'), local('Roboto-Regular'), url('fonts/roboto/Roboto-Regular.ttf') format('truetype');
+   font-display: swap;
 }
 @font-face {
    font-family: 'Roboto-Bold';
    src: local('Roboto'), local('Roboto-Bold'), url('fonts/roboto/Roboto-Bold.ttf') format('truetype');
+   font-display: swap;
 }
 @font-face {
    font-family: 'Roboto-Black';
    src: local('Roboto'), local('Roboto-Black'), url('fonts/roboto/Roboto-Black.ttf') format('truetype');
+   font-display: swap;
 }
 
 @mixin font-family($family, $weight) {
