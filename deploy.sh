@@ -25,7 +25,7 @@ rm -rf public/*
 rm version.txt
 rm buildDate.txt
 echo "$version" >> version.txt
-echo "`date`" >> buildDate.txt
+echo "`date +'%a, %Y-%m-%d %T'`" >> buildDate.txt
 
 # Build the project.
 hugo

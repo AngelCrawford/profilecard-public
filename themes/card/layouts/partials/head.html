@@ -56,7 +56,8 @@
 {{ $js := resources.Get "js/main.js" }}
 {{ $script := $js | resources.Minify | resources.Fingerprint }}
 <script src="{{ $script.Permalink }}"></script>
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<link type="text/plain" rel="author" href="humans.{{ .Site.Language }}.txt" />
 
 {{ partial "style" . }}
 
