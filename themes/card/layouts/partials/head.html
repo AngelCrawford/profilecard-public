@@ -6,7 +6,7 @@
 
 <!-- SEO -->
 <title>{{ if .IsPage }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
-{{ with .Site.Params.author }}<meta name="author" content="{{ . }}" />{{ end }}
+{{ with .Params.author }}<meta name="author" content="{{ . }}" />{{ end }}
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}" />{{ end }}
 {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}" />{{ end }}
 <!-- <meta name="robots" content="index, follow" /> -->
@@ -25,7 +25,7 @@
   <meta property="og:image" content="{{ . | absURL }}" />
   <meta name="twitter:card" content="summary_large_image" />
 {{ end }}
-{{ with .Site.Params.twitterHandle }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
+{{ with .Params.twitterHandle }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
 
 <!-- Google Chrome -->
 <meta name="theme-color" content="#191919">
