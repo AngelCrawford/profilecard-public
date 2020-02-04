@@ -1,0 +1,103 @@
+description = "Webcard (Kurzprofil) für Angel Crawford. Entwickler. Sonnenliebhaber. Goth."
+keywords = "Webcard, Profil Karte, Angel Crawford"
+shareImage = "images/social.de.jpg"
+favicon = "favicon.de.ico"
+flag_file = "images/de.de.png"
+flag_title = "Ändere die Sprache zu"
+spotifyPlaylist = "https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd"
+birthdate = "1987-02-05"
+
+[visual.image]
+  enable = true
+  size = "cover"
+  position = "center center"
+  count = 4 # wird für das CSS benötigt!
+  speed = "1s"
+
+  [[visual.image.file]]
+    url = "images/slider/background_1_2000px.de.jpg"
+    url_smallish = "images/slider/background_1_1200px.de.jpg"
+    url_tablet = "images/slider/background_1_800px.de.jpg"
+    url_mobile = "images/slider/background_1_500px.de.jpg"
+    credit = "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
+
+  [[visual.image.file]]
+    url = "images/slider/background_2_2000px.de.jpg"
+    url_smallish = "images/slider/background_2_1200px.de.jpg"
+    url_tablet = "images/slider/background_2_800px.de.jpg"
+    url_mobile = "images/slider/background_2_500px.de.jpg"
+    credit = "📅 2013-05-14 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 Ich"
+
+  [[visual.image.file]]
+    url = "images/slider/background_3_2000px.de.jpg"
+    url_smallish = "images/slider/background_3_1200px.de.jpg"
+    url_tablet = "images/slider/background_3_800px.de.jpg"
+    url_mobile = "images/slider/background_3_500px.de.jpg"
+    credit = "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
+
+  [[visual.image.file]]
+    url = "images/slider/background_4.de.jpg"
+    credit = "📅 2019-09-28 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
+
+
+[visual.video]
+  enable = false
+  mute = true
+  file = "videos/background.mp4"
+  #youtubeId = "dk9uNWPP7EA"
+
+
+[list_type]
+  icons = true
+  round_icons = false
+  hover_color = false
+
+
+[[links]]
+  [links.list1]
+    heading = "Kontakt"
+    # [[languages.en.params.links.list1.link]]
+    #   text = "Blog"
+    #   url = "#"
+    #   icon = "fas fa-link"
+
+  [links.list2]
+    heading = "Social Media"
+    [[links.list2.link]]
+      text = "Instagram"
+      url = "https://www.instagram.com/angel_crawford_ftw"
+      icon = "fab fa-instagram"
+      color = "#c13584"
+    [[links.list2.link]]
+      text = "Facebook"
+      url = "https://www.facebook.com/angel.crawford.ftw"
+      icon = "fab fa-facebook"
+      color = "#4267B2"
+    [[links.list2.link]]
+      text = "Twitter"
+      url = "https://twitter.com/crawford_ftw"
+      icon = "fab fa-twitter"
+      color = "#1da1f2"
+    [[links.list2.link]]
+      text = "Spotify"
+      url = "https://open.spotify.com/user/l73ksvrl7vnidevukda1z0kwj"
+      icon = "fab fa-spotify"
+      color = "#1DB954"
+
+  [links.list3]
+    heading = "Entwicklung"
+    [[links.list3.link]]
+      text = "Github"
+      url = "https://github.com/AngelCrawford"
+      icon = "fab fa-github"
+      color = "#555"
+    [[links.list3.link]]
+      text = "CodePen"
+      url = "https://codepen.io/angel_crawford"
+      icon = "fab fa-codepen"
+      color = "#888"
+    [[links.list3.link]]
+      text = "Stack Overflow"
+      url = "https://stackoverflow.com/u/3206211"
+      icon = "fab fa-stack-overflow"
+      color= "#f48024"

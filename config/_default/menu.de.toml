@@ -1,0 +1,10 @@
+[[footer]]
+  identifier = "legal-notice"
+  name       = "Impressum"
+  url        = "impressum/"
+  weight     = 1
+[[footer]]
+  identifier = "datenschutz"
+  name       = "Datenschutz"
+  url        = "datenschutz/"
+  weight     = 0

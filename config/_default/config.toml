@@ -1,0 +1,28 @@
+# Site settings
+baseURL = "https://angel-crawford.de/"
+theme = "card"
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
+copyright = "Angel Crawford"
+enableRobotsTXT = true
+author = "Angel Crawford"
+twitterHandle = "crawford_ftw" #Twitter name, to bind shared cards to your profile
+# Enter your tracking code to enable Google Analytics
+#googleAnalytics = ""
+
+[sitemap]
+  ChangeFreq = "weekly"
+  Priority = "0.9"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[languages.en.breakpoints]
+  bp_smallish = "1200px"
+  bp_tablet = "800px"
+  bp_mobile = "500px"
+[languages.de.breakpoints]
+  bp_smallish = "1200px"
+  bp_tablet = "800px"
+  bp_mobile = "500px"
