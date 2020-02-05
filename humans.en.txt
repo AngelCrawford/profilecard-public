@@ -2,6 +2,15 @@
     Chef: Angel Crawford
     From: Germany
 
+/* INFORMATION */
+    Built with Hugo CMS and hosted on Github Pages. 
+    You can find the Code on Github @ https://github.com/AngelCrawford/profilecard-public.
+
+    https://angel-crawford.de
+
+    Language: Deutsch / English
+    IDE: Atom, Visual Studio Code, Gimp, Git
+
 /* THANKS */
     * Hugo @ https://gohugo.io
     * Split Theme @ https://onepagelove.com/split
@@ -20,8 +29,3 @@
     * Kara Kuckoo @ https://www.facebook.com/KaraKuckoo
     * Favicon Generator @ https://realfavicongenerator.net
     * The High Resolution Flag Sprite @ https://www.freakflagsprite.com
-
-/* SITE */
-    Language: Deutsch / English
-    Doctype: HTML5
-    IDE: Atom, Gimp, Git
