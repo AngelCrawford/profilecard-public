@@ -21,6 +21,12 @@ Mail:
   l<span class="removeText">REMOVE_ME!</span>i<!-- kommentar@falle -->am
 </span>
 
+## Information
+Built with Hugo CMS and hosted on Github Pages. You can find the Code on [Github](https://github.com/AngelCrawford/profilecard-public).
+* https://angel-crawford.de
+* Languages: Deutsch / English
+* Build with [Hugo](https://gohugo.io)
+
 ## Thanks to
 ### Generally
 * [Hugo](https://gohugo.io)

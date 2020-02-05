@@ -21,7 +21,12 @@ E-Mail:
   d<!-- kommentar@testfatte.de -->rof<!-- >@. -->warc<!-- >@. -->-legna<span class="addSeparatorAt"></span>
   l<span class="removeText">REMOVE_ME!</span>i<!-- kommentar@falle -->am
 </span>
-<div>&nbsp;</div>
+
+## Information
+Gebaut mit Hugo CMS und auf Github Pages Veröffentlicht. Du kannst den Code dazu auf [Github](https://github.com/AngelCrawford/profilecard-public) finden.
+* https://angel-crawford.de
+* Sprachen: Deutsch / English
+* Gebaut mit [Hugo](https://gohugo.io)
 
 ## Urheberrechtshinweise
 ### Allgemein
