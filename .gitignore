@@ -1,6 +1,8 @@
 # Hugo default output directory
 /resources
 
+*.code-workspace
+
 ## OS Files
 # Windows
 Thumbs.db

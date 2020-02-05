@@ -44,11 +44,9 @@ function loadPage(newUrl) {
   httpRequest.onreadystatechange = function() {
     if (httpRequest.readyState !== XMLHttpRequest.DONE)
       return;
-    // TODO: UI for this error
     var newDocument = httpRequest.responseXML;
     if (newDocument === null)
       return;
-    // TODO: UI for this error
     var newContent = httpRequest.responseXML.getElementById("mainContent");
     if (newContent === null)
       return;
