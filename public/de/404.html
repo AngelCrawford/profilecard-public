@@ -47,7 +47,7 @@
 
 
 
-<link rel="stylesheet" href="https://angel-crawford.de/style.min.af5a05596e8733f3dbf52aae33823dde1fd234b7e565d81442265c6bb5b7c07b.css">
+<link rel="stylesheet" href="https://angel-crawford.de/style.min.83dddf01875e55a0feeef63b09f0211a99c878b9442e7c74850eb28b3f45973c.css">
 
 
 
@@ -120,7 +120,24 @@
         }
       
     
-      .s-content .s-item.s-item-4 { background-image: url("images/slider/background_4.de.jpg"); }
+      .s-content .s-item.s-item-4 { background-image: url("images/slider/background_6_2000px.de.jpg"); }
+      
+        @media (max-width: 1200px ) {
+          .s-content .s-item.s-item-4 { background-image: url("images/slider/background_6_1200px.de.jpg"); }
+        }
+      
+      
+        @media (max-width: 800px ) {
+          .s-content .s-item.s-item-4 { background-image: url("images/slider/background_6_800px.de.jpg"); }
+        }
+      
+      
+        @media (max-width: 500px ) {
+          .s-content .s-item.s-item-4 { background-image: url("images/slider/background_6_500px.de.jpg"); }
+        }
+      
+    
+      .s-content .s-item.s-item-5 { background-image: url("images/slider/background_4.de.jpg"); }
       
       
       
@@ -148,7 +165,7 @@
 
 
 <div class="split-image">
-  <div class="s-wrap" id="image-slider" role="slider" aria-valuemin="1" aria-valuemax="4">
+  <div class="s-wrap" id="image-slider" role="slider" aria-valuemin="1" aria-valuemax="5">
     
     
       
@@ -175,6 +192,12 @@
         <input type="radio" id="s-4" name="slider-control"  />
       
     
+      
+
+      
+        <input type="radio" id="s-5" name="slider-control"  />
+      
+    
     <ul class="s-content">
       
         <li class="s-item s-item-1"></li>
@@ -184,6 +207,8 @@
         <li class="s-item s-item-3"></li>
       
         <li class="s-item s-item-4"></li>
+      
+        <li class="s-item s-item-5"></li>
       
     </ul>
 
@@ -201,6 +226,9 @@
         
           
           <label class="s-c-4" for="s-4"></label>
+        
+          
+          <label class="s-c-5" for="s-5"></label>
         
       </div>
 
@@ -226,6 +254,12 @@
           
           
             <label class="s-nav-4 left" for="s-3"></label>
+            <label class="s-nav-4 right" for="s-5"></label>
+          
+        
+          
+          
+            <label class="s-nav-5 left" for="s-4"></label>
           
         
       </div>
@@ -253,6 +287,12 @@
   
     
       <span class="s-credit-4">
+        <span class="s-text-credit">📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Selbstgebautes Kostüm</span>
+      </span>
+    
+  
+    
+      <span class="s-credit-5">
         <span class="s-text-credit">📅 2019-09-28 <small>|</small> 📷 Ich <small>|</small> 💄 Ich</span>
       </span>
     
@@ -374,8 +414,8 @@
         <div class="split-credit">
   <p>
     <span class="split-copyright">
-      &copy; 2019 - 2020 - <abbr title='Build Date: Wed, 2020-02-05 21:29:40
-'>v0.98.0
+      &copy; 2019 - 2020 - <abbr title='Build Date: Sat, 2020-08-22 14:59:49
+'>v1.0.0
 </abbr>
       <span class="split-copyright-config">Angel Crawford</span>
     </span>

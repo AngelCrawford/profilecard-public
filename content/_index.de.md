@@ -10,6 +10,6 @@ tagline = "Entwickler. Sonnen-<br>liebhaber. Goth."
   * Rails, WordPress, Hugo, Grav
   * Photoshop, Gimp, Krita, Filmora 9
 * Musik-, Serien- und Filmsüchtig
-  * [Genres](genres): Action, Anime, Horror, Sci-Fi, Fantasy, Thriller ...
+  * [Genres](genres "Genres Auflistung"): Action, Anime, Horror, Sci-Fi, Fantasy, Thriller ...
   * Momentan sind Koreanische Serien dran, Untertitel ftw.
   * {{< spotifyPlaylist >}}
