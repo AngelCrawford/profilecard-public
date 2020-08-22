@@ -11,7 +11,7 @@
     Language: Deutsch / English
     IDE: Atom, Visual Studio Code, Gimp, Git
 
-/* THANKS */
+/* \THANKS */
     * Hugo @ https://gohugo.io
     * Split Theme @ https://onepagelove.com/split
     * FontAwesome @ https://fontawesome.com
