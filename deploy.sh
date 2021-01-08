@@ -42,3 +42,4 @@ git tag v$version
 # Push source and build repos.
 git push origin master --tags
 git subtree push --prefix=public git@github.com:AngelCrawford/profilecard-public.git gh-pages
+
