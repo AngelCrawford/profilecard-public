@@ -8,7 +8,7 @@ smallBodyText = true
 
 This is a private website.
 * I don't save any data
-* Don't use a Google Analytics service
+* Don't use any Google service
 * Don't use pictures without permission
 * **Conclusion:** My data
 

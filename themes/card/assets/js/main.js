@@ -158,6 +158,7 @@ function createPie(dataElement, pieElement) {
     "#0c4836",
     "#17a2b8",
     "#0f6674",
+    "#296ACC",
   ];
   for(var i=0; i<listData.length; i++) {
     var size = sliceSize(listData[i], listTotal);

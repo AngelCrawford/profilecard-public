@@ -9,7 +9,7 @@ smallBodyText = true
 
 Es handelt sich hier um eine rein private Website.
 * Ich speicher keine Daten
-* Verwende keinen Google Analytics Dienst
+* Verwende keine Google Dienste
 * Nutze keine Bilder ohne Genehmigung
 * **Fazit:** Meine Daten
 
