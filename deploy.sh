@@ -24,7 +24,7 @@ rm -rf public/*
 # Change the version file
 rm version.txt
 rm buildDate.txt
-echo "$version" >> version.txt
+echo "v$version" >> version.txt
 echo "`date +'%a, %Y-%m-%d %T'`" >> buildDate.txt
 
 # Build the project.
