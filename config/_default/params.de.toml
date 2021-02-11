@@ -11,7 +11,7 @@ birthdate = "1987-02-05"
   enable = true
   size = "cover"
   position = "center center"
-  count = 5 # wird für das CSS benötigt!
+  count = 6 # wird für das CSS benötigt!
   speed = "1s"
 
   [[visual.image.file]]
@@ -42,11 +42,13 @@ birthdate = "1987-02-05"
     url_mobile = "images/slider/background_6_500px.de.jpg"
     credit = "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Selbstgebautes Kostüm"
 
-
-
   [[visual.image.file]]
     url = "images/slider/background_4.de.jpg"
     credit = "📅 2019-09-28 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
+
+  [[visual.image.file]]
+    url = "images/slider/background_7.de.png"
+    credit = "📅 2021-02-06 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
 
 
 [visual.video]

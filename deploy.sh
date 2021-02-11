@@ -28,7 +28,7 @@ echo "$version" >> version.txt
 echo "`date +'%a, %Y-%m-%d %T'`" >> buildDate.txt
 
 # Build the project.
-hugo server
+hugo
 
 # Add changes to git.
 git add --all
