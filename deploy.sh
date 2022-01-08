@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# bash deploy.sh "<my commit msg>" "<my_tag>"
+
 Red="\033[0;31m"          # Red
 Green="\033[0;32m"        # Green
 Color_Off="\033[0m"       # Text Reset
