@@ -1,15 +1,7 @@
 $(document).ready(function () {
   // Back to Top Scroll Button
-  $('#mainContent').on('scroll', onScroll);
+  $('#mainContent').on('scroll load', onScroll);
   $('body').on('touchmove', onScroll); // for mobile
-
-  function onScroll(){
-    if ($('#mainContent').scrollTop() >= 300 ) {
-      $('#back-to-top-button').addClass('show');
-    } else {
-      $('#back-to-top-button').removeClass('show');
-    }
-  }
 
   // Make links load asynchronously
   $("body").on("click", function(event) {
@@ -41,9 +33,7 @@ $(document).ready(function () {
   $('.s-wrap > input').on('input', function() {
     var index = $('.s-wrap > input:checked')[0];
   });
-
   var slidesCount = $('.s-wrap > input').length;
-  
   $('#image-slider').on('touchstart', function(event){
     const xClick = event.originalEvent.touches[0].pageX;
     $(this).one('touchmove', function(event){
@@ -82,7 +72,6 @@ $(document).ready(function () {
         $(this).off('touchmove');
     });
   });
-
 
 });
 
@@ -123,18 +112,22 @@ function loadPage(newUrl) {
     };
     createPie(".pieID.legend", ".pieID.pie");
 
-    $('#mainContent').scroll(function() {
-      if ($('#mainContent').scrollTop() >= 10) {
-        $('#back-to-top-button').addClass('show');
-      } else {
-        $('#back-to-top-button').removeClass('show');
-      }
-    });
+    // Back to Top Scroll Button
+    $('#mainContent').on('scroll load', onScroll);
+    $('body').on('touchmove', onScroll); // for mobile
   }
   httpRequest.responseType = "document";
   httpRequest.open("GET", newUrl);
   httpRequest.send();
 };
+
+function onScroll(){
+  if ($('#mainContent').scrollTop() >= 300 ) {
+    $('#back-to-top-button').addClass('show');
+  } else {
+    $('#back-to-top-button').removeClass('show');
+  }
+}
 
 // Cookie
 function setCookie(name, value, days) {
