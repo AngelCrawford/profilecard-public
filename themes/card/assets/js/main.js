@@ -37,6 +37,53 @@ $(document).ready(function () {
   if (getCookie("spotifyWidget")) {
     removeOverlay();
   };
+
+  $('.s-wrap > input').on('input', function() {
+    var index = $('.s-wrap > input:checked')[0];
+  });
+
+  var slidesCount = $('.s-wrap > input').length;
+  
+  $('#image-slider').on('touchstart', function(event){
+    const xClick = event.originalEvent.touches[0].pageX;
+    $(this).one('touchmove', function(event){
+        const xMove = event.originalEvent.touches[0].pageX;
+        const sensitivityInPx = 5;
+
+        if( Math.floor(xClick - xMove) > sensitivityInPx ){
+          var index = $('input:checked')[0];
+          slider = parseInt(index['id'].replace('s-', '')) + 1;
+
+          if (slider == (slidesCount + 1)) {
+            slider = slidesCount;
+          }
+          // console.log(index['id']);
+          // console.log(slider);
+
+          $('.s-wrap #' + index['id'] + ':checked ~ .s-content').css('transform', 'translateX(calc(-(100% / '+slidesCount+') * ('+slider+' - 1) ) )');
+          $('.s-wrap #s-' + slider).prop('checked', true);
+        }
+        else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
+          var index = $('input:checked')[0];
+          slider = parseInt(index['id'].replace('s-', '')) - 1;
+
+          if (slider == 0) {
+            slider = 1;
+          }
+          // console.log(index['id']);
+          // console.log(slider);
+          
+          $('.s-wrap #' + index['id'] + ':checked ~ .s-content').css('transform', 'translateX(calc(-(100% / '+slidesCount+') * ('+slider+' - 1) ) )');
+          $('.s-wrap #s-' + slider).prop('checked', true);
+        }
+    });
+
+    $(this).on('touchend', function(){
+        $(this).off('touchmove');
+    });
+  });
+
+
 });
 
 function loadPage(newUrl) {
