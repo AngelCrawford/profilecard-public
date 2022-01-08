@@ -32,11 +32,16 @@
               <a href="{{.url}}" target="_blank" class="tooltip" data-tooltip="{{.text}}">
                 {{ if $.Site.Params.list_type.round_icons }}
                   <span class="round-icons fa-stack">
-                    <i class="fas fa-circle fa-stack-2x {{ .text }}" {{ if (not $.Site.Params.list_type.hover_color) }} style="color:{{.color}}" {{ end }}></i>
+                    <i class="fas fa-circle fa-stack-2x {{ .text }}" 
+                      style='{{ if (not $.Site.Params.list_type.hover_color) }}color: {{ .color }}{{ end }}; 
+                        {{ if .opacity }} opacity: {{ .opacity }};{{ end }}'
+                    ></i>
                     <i class="{{.icon}} fa-stack-1x"></i>
                   </span>
                 {{ else }}
-                  <i class="{{.icon}} fa-lg fa-fw {{ .text }}" {{ if (not $.Site.Params.list_type.hover_color) }} style="color:{{.color}}" {{ end }}></i>
+                  <i class="{{.icon}} fa-lg fa-fw {{ .text }}" 
+                  style='{{ if (not $.Site.Params.list_type.hover_color) }}color: {{ .color }}{{ end }}; 
+                    {{ if .opacity }} opacity: {{ .opacity }};{{ end }}'></i>
                 {{ end }}
               </a>
             </li>
