@@ -1,7 +1,8 @@
 $(document).ready(function () {
   // Back to Top Scroll Button
   $('#mainContent').on('scroll load', onScroll);
-  $('body').on('touchmove', onScroll); // for mobile
+  $('#mainContent').on('touchmove', onScrollTouch); // for mobile
+  topScroll();
 
   // Make links load asynchronously
   $("body").on("click", function(event) {
@@ -72,7 +73,6 @@ $(document).ready(function () {
         $(this).off('touchmove');
     });
   });
-
 });
 
 function loadPage(newUrl) {
@@ -114,19 +114,42 @@ function loadPage(newUrl) {
 
     // Back to Top Scroll Button
     $('#mainContent').on('scroll load', onScroll);
-    $('body').on('touchmove', onScroll); // for mobile
+    $('#mainContent').on('touchmove', onScrollTouch); // for mobile
+    topScroll();
+
   }
   httpRequest.responseType = "document";
   httpRequest.open("GET", newUrl);
   httpRequest.send();
 };
 
-function onScroll(){
+// Show Button
+function onScroll() {
   if ($('#mainContent').scrollTop() >= 300 ) {
     $('#back-to-top-button').addClass('show');
   } else {
     $('#back-to-top-button').removeClass('show');
   }
+};
+// Show Button on Mobile "Touch" scroll
+function onScrollTouch() {
+  console.log('test');
+  if ($(document).scrollTop() >= 300 ) {
+    $('#back-to-top-button').addClass('show');
+  } else {
+    $('#back-to-top-button').removeClass('show');
+  }
+}
+// Scroll to the top of the page
+function topScroll() {
+  $("#back-to-top-button").on('click touchend', function(e) {
+    e.preventDefault();
+    var currentURL = window.location.href;
+    var title = document.title;
+    window.location.href = currentURL + '#back-to-top';
+    window.history.replaceState( {} , title, currentURL );
+    return false;
+  });
 }
 
 // Cookie

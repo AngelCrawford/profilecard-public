@@ -21,11 +21,10 @@
 
     <!-- Content Side -->
     <div class="split-content" id="mainContent">
-      <div class="split-content-vertically-center">
+      <div class="split-content-vertically-center" id="back-to-top">
         {{ if not (eq .RelPermalink "404.html") }}
           {{ partial "intro" . }}
         {{ end }}
-        <h1>{{ .Page.Permalink }}</h1>
 
         {{ block "main" .  }}
           {{ partial "bio" . }}
@@ -34,7 +33,7 @@
         {{ partial "footer" . }}
       </div>
 
-      <a href="{{ .Page.Permalink }}#back-to-top" id="back-to-top-button" class=""></a>
+      <a  id="back-to-top-button" class=""></a>
     </div>
 
   </div>
