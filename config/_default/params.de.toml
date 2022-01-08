@@ -11,7 +11,7 @@ birthdate = "1987-02-05"
   enable = true
   size = "cover"
   position = "center center"
-  count = 6 # wird für das CSS benötigt!
+  count = 7 # wird für das CSS benötigt!
   speed = "1s"
 
   [[visual.image.file]]
@@ -49,6 +49,10 @@ birthdate = "1987-02-05"
   [[visual.image.file]]
     url = "images/slider/background_7.de.png"
     credit = "📅 2021-02-06 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
+
+  [[visual.image.file]]
+    url = "images/slider/background_8.de.jpg"
+    credit = "📅 2021-12-31 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
 
 
 [visual.video]

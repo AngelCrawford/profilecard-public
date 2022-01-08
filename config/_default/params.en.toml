@@ -11,7 +11,7 @@ birthdate = "1987-02-05"
   enable = true
   size = "cover"
   position = "center top"
-  count = 6 # Anzahl der Bilder im Slider
+  count = 7 # Anzahl der Bilder im Slider
   speed = "1s" # Sekunden die der Slider zum Wechsel benötigt
 
   [[visual.image.file]]
@@ -49,6 +49,10 @@ birthdate = "1987-02-05"
   [[visual.image.file]]
     url = "images/slider/background_7.en.png"
     credit = "📅 2021-02-06 <small>|</small> 📷 Me <small>|</small> 💄 Me"
+
+  [[visual.image.file]]
+    url = "images/slider/background_8.en.jpg"
+    credit = "📅 2021-12-31 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
 
 
 [visual.video]
