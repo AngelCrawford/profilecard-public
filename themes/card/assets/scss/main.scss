@@ -37,6 +37,8 @@ $tt-anim-delay      : .2s;
 $slider-number: {{ .Site.Params.visual.image.count | default "3" }};
 $switch-speed: {{ .Site.Params.visual.image.speed | default "1s" }};
 
+$fa-font-path: "fonts/fontawesome";
+
 @import "00-reset";
 @import "01-fonts";
 @import "02-content";
@@ -49,21 +51,3 @@ $switch-speed: {{ .Site.Params.visual.image.speed | default "1s" }};
 @import "fontawesome/solid.scss";
 @import "fontawesome/brands.scss";
 @import "fontawesome/regular.scss";
-
-.user {
-  @extend %fa-icon;
-  @extend .fas;
-
-  &:before {
-    content: fa-content($fa-var-user);
-  }
-}
-
-.twitter {
-  @extend %fa-icon;
-  @extend .fab;
-
-  &:before {
-    content: fa-content($fa-var-twitter);
-  }
-}

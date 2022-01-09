@@ -33,10 +33,10 @@ echo "`date +'%a, %Y-%m-%d %T'`" >> buildDate.txt
 hugo
 
 # Add changes to git.
-git add --all
+git add .
 
 # Commit changes.
-git commit -am "$msg"
+git commit -m "$msg"
 
 # Add a git tag, to show on the main repository that the site is live.
 git tag v$version
