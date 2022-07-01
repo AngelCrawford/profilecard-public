@@ -15,6 +15,13 @@ birthdate = "1987-02-05"
   speed = "1s"
 
   [[visual.image.file]]
+    url = "images/slider/background_6_2000px.de.jpg"
+    url_smallish = "images/slider/background_6_1200px.de.jpg"
+    url_tablet = "images/slider/background_6_800px.de.jpg"
+    url_mobile = "images/slider/background_6_500px.de.jpg"
+    credit = "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Selbstgebautes Kostüm"
+
+  [[visual.image.file]]
     url = "images/slider/background_1_2000px.de.jpg"
     url_smallish = "images/slider/background_1_1200px.de.jpg"
     url_tablet = "images/slider/background_1_800px.de.jpg"
@@ -34,13 +41,6 @@ birthdate = "1987-02-05"
     url_tablet = "images/slider/background_3_800px.de.jpg"
     url_mobile = "images/slider/background_3_500px.de.jpg"
     credit = "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
-
-  [[visual.image.file]]
-    url = "images/slider/background_6_2000px.de.jpg"
-    url_smallish = "images/slider/background_6_1200px.de.jpg"
-    url_tablet = "images/slider/background_6_800px.de.jpg"
-    url_mobile = "images/slider/background_6_500px.de.jpg"
-    credit = "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Selbstgebautes Kostüm"
 
   [[visual.image.file]]
     url = "images/slider/background_4.de.jpg"
@@ -105,6 +105,12 @@ birthdate = "1987-02-05"
       url = "https://www.twitch.tv/angel_crawford"
       icon = "fab fa-twitch"
       color = "#6441a5"
+    [[links.list2.link]]
+      text = "Reddit"
+      url = "https://www.reddit.com/user/Angel_Crawford"
+      icon = "fab fa-reddit"
+      color = "#FF5700"
+      opacity = "0.6"
     [[links.list2.link]]
       text = "Spotify"
       url = "https://open.spotify.com/user/l73ksvrl7vnidevukda1z0kwj"
