@@ -37,7 +37,7 @@ $(document).ready(function () {
   var slidesCount = $('.s-wrap > input').length;
   $('#image-slider').on('touchstart', function(event){
     const xClick = event.originalEvent.touches[0].pageX;
-    $(this).one('touchmove', function(event){
+    $(this).on('touchmove', function(event){
         const xMove = event.originalEvent.touches[0].pageX;
         const sensitivityInPx = 5;
 
