@@ -35,11 +35,12 @@ $(document).ready(function () {
     var index = $('.s-wrap > input:checked')[0];
   });
   var slidesCount = $('.s-wrap > input').length;
+
   $('#image-slider').on('touchstart', function(event){
     const xClick = event.originalEvent.touches[0].pageX;
     $(this).on('touchmove', function(event){
         const xMove = event.originalEvent.touches[0].pageX;
-        const sensitivityInPx = 5;
+        const sensitivityInPx = 20;
 
         if( Math.floor(xClick - xMove) > sensitivityInPx ){
           var index = $('input:checked')[0];
@@ -53,6 +54,7 @@ $(document).ready(function () {
 
           $('.s-wrap #' + index['id'] + ':checked ~ .s-content').css('transform', 'translateX(calc(-(100% / '+slidesCount+') * ('+slider+' - 1) ) )');
           $('.s-wrap #s-' + slider).prop('checked', true);
+          $(this).off('touchmove');
         }
         else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
           var index = $('input:checked')[0];
@@ -66,11 +68,8 @@ $(document).ready(function () {
           
           $('.s-wrap #' + index['id'] + ':checked ~ .s-content').css('transform', 'translateX(calc(-(100% / '+slidesCount+') * ('+slider+' - 1) ) )');
           $('.s-wrap #s-' + slider).prop('checked', true);
+          $(this).off('touchmove');
         }
-    });
-
-    $(this).on('touchend', function(){
-        $(this).off('touchmove');
     });
   });
 });
