@@ -10,8 +10,7 @@ birthdate = "1987-02-05"
 [visual.image]
   enable = true
   size = "cover"
-  position = "center center"
-  count = 7 # wird für das CSS benötigt!
+  count = 6 # wird für das CSS benötigt!
   speed = "1s"
 
   [[visual.image.file]]
@@ -20,6 +19,11 @@ birthdate = "1987-02-05"
     url_tablet = "images/slider/background_2_800px.de.jpg"
     url_mobile = "images/slider/background_2_500px.de.jpg"
     credit = "📅 2013-05-14 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 Ich"
+
+  [[visual.image.file]]
+    url = "images/slider/background_9.de.jpeg"
+    credit = "📅 2022-09-22 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
+    position = "center"
 
   [[visual.image.file]]
     url = "images/slider/background_1_2000px.de.jpg"
@@ -36,10 +40,6 @@ birthdate = "1987-02-05"
     credit = "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
 
   [[visual.image.file]]
-    url = "images/slider/background_4.de.jpg"
-    credit = "📅 2019-09-28 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
-
-  [[visual.image.file]]
     url = "images/slider/background_6_2000px.de.jpg"
     url_smallish = "images/slider/background_6_1200px.de.jpg"
     url_tablet = "images/slider/background_6_800px.de.jpg"
@@ -47,12 +47,8 @@ birthdate = "1987-02-05"
     credit = "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Selbstgebautes Kostüm"
 
   [[visual.image.file]]
-    url = "images/slider/background_7.de.png"
-    credit = "📅 2021-02-06 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
-
-  [[visual.image.file]]
-    url = "images/slider/background_8.de.jpg"
-    credit = "📅 2021-12-31 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
+    url = "images/slider/background_4.de.jpg"
+    credit = "📅 2019-09-28 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
 
 
 [visual.video]

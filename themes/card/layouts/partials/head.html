@@ -47,7 +47,7 @@
 {{ $style := $sass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-{{ $jQuery := resources.Get "js/jquery-3.4.1.js" }}
+{{ $jQuery := resources.Get "js/jquery-3.6.1.js" }}
 {{ $script := $jQuery | resources.Minify | resources.Fingerprint }}
 <script src="{{ $script.Permalink }}"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1" />

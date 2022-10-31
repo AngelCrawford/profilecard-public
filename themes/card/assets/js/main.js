@@ -133,7 +133,7 @@ function onScroll() {
 };
 // Show Button on Mobile "Touch" scroll
 function onScrollTouch() {
-  console.log('test');
+  // console.log('test');
   if ($(document).scrollTop() >= 300 ) {
     $('#back-to-top-button').addClass('show');
   } else {

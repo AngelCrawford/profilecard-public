@@ -10,8 +10,8 @@ birthdate = "1987-02-05"
 [visual.image]
   enable = true
   size = "cover"
-  position = "center top"
-  count = 7 # Anzahl der Bilder im Slider
+  position = "50% 10%"
+  count = 6 # Anzahl der Bilder im Slider
   speed = "1s" # Sekunden die der Slider zum Wechsel benötigt
 
   [[visual.image.file]]
@@ -20,6 +20,11 @@ birthdate = "1987-02-05"
     url_tablet = "images/slider/background_2_800px.en.jpg"
     url_mobile = "images/slider/background_2_500px.en.jpg"
     credit = "📅 2013-05-14 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 Me"
+
+  [[visual.image.file]]
+    url = "images/slider/background_9.en.jpeg"
+    credit = "📅 2022-09-22 <small>|</small> 📷 Me <small>|</small> 💄 Me"
+    position = "center"
 
   [[visual.image.file]]
     url = "images/slider/background_1_2000px.en.jpg"
@@ -36,10 +41,6 @@ birthdate = "1987-02-05"
     credit = "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
 
   [[visual.image.file]]
-    url = "images/slider/background_4.en.jpg"
-    credit = "📅 2019-09-28 <small>|</small> 📷 Me <small>|</small> 💄 Me"
-
-  [[visual.image.file]]
     url = "images/slider/background_6_2000px.en.jpg"
     url_smallish = "images/slider/background_6_1200px.en.jpg"
     url_tablet = "images/slider/background_6_800px.en.jpg"
@@ -47,12 +48,8 @@ birthdate = "1987-02-05"
     credit = "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Costume by me ;)"
 
   [[visual.image.file]]
-    url = "images/slider/background_7.en.png"
-    credit = "📅 2021-02-06 <small>|</small> 📷 Me <small>|</small> 💄 Me"
-
-  [[visual.image.file]]
-    url = "images/slider/background_8.en.jpg"
-    credit = "📅 2021-12-31 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
+    url = "images/slider/background_4.en.jpg"
+    credit = "📅 2019-09-28 <small>|</small> 📷 Me <small>|</small> 💄 Me"
 
 
 [visual.video]
