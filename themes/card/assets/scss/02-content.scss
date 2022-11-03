@@ -8,10 +8,14 @@
 }
 
 ::-moz-selection {
-    background: darken($secondary, 20%);
+  background: darken($secondary, 20%);
+  -webkit-text-fill-color: #f2ebe3;
+  color: #f2ebe3;
 }
 ::selection {
-    background: darken($secondary, 20%);
+  background: darken($secondary, 20%);
+  -webkit-text-fill-color: #f2ebe3;
+  color: #f2ebe3;
 }
 :root {
   font-size: 21px;
