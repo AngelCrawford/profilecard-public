@@ -1,23 +1,4 @@
-
-
-  // Language detection
-  var userLang = window.navigator.userLanguage || window.navigator.language;
-  var lang = userLang.language.slice(0,2);
-  if (userLang == "en") {
-    window.location.href = "/de";
-    event.preventDefault();
-    console.log("if");
-  }
-  else {
-    window.location.href = "/";
-    event.preventDefault();
-    console.log("else");
-  }
-console.log(lang);
-
-
 $(document).ready(function () {
-
 
   // Back to Top Scroll Button
   $('#mainContent').on('scroll load', onScroll);
