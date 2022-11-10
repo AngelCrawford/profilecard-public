@@ -10,7 +10,7 @@
           <h3>{{ $list.heading }}</h3>
           <ul>
             {{ range $list.link }}
-              <li><a href="{{ .url }}" target="_blank" rel="me">
+              <li><a href="{{ .url }}" target="_blank" rel="me" aria-label="{{.text}}">
                 {{ if isset . "icon" }}<i class="{{.icon}} fa-lg fa-fw" {{ if (not $.Site.Params.list_type.hover_color) }} style="color:{{.color}}" {{ end }}></i>{{ end }}{{ .text | safeHTML }}
               </a></li>
             {{ end }}
@@ -29,7 +29,7 @@
           {{ range $list.link }}
 
             <li class="info">
-              <a href="{{.url}}" target="_blank" class="tooltip" data-tooltip="{{.text}}" rel="me">
+              <a href="{{.url}}" target="_blank" class="tooltip" data-tooltip="{{.text}}" rel="me" aria-label="{{.text}}">
                 {{ if $.Site.Params.list_type.round_icons }}
                   <span class="round-icons fa-stack">
                     <i class="fas fa-circle fa-stack-2x {{ .text }}" 

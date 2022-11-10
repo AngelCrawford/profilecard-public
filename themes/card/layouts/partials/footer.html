@@ -5,7 +5,7 @@
       <span class="split-copyright-config">{{ .Site.Copyright | safeHTML }}</span>
     </span>
     {{ $currentPage := . }}
-    <span class="split-languages" role="navigation">
+    <span class="split-languages" role="navigation" aria-label="Language Switcher">
       {{ if .IsTranslated }}
         {{ range .Translations }}
           <a href="{{ .Permalink }}" title='{{ i18n "language_title" }} "{{ .Language.LanguageName }}"'>
@@ -24,7 +24,7 @@
         {{ end }}
       {{ end }}
     </span>
-    <span class="footer-menu" role="navigation">
+    <span class="footer-menu" role="navigation" aria-label="Navigation Footer">
       {{ range .Site.Menus.footer }}
         {{ if eq $currentPage.RelPermalink .URL }}
           <span class="active">{{ .Name }}</span>
