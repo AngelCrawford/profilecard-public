@@ -15,40 +15,40 @@ birthdate = "1987-02-05"
   speed = "1s" # Sekunden die der Slider zum Wechsel benötigt
 
   [[visual.image.file]]
-    url = "images/slider/background_2_2000px.jpg"
-    url_smallish = "images/slider/background_2_1200px.jpg"
-    url_tablet = "images/slider/background_2_800px.jpg"
-    url_mobile = "images/slider/background_2_500px.jpg"
+    url = "images/slider/background_2_2000px.webp"
+    url_smallish = "images/slider/background_2_1200px.webp"
+    url_tablet = "images/slider/background_2_800px.webp"
+    url_mobile = "images/slider/background_2_500px.webp"
     credit = "📅 2013-05-14 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 Me"
 
   [[visual.image.file]]
-    url = "images/slider/background_9.jpeg"
+    url = "images/slider/background_9.webp"
     credit = "📅 2022-09-22 <small>|</small> 📷 Me <small>|</small> 💄 Me"
     position = "center"
 
   [[visual.image.file]]
-    url = "images/slider/background_1_2000px.jpg"
-    url_smallish = "images/slider/background_1_1200px.jpg"
-    url_tablet = "images/slider/background_1_800px.jpg"
-    url_mobile = "images/slider/background_1_500px.jpg"
+    url = "images/slider/background_1_2000px.webp"
+    url_smallish = "images/slider/background_1_1200px.webp"
+    url_tablet = "images/slider/background_1_800px.webp"
+    url_mobile = "images/slider/background_1_500px.webp"
     credit = "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
 
   [[visual.image.file]]
-    url = "images/slider/background_3_2000px.jpg"
-    url_smallish = "images/slider/background_3_1200px.jpg"
-    url_tablet = "images/slider/background_3_800px.jpg"
-    url_mobile = "images/slider/background_3_500px.jpg"
+    url = "images/slider/background_3_2000px.webp"
+    url_smallish = "images/slider/background_3_1200px.webp"
+    url_tablet = "images/slider/background_3_800px.webp"
+    url_mobile = "images/slider/background_3_500px.webp"
     credit = "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
 
   [[visual.image.file]]
-    url = "images/slider/background_6_2000px.jpg"
-    url_smallish = "images/slider/background_6_1200px.jpg"
-    url_tablet = "images/slider/background_6_800px.jpg"
-    url_mobile = "images/slider/background_6_500px.jpg"
+    url = "images/slider/background_6_2000px.webp"
+    url_smallish = "images/slider/background_6_1200px.webp"
+    url_tablet = "images/slider/background_6_800px.webp"
+    url_mobile = "images/slider/background_6_500px.webp"
     credit = "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Costume by me ;)"
 
   [[visual.image.file]]
-    url = "images/slider/background_4.jpg"
+    url = "images/slider/background_4.webp"
     credit = "📅 2019-09-28 <small>|</small> 📷 Me <small>|</small> 💄 Me"
 
 
