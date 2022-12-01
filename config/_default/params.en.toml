@@ -11,8 +11,12 @@ birthdate = "1987-02-05"
   enable = true
   size = "cover"
   position = "50% 10%"
-  count = 6 # Anzahl der Bilder im Slider
+  count = 7 # Anzahl der Bilder im Slider
   speed = "1s" # Sekunden die der Slider zum Wechsel benötigt
+
+  [[visual.image.file]]
+    url = "images/slider/Weihnachten-yellow_eyes.jpg"
+    credit = "📅 2013-12-02 <small>|</small> 📷 <a href='https://www.facebook.com/gracefallen'>Leonard Gracefallen</a> <small>|</small> 💄 <a href='https://www.facebook.com/Mad.Damon'>Michael Gruenberg</a>"
 
   [[visual.image.file]]
     url = "images/slider/background_2_2000px.webp"
