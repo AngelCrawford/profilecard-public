@@ -10,12 +10,17 @@ birthdate = "1987-02-05"
 [visual.image]
   enable = true
   size = "cover"
-  count = 7 # wird für das CSS benötigt!
+  count = 6 # wird für das CSS benötigt!
   speed = "1s"
 
+  # [[visual.image.file]]
+  #   url = "images/slider/Weihnachten-yellow_eyes.jpg"
+  #   credit = "📅 2013-12-02 <small>|</small> 📷 <a href='https://www.facebook.com/gracefallen'>Leonard Gracefallen</a> <small>|</small> 💄 <a href='https://www.facebook.com/Mad.Damon'>Michael Gruenberg</a>"
+
   [[visual.image.file]]
-    url = "images/slider/Weihnachten-yellow_eyes.jpg"
-    credit = "📅 2013-12-02 <small>|</small> 📷 <a href='https://www.facebook.com/gracefallen'>Leonard Gracefallen</a> <small>|</small> 💄 <a href='https://www.facebook.com/Mad.Damon'>Michael Gruenberg</a>"
+    url = "images/slider/background_9.webp"
+    credit = "📅 2022-09-22 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
+    position = "center"
 
   [[visual.image.file]]
     url = "images/slider/background_2_2000px.webp"
@@ -23,11 +28,6 @@ birthdate = "1987-02-05"
     url_tablet = "images/slider/background_2_800px.webp"
     url_mobile = "images/slider/background_2_500px.webp"
     credit = "📅 2013-05-14 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 Ich"
-
-  [[visual.image.file]]
-    url = "images/slider/background_9.webp"
-    credit = "📅 2022-09-22 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
-    position = "center"
 
   [[visual.image.file]]
     url = "images/slider/background_1_2000px.webp"
