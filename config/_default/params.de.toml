@@ -118,6 +118,19 @@ birthdate = "1987-02-05"
       color = "#1DB954"
       opacity = "0.8"
 
+    [[links.list2.link]]
+      text = "Steam"
+      url = "https://steamcommunity.com/id/angel_crawford/"
+      icon = "fab fa-steam"
+      color = "#c7d5e0"
+      opacity = "0.6"
+    [[links.list2.link]]
+      text = "EA ID (Origin)"
+      url = "https://www.ea.com/games/the-sims/the-sims-4/pc/gallery/browse?category=all&searchtype=ea_origin_id&searchquery=Angel_Noidat&maxis=false"
+      icon = "fas fa-gamepad"
+      color = "#a6e329"
+      opacity = "0.5"
+
   [links.list3]
     heading = "Entwicklung"
     [[links.list3.link]]
