@@ -11,5 +11,5 @@ tagline = "Developer. <br />Sun lover. Goth."
 * Cosplayer | <small>a relatively new love</small>
 * Addicted to music, series and movies
   * [Genres](genres "Genres list"): Action, Anime, Horror, Sci-Fi, Fantasy, Thriller ...
-  * Currently looking through Korean series, subtitles ftw
+  * At the moment it's trash movies. Bad CGI and/or bad scripts? Even hotter!
   * {{< spotifyPlaylist >}}

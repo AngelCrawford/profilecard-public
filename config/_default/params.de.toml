@@ -10,12 +10,22 @@ birthdate = "1987-02-05"
 [visual.image]
   enable = true
   size = "cover"
-  count = 6 # wird für das CSS benötigt!
+  position = "50% 10%"
+  count = 7 # wird für das CSS benötigt!
   speed = "1s"
 
   # [[visual.image.file]]
   #   url = "images/slider/Weihnachten-yellow_eyes.jpg"
   #   credit = "📅 2013-12-02 <small>|</small> 📷 <a href='https://www.facebook.com/gracefallen'>Leonard Gracefallen</a> <small>|</small> 💄 <a href='https://www.facebook.com/Mad.Damon'>Michael Gruenberg</a>"
+
+
+  [[visual.image.file]]
+    url = "images/slider/background_5.webp"
+    url_smallish = "images/slider/background_5_1500px.webp"
+    url_tablet = "images/slider/background_5_700px.webp"
+    url_mobile = "images/slider/background_5_500px.webp"
+    credit = "📅 2021-10-02 <small>|</small> 📷 Ich <small>|</small> 💄 Ich"
+    position = "center"
 
   [[visual.image.file]]
     url = "images/slider/background_9.webp"
@@ -89,22 +99,17 @@ birthdate = "1987-02-05"
       icon = "fab fa-facebook"
       color = "#4267B2"
     [[links.list2.link]]
-      text = "Twitter"
-      url = "https://twitter.com/crawford_ftw"
-      icon = "fab fa-twitter"
-      color = "#1da1f2"
-      opacity = "0.8"
-    [[links.list2.link]]
       text = "Mastodon"
       url = "https://norden.social/@angel_crawford"
       icon = "fab fa-mastodon"
       color = "#5e51e6"
       opacity = "0.8"
     [[links.list2.link]]
-      text = "Twitch"
-      url = "https://www.twitch.tv/angel_crawford"
-      icon = "fab fa-twitch"
-      color = "#6441a5"
+      text = "Spotify"
+      url = "https://open.spotify.com/user/l73ksvrl7vnidevukda1z0kwj"
+      icon = "fab fa-spotify"
+      color = "#1DB954"
+      opacity = "0.8"
     [[links.list2.link]]
       text = "Reddit"
       url = "https://www.reddit.com/user/Angel_Crawford"
@@ -112,11 +117,10 @@ birthdate = "1987-02-05"
       color = "#FF5700"
       opacity = "0.6"
     [[links.list2.link]]
-      text = "Spotify"
-      url = "https://open.spotify.com/user/l73ksvrl7vnidevukda1z0kwj"
-      icon = "fab fa-spotify"
-      color = "#1DB954"
-      opacity = "0.8"
+      text = "Twitch"
+      url = "https://www.twitch.tv/angel_crawford"
+      icon = "fab fa-twitch"
+      color = "#6441a5"
 
     [[links.list2.link]]
       text = "Steam"

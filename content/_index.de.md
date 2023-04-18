@@ -11,5 +11,5 @@ tagline = "Entwickler. Sonnen-<br>liebhaber. Goth."
 * Cosplayer | <small>eine relativ neue Liebe</small>
 * Musik-, Serien- und Filmsüchtig
   * [Genres](genres "Genres Auflistung"): Action, Anime, Horror, Sci-Fi, Fantasy, Thriller ...
-  * Momentan sind Koreanische Serien dran, Untertitel ftw.
+  * Aktuell sind es Trash-Filme. Schlechtes CGI, schlechte Drehbücher? Noch Besser!
   * {{< spotifyPlaylist >}}
