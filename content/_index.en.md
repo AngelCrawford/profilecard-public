@@ -13,3 +13,4 @@ tagline = "Developer. <br />Sun lover. Goth."
   * [Genres](genres "Genres list"): Action, Anime, Horror, Sci-Fi, Fantasy, Thriller ...
   * At the moment it's trash movies. Bad CGI and/or bad scripts? Even hotter!
   * {{< spotifyPlaylist >}}
+* Cake, 🐄 or gold-colored things | <small>You can definitely bribe me with that</small>

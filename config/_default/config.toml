@@ -1,7 +1,7 @@
 # Site settings
 baseURL = "https://angel-crawford.de/"
 theme = "card"
-disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
+disableKinds = ["section", "taxonomy", "RSS"]
 copyright = "Angel Crawford"
 enableRobotsTXT = true
 author = "Angel Crawford"
@@ -18,11 +18,11 @@ twitterHandle = "crawford_ftw" #Twitter name, to bind shared cards to your profi
     [markup.goldmark.renderer]
       unsafe = true
 
-[languages.en.breakpoints]
+[languages.en.params.breakpoints]
   bp_smallish = "1200px"
   bp_tablet = "800px"
   bp_mobile = "500px"
-[languages.de.breakpoints]
+[languages.de.params.breakpoints]
   bp_smallish = "1200px"
   bp_tablet = "800px"
   bp_mobile = "500px"
