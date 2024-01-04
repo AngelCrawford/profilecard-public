@@ -10,7 +10,7 @@
         {{ range .Translations }}
           <a href="{{ .Permalink }}" title='{{ i18n "language_title" }} "{{ .Language.LanguageName }}"'>
             {{ if not (eq .Language $.Language) }}
-              <img src="{{ .Site.Params.flag_file }}" alt="{{ .Language.LanguageName }} Image" />
+              <img src="{{ .Site.Params.flag_file }}" alt="{{ .Language.LanguageName }} Image" height="17" width="13" />
             {{ end }}
           </a>
         {{ end }}
