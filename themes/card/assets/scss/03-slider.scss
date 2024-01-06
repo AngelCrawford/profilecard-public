@@ -62,29 +62,26 @@ $slider-width: 100% / $slider-number;
     transform: translateY(-50%);
     cursor: pointer;
 
-    &::before {
-      font-family: "Font Awesome 6 Free";
-      font-weight: 600;
-      font-size: 2.7em;
-      display: block;
-      height: 100%;
-      -webkit-text-fill-color: $color-text;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: $secondary;
-    }
-
-    &::before {
-      margin-bottom: -12px;
+    svg {
+      height: 4em;
+      path {
+        stroke: $secondary;
+        stroke-width: 0.5px;
+      }
     }
 
     &.left {
       left: 5px;
-      &::before { content: "\f104"; }
+      svg {
+        margin-left: -25px;
+      }
     }
 
     &.right {
       right: 5px;
-      &::before { content: "\f105"; }
+      svg {
+        margin-right: -25px;
+      }
     }
 
   }

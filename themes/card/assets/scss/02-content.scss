@@ -108,17 +108,17 @@ body.page-template-page-fullsingle-split {
       white-space: nowrap;
       line-height: 20px;
       overflow: hidden;
-      &:before {
-        content: "\f05a";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 600;
-        padding-right: .6em;
-        font-size: 0.8571rem;
+      svg {
+        height: 29px;
+        margin-left: -5px;
+        margin-top: -5px;
+        position: absolute;
       }
       span.s-text-credit {
         color: $color-text;
         @include font-light;
         line-height: 0px;
+        padding-left: 30px;
         a {
           color: $color-text;
           border-bottom: 1px dotted $color-text;
@@ -374,15 +374,13 @@ body.page-template-page-fullsingle-split {
     padding-left: .7em;
     margin-left: .1em;
     &::before {
-      content: "\f45c";
-      font-family: "Font Awesome 6 Free";
+      content: "■";
       font-weight: 600;
       position: absolute;
-      font-size: 26%;
+      font-size: 0.6em;
       color: $primary;
-      top: 0;
-      bottom: 0;
-      left: 0;
+      top: -2px;
+      left: -2px;
     }
   }
 
@@ -756,15 +754,6 @@ video.video {
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
-  &::after {
-    content: "\f077";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.2em;
-    line-height: 30px;
-    color: #fff;
-  }
   &:hover {
     cursor: pointer;
     background-color: $color-background;
