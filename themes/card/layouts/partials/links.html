@@ -11,7 +11,7 @@
           <ul>
             {{ range $list.link }}
               <li><a href="{{ .url }}" target="_blank" rel="me" aria-label="{{.text}}">
-                {{ if isset . "icon" }} {{.icon}} {{ if (not $.Site.Params.list_type.hover_color) }} style="color:{{.color}}" {{ end }}>{{ end }}{{ .text | safeHTML }}
+                {{ if isset . "icon" }}<i class="{{.icon}} fa-lg fa-fw" {{ if (not $.Site.Params.list_type.hover_color) }} style="color:{{.color}}" {{ end }}></i>{{ end }}{{ .text | safeHTML }}
               </a></li>
             {{ end }}
           </ul>
@@ -40,8 +40,7 @@
                   </span>
                 {{ else }}
                 
-                  <svg "{{.icon}}"             style='{{ if (not $.Site.Params.list_type.hover_color) }}color: {{ .color }}{{ end }}; 
-                    {{ if .opacity }} opacity: {{ .opacity }};{{ end }}'></i>
+                  <i class="{{.icon}} ri-xl {{ .text }}" style='{{ if (not $.Site.Params.list_type.hover_color) }}color: {{ .color }}{{ end }}; {{ if .opacity }} opacity: {{ .opacity }};{{ end }}'></i>
                 {{ end }}
               </a>
             </li>

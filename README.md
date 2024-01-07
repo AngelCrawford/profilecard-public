@@ -14,7 +14,7 @@ Built with Hugo CMS and hosted on Github Pages.
 * [Hugo](https://gohugo.io) => Extented Version
 * Deploy file => [View Tutorial here](https://gist.github.com/AngelCrawford/06dbd50beee9f96064b8dc1d71dfa120)
 * Original [Split](https://github.com/AngelCrawford/profilecard/tree/master/themes/hugo-split-theme) Theme (Buyed the Pro Version)
-* [FontAwesome](https://fontawesome.com)
+* [Remix Icon](https://remixicon.com)
 
 ---
 

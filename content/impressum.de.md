@@ -32,7 +32,7 @@ Gebaut mit Hugo CMS und auf Github Pages Veröffentlicht. Du kannst den Code daz
 ### Allgemein
 * [Hugo](https://gohugo.io)
 * [Split Theme](https://onepagelove.com/split)
-* [FontAwesome](https://fontawesome.com)
+* [Remix Icon](https://remixicon.com)
 * [Github Pages](https://pages.github.com/)
 
 ### CSS und JS/jQuery

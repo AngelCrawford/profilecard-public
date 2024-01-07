@@ -23,24 +23,10 @@
 
 .split-bio p a[href^="http://"]:after, .split-bio li a[href^="http://"]:after,
 .split-bio p a[href^="https://"]:after, .split-bio li a[href^="https://"]:after {
-  content: "\f35d";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
-  font-size: 60%;
+  content: "\ecaf";
+  font-family: "remixicon";
+  font-size: 80%;
   color: rgba($color-text, .5);
-  padding-left: 0.3em;
-  margin-top: -0.3em;
-  height:  2em;
-  vertical-align: top;
-  display: inline-block;
-}
-
-a[href$=".pdf"]:after {
-  content: "\f1c1";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 400;
-  font-size: 70%;
-  color: $secondary;
   padding-left: 0.3em;
   margin-top: -0.3em;
   height:  2em;
@@ -277,9 +263,6 @@ body.page-template-page-fullsingle-split {
     font-style: italic;
     line-height: inherit;
   }
-  i {
-    font-size: 70%;
-  }
 
   strong,
   b {
@@ -391,8 +374,10 @@ body.page-template-page-fullsingle-split {
     color: rgba($color-text, .5);
     list-style: none;
     &::before {
-      top: 1.8em;
+      top: 0.5em;
       color: darken($primary, 15%);
+      font-size: .5em;
+      left: 0px;
     }
     a {
       color: $secondary;
@@ -430,13 +415,6 @@ body.page-template-page-fullsingle-split {
     margin-top: 1em;
     display: inline-block;
     opacity: .7;
-    &:before {
-      content: "\f060";
-      font-family: "Font Awesome 6 Free";
-      font-weight: 600;
-      font-size: 70%;
-      padding-right: .5em;
-    }
     &:hover {
       opacity: 1;
       background-color: rgba($secondary, .1);

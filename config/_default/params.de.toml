@@ -96,58 +96,58 @@ birthdate = "1987-02-05"
     #   url = "#"
     #   icon = "fas fa-link"
 
-  [links.list2]
-    heading = "Social Media"
+    [links.list2]
+    heading = "Social"
     [[links.list2.link]]
       text = "Instagram"
       url = "https://www.instagram.com/angel_crawford_ftw"
-      icon = "fab fa-instagram"
+      icon = "ri-instagram-line"
       color = "#c13584"
     [[links.list2.link]]
       text = "Threads (Instagram)"
       url = "https://www.threads.net/@angel_crawford_ftw"
-      icon = "fa-brands fa-threads"
+      icon = "ri-threads-line"
       color = "#ffffff"
       opacity = "0.6"
     [[links.list2.link]]
       text = "Facebook"
       url = "https://www.facebook.com/angel.crawford.ftw"
-      icon = "fab fa-facebook"
+      icon = "ri-facebook-circle-line"
       color = "#4267B2"
     [[links.list2.link]]
       text = "Spotify"
       url = "https://open.spotify.com/user/l73ksvrl7vnidevukda1z0kwj"
-      icon = "fab fa-spotify"
+      icon = "ri-spotify-line"
       color = "#1DB954"
       opacity = "0.8"
     [[links.list2.link]]
       text = "Reddit"
       url = "https://www.reddit.com/user/Angel_Crawford"
-      icon = "fab fa-reddit"
+      icon = "ri-reddit-line"
       color = "#FF5700"
       opacity = "0.6"
     [[links.list2.link]]
       text = "EA ID (Origin)"
       url = "https://www.ea.com/games/the-sims/the-sims-4/pc/gallery/browse?category=all&searchtype=ea_origin_id&searchquery=Angel_Noidat&maxis=false"
-      icon = "fas fa-gamepad"
+      icon = "ri-gamepad-line"
       color = "#a6e329"
       opacity = "0.5"
 
   [links.list3]
-    heading = "Entwicklung"
+    heading = "Develop"
     [[links.list3.link]]
       text = "Github"
       url = "https://github.com/AngelCrawford"
-      icon = "fab fa-github"
+      icon = "ri-github-line"
       color = "#555"
     [[links.list3.link]]
       text = "CodePen"
       url = "https://codepen.io/angel_crawford"
-      icon = "fab fa-codepen"
+      icon = "ri-codepen-fill"
       color = "#888"
     [[links.list3.link]]
       text = "Stack Overflow"
       url = "https://stackoverflow.com/u/3206211"
-      icon = "fab fa-stack-overflow"
+      icon = "ri-stack-overflow-line"
       color= "#f48024"
       opacity = "0.8"

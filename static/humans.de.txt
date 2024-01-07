@@ -14,7 +14,7 @@
 /* DANKE */
     * Hugo @ https://gohugo.io
     * Split Theme @ https://onepagelove.com/split
-    * FontAwesome @ https://fontawesome.com
+    * Remix Icon @ https://remixicon.com
     * Github Pages @ https://pages.github.com
 
   /* CSS, JS, jQuery */

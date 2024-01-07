@@ -31,7 +31,7 @@ Built with Hugo CMS and hosted on Github Pages. You can find the Code on [Github
 ### Generally
 * [Hugo](https://gohugo.io)
 * [Split Theme](https://onepagelove.com/split)
-* [FontAwesome](https://fontawesome.com)
+* [Remix Icon](https://remixicon.com)
 * [Github Pages](https://pages.github.com/)
 
 ### CSS and JS/jQuery

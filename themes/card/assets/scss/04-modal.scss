@@ -24,7 +24,14 @@
       i {
         font-style: normal;
         color: rgba($secondary, .5);
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        margin: -3px 10px 0 0;
+        float: left;
+
+        &::after {
+          content: "";
+          clear: both;
+        }
       }
     }
     .modal-footer {
@@ -40,16 +47,16 @@
         display: inline-block;
         opacity: .7;
         &:before {
-          font-family: "Font Awesome 6 Free";
+          font-family: "remixicon";
           font-weight: 600;
-          font-size: 70%;
+          font-size: 90%;
           padding-right: .5em;
         }
         &#accept:before {
-          content: "\f00c";
+          content: "\eb7a";
         }
         &#abort:before {
-          content: "\f00d";
+          content: "\eb98";
         }
         &:hover {
           opacity: 1;
@@ -103,6 +110,10 @@
       width: 80%;
       .modal-header {
         padding: 1.5em 1.5em .5em 1.5em;
+        i {
+          font-size: 1rem;
+          margin: 0 10px 0 0;
+        }
       }
       .modal-body {
         padding: 1.5em;
@@ -121,6 +132,10 @@
       width: 90%;
       .modal-header {
         padding: .8em .8em .02em .8em;
+        i {
+          font-size: 1rem;
+          margin: 0 10px 0 0;
+        }
       }
       .modal-body {
         padding: .8em;
