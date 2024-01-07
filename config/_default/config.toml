@@ -18,6 +18,11 @@ twitterHandle = "crawford_ftw" #Twitter name, to bind shared cards to your profi
     [markup.goldmark.renderer]
       unsafe = true
 
+[caches]
+    [caches.images]
+        dir    = ':cacheDir/:project'
+        maxAge = "800h" # or some high value
+
 [languages.en.params.breakpoints]
   bp_smallish = "1200px"
   bp_tablet = "800px"
