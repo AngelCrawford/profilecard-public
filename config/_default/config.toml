@@ -19,9 +19,9 @@ twitterHandle = "crawford_ftw" #Twitter name, to bind shared cards to your profi
       unsafe = true
 
 [caches]
-    [caches.images]
-        dir    = ':cacheDir/:project'
-        maxAge = "800h" # or some high value
+  [caches.images]
+    dir    = ':resourceDir/:project'
+    maxAge = "800h"
 
 [languages.en.params.breakpoints]
   bp_smallish = "1200px"
