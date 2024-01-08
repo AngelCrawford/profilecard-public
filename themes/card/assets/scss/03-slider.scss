@@ -22,16 +22,13 @@ $slider-width: 100% / $slider-number;
     font-size: 0;
     list-style: none;
     transition: transform $switch-speed;
+    // animation: slider-animation 50s infinite;
 
     .s-item {
       display: inline-block;
       width: $slider-width;
       height: 100%;
       background-repeat: no-repeat;
-
-      @media (min-width: $bp-smallish + 1px ) {
-        // background-position: center 10% !important;
-      }
     }
   }
   .s-control {
@@ -41,6 +38,11 @@ $slider-width: 100% / $slider-number;
     text-align: center;
     transform: translateX(-50%);
     transition-timing-function: ease-out;
+
+    // @media (min-width: $bp-smallish + 1px ) { width: 100%; }
+    @media (max-width: $bp-smallish) { width: 100%; }
+    @media (max-width: $bp-tablet) { width: 100%; }
+    @media (max-width: $bp-mobile) { width: 100%; }
 
     > label[class^="s-c-"] {
       display: inline-block;
@@ -103,21 +105,20 @@ $slider-width: 100% / $slider-number;
   }
 }
 
-@keyframes slider-animation {
-  $i: 0;
-  $j: 0;
-  $times: ($slider-number - 1) * 2;
-  @while $i < 100 {
-    #{$i}%,
-    #{$i + 7}% {
-      @if $i < 50 {
-        transform: translateX(-$slider-width * $j);
-          } @else {
-            transform: translateX(-$slider-width * ($times - $j));
-              }
-    }
-
-    $i: $i + 100 / $times;
-    $j: $j + 1;
-  }
-}
+// @keyframes slider-animation {
+//   $i: 0;
+//   $j: 0;
+//   $times: $slider-number;
+//   @while $i < 100 {
+//     #{$i}%,
+//     #{$i + 7}% {
+//       @if $i < 50 {
+//         transform: translateX(-$slider-width * $j);
+//       } @else {
+//         transform: translateX(-$slider-width * ($times - $j));
+//       }
+//     }
+//     $i: $i + 100 / $times;
+//     $j: $j + 1;
+//   }
+// }

@@ -47,7 +47,7 @@ params:
         size     : "cover"
         position : "50% 10%"
         count    : 9 # wird für das CSS benötigt!
-        speed    : "1s"
+        clickSpeed    : "1s"
         file:
           - url          : "images/slider/background_5.webp"
             url_smallish : "images/slider/background_5_1500px.webp"
