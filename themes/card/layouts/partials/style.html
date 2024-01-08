@@ -28,20 +28,4 @@
     {{ end }}
 
   {{ end }}
-
-  {{ if .Site.Params.list_type.hover_color }}
-
-    {{ range $key, $value := .Site.Params.links }}
-      {{ range $key, $list := $value }}
-        {{ range $list.link }}
-
-
-          i.{{ .text }}:hover, a.tooltip:hover i.{{ .text }} {color:{{ .color }};}
-
-        {{ end }}
-      {{ end }}
-    {{ end }}
-
-  {{ end }}
-
 </style>

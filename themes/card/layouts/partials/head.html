@@ -35,11 +35,11 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#191919">
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="images/fav_blue/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/fav_blue/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/fav_blue/favicon-16x16.png">
-<link rel="manifest" href="images/fav_blue/site.webmanifest">
-<link rel="mask-icon" href="images/fav_blue/safari-pinned-tab.svg" color="#b78846">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/site.webmanifest">
+<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#b78846">
 <meta name="msapplication-TileColor" content="#b78846">
 
 <!-- Styles -->
@@ -47,12 +47,12 @@
 {{ $style := $sass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
+<!-- Scripts -->
 {{ $jQuery := resources.Get "js/jquery-3.7.1.js" }}
 {{ $script := $jQuery | resources.Minify | resources.Fingerprint }}
 <script src="{{ $script.Permalink }}"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<!-- Scripts -->
 {{ $js := resources.Get "js/main.js" }}
 {{ $script := $js | resources.Minify | resources.Fingerprint }}
 <script src="{{ $script.Permalink }}"></script>
