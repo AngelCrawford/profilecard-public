@@ -12,8 +12,11 @@
       {{ end }}
     {{ end }}
     <ul class="s-content">
-      {{ range $index, $value := .Site.Params.visual.image.file }}
-        <li class="s-item s-item-{{ add $index 1 }}"></li>
+      
+      {{ range $index, $value := resources.Match "images/slider/*.webp" }}
+        <li class="s-item s-item-{{ add $index 1 }}">
+          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="">
+        </li>
       {{ end }}
     </ul>
 
