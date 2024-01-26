@@ -9,15 +9,7 @@
 
   <div class="fs-split" id="back-to-top">
 
-    {{ if .Site.Params.visual.image.enable }}
-
-      {{ partial "image" . }}
-
-    {{ else if .Site.Params.visual.video.enable }}
-
-      {{ partial "video" . }}
-
-    {{ end }}
+    {{ partial "slider" . }}
 
     <!-- Content Side -->
     <div class="split-content" id="mainContent">

@@ -27,6 +27,18 @@ caches:
     dir: :resourceDir/_gen
     maxAge: "800h"
 
+resources:
+  - src: "images/slider/01.webp"
+    params:
+      weight   : 20
+      credit   : "📅 2021-10-02 <small>|</small> 📷 Me <small>|</small> 💄 Me"
+      position : "center"
+  - src: "images/slider/background_6.webp"
+    params:
+      weight   : 10
+      credit   : "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Costume by me ;)"
+      position : "center"
+
 params:
   breakpoints:
     bp_smallish: "1200px"
@@ -37,22 +49,13 @@ params:
   shareImage      : "images/social.jpg"
   favicon         : "favicon.ico"
   visual:
-    video:
-    enable : false
-    mute   : true
-    file   : "videos/background.mp4"
-    #youtubeId : "dk9uNWPP7EA"
     image:
-        enable   : true
         size     : "cover"
         position : "50% 10%"
         count    : 9 # wird für das CSS benötigt!
         clickSpeed    : "1s"
         file:
           - url          : "images/slider/background_5.webp"
-            url_smallish : "images/slider/background_5_1500px.webp"
-            url_tablet   : "images/slider/background_5_700px.webp"
-            url_mobile   : "images/slider/background_5_500px.webp"
             credit       : "📅 2021-10-02 <small>|</small> 📷 Me <small>|</small> 💄 Me"
             position     : "center"
           - url          : "images/slider/background_9.webp"
@@ -61,25 +64,13 @@ params:
           - url          : "images/slider/background10.webp"
             credit       : "📅 2023-05-28 <small>|</small> 📷 Me <small>|</small> 💄 Me"
             position     : "top center"
-          - url          : "images/slider/background_2_2000px.webp"
-            url_smallish : "images/slider/background_2_1200px.webp"
-            url_tablet   : "images/slider/background_2_800px.webp"
-            url_mobile   : "images/slider/background_2_500px.webp"
+          - url          : "images/slider/background_2.webp"
             credit       : "📅 2013-05-14 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 Me"
-          - url          : "images/slider/background_1_2000px.webp"
-            url_smallish : "images/slider/background_1_1200px.webp"
-            url_tablet   : "images/slider/background_1_800px.webp"
-            url_mobile   : "images/slider/background_1_500px.webp"
+          - url          : "images/slider/background_1.webp"
             credit       : "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
-          - url          : "images/slider/background_3_2000px.webp"
-            url_smallish : "images/slider/background_3_1200px.webp"
-            url_tablet   : "images/slider/background_3_800px.webp"
-            url_mobile   : "images/slider/background_3_500px.webp"
+          - url          : "images/slider/background_3.webp"
             credit       : "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
-          - url          : "images/slider/background_6_2000px.webp"
-            url_smallish : "images/slider/background_6_1200px.webp"
-            url_tablet   : "images/slider/background_6_800px.webp"
-            url_mobile   : "images/slider/background_6_500px.webp"
+          - url          : "images/slider/background_6.webp"
             credit       : "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Costume by me ;)"
           - url          : "images/slider/background_4.webp"
             credit       : "📅 2019-09-28 <small>|</small> 📷 Me <small>|</small> 💄 Me"
