@@ -13,11 +13,12 @@
     {{ end }}
     <ul class="s-content">
 
-      range $image := sort (.Page.Resources.ByType "image") ".Params.year" "desc"
       
-      {{ range $index, $value := sort (resources.Match "images/slider/*.webp") ".Params.weight" "asc" }}
-        <li class="s-item s-item-{{ $index }}">{{ $value.Params.weight }}
-          <img src="{{ $value.RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" style="
+      {{ range sort (resources.ByType "image") "weight" }} 
+      
+      
+        <li class="s-item s-item-{{ .RelPermalink }}">
+          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" type="image/webp" style="
             background-size: {{ if .Params.visual.image.size }}{{ .Params.visual.image.size }}{{ else }}cover{{ end }};
             background-position: {{ if .Params.visual.image.position }}{{ .Params.visual.image.position }}{{ else }}center center{{ end }};
           ">

@@ -28,12 +28,14 @@ caches:
     maxAge: "800h"
 
 resources:
-  - src: "images/slider/01.webp"
+  - src: "assets/slider-1.webp"
+    name: "test 10"
+    weight   : 20
     params:
-      weight   : 20
       credit   : "📅 2021-10-02 <small>|</small> 📷 Me <small>|</small> 💄 Me"
       position : "center"
-  - src: "images/slider/background_6.webp"
+  - src: "slider-8.webp"
+    name: "test 30"
     params:
       weight   : 10
       credit   : "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Costume by me ;)"
