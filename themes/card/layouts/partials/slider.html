@@ -25,7 +25,7 @@
             <img src="{{ $smallImg.RelPermalink }}" 
               srcset="{{ $smallImg.RelPermalink }} 500w, {{ $mediumImg.RelPermalink }} 700w, {{ $largeImg.RelPermalink }} 900w" 
               sizes="(max-width:800px) 50vw, (min-width: 801px) 50vw, 50vw" 
-              alt="" 
+              alt="Slider Images" 
               {{ if not (eq $index 1) }}loading="lazy"{{ end }} 
               type="image/webp" 
               {{if $value.position}} style="object-position: {{ $value.position }};"{{ end }}
