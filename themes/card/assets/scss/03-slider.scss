@@ -28,7 +28,14 @@ $slider-width: 100% / $slider-number;
       display: inline-block;
       width: $slider-width;
       height: 100%;
-      background-repeat: no-repeat;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        display: inline;
+      }
     }
   }
   .s-control {
