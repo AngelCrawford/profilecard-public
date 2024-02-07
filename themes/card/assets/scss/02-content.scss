@@ -171,6 +171,8 @@ body.page-template-page-fullsingle-split {
   .tagline {
     line-height: 1.25em;
     color: $color-tagline;
+    font-weight: 900;
+    letter-spacing: 1px;
     background: -moz-linear-gradient(left, $primary 0%, $accent 100%);
     background: -webkit-linear-gradient(left, $primary 0%, $accent 100%);
     background: linear-gradient(135deg, $primary, $accent);

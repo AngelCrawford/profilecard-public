@@ -1,4 +1,4 @@
-![Screenshot](images/screenshot.jpg)
+![Screenshot](images/social.jpg)
 
 ![](https://img.shields.io/badge/Platform-Windows-blue) ![](https://img.shields.io/badge/Editor-Atom-green) ![](https://img.shields.io/badge/Editor-Visual_Studio_Code-green)
 

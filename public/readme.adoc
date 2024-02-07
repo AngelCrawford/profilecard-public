@@ -1,4 +1,4 @@
-image:images/screenshot.jpg[Screenshot]
+image:images/social.jpg[Screenshot]
 
 image:https://img.shields.io/badge/Platform-Windows-blue[] image:https://img.shields.io/badge/Editor-Atom-green[]
 
