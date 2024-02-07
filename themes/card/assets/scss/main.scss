@@ -34,8 +34,8 @@ $tt-anim-duration   : 0s;
 $tt-anim-delay      : .2s;
 
 // Slider
-$slider-number: {{ .Site.Params.visual.image.count | default "3" }};
-$switch-speed : {{ .Site.Params.visual.image.clickSpeed | default "1s" }};
+$slider-number: {{ .Site.Params.slider.count | default "3" }};
+$switch-speed : {{ .Site.Params.slider.clickSpeed | default "1s" }};
 
 
 @import "00-reset";

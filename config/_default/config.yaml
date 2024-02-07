@@ -28,6 +28,53 @@ caches:
     maxAge: "800h"
 
 params:
+  slider:
+    count        : 9 # wird für das CSS benötigt!
+    clickSpeed   : "1s"
+    images:
+      - name     : "slider-1.webp"
+        path     : "assets/images/slider-1.webp"
+        credit   : "📅 2021-10-02 <small>|</small> 📷 Me <small>|</small> 💄 Me"
+        weight   : 1
+        position : "center 20%"
+      - name     : "slider-2.webp"
+        path     : "assets/images/slider-2.webp"
+        credit   : "📅 2022-09-22 <small>|</small> 📷 Me <small>|</small> 💄 Me"
+        weight   : 2
+      - name     : "slider-3.webp"
+        path     : "assets/images/slider-3.webp"
+        credit   : "📅 2023-05-28 <small>|</small> 📷 Me <small>|</small> 💄 Me"
+        weight   : 3
+        position : "center 20%"
+      - name     : "slider-4.webp"
+        path     : "assets/images/slider-4.webp"
+        credit   : "📅 2013-05-14 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 Me"
+        position : "center 10%"
+        weight   : 4
+      - name     : "slider-5.webp"
+        path     : "assets/images/slider-5.webp"
+        credit   : "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"    
+        position : "center 10%"
+        weight   : 5
+      - name     : "slider-6.webp"
+        path     : "assets/images/slider-6.webp"
+        credit   : "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
+        position : "center 15%"
+        weight   : 6
+      - name     : "slider-7.webp"
+        path     : "assets/images/slider-7.webp"
+        credit   : "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Costume by me ;)"
+        position : "center 20%"
+        weight   : 7
+      - name     : "slider-8.webp"
+        path     : "assets/images/slider-8.webp"
+        credit   : "📅 2019-09-28 <small>|</small> 📷 Me <small>|</small> 💄 Me"
+        weight   : 8
+      - name     : "slider-9.webp"
+        path     : "assets/images/slider-9.webp"
+        credit   : "📅 2023-08-12 <small>|</small> 📷 <a href='https://www.instagram.com/adjastonascursol'>Adjaston Ascursol</a> <small>|</small> 💄 Me"
+        position : "center top"
+        weight   : 9
   breakpoints:
     bp_smallish: "1200px"
     bp_tablet  : "800px"
@@ -36,56 +83,6 @@ params:
   spotifyPlaylist : "https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd"
   shareImage      : "images/social.jpg"
   favicon         : "favicon.ico"
-  visual:
-    video:
-    enable : false
-    mute   : true
-    file   : "videos/background.mp4"
-    #youtubeId : "dk9uNWPP7EA"
-    image:
-        enable   : true
-        size     : "cover"
-        position : "50% 10%"
-        count    : 9 # wird für das CSS benötigt!
-        clickSpeed    : "1s"
-        file:
-          - url          : "images/slider/background_5.webp"
-            url_smallish : "images/slider/background_5_1500px.webp"
-            url_tablet   : "images/slider/background_5_700px.webp"
-            url_mobile   : "images/slider/background_5_500px.webp"
-            credit       : "📅 2021-10-02 <small>|</small> 📷 Me <small>|</small> 💄 Me"
-            position     : "center"
-          - url          : "images/slider/background_9.webp"
-            credit       : "📅 2022-09-22 <small>|</small> 📷 Me <small>|</small> 💄 Me"
-            position     : "center"
-          - url          : "images/slider/background10.webp"
-            credit       : "📅 2023-05-28 <small>|</small> 📷 Me <small>|</small> 💄 Me"
-            position     : "top center"
-          - url          : "images/slider/background_2_2000px.webp"
-            url_smallish : "images/slider/background_2_1200px.webp"
-            url_tablet   : "images/slider/background_2_800px.webp"
-            url_mobile   : "images/slider/background_2_500px.webp"
-            credit       : "📅 2013-05-14 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 Me"
-          - url          : "images/slider/background_1_2000px.webp"
-            url_smallish : "images/slider/background_1_1200px.webp"
-            url_tablet   : "images/slider/background_1_800px.webp"
-            url_mobile   : "images/slider/background_1_500px.webp"
-            credit       : "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
-          - url          : "images/slider/background_3_2000px.webp"
-            url_smallish : "images/slider/background_3_1200px.webp"
-            url_tablet   : "images/slider/background_3_800px.webp"
-            url_mobile   : "images/slider/background_3_500px.webp"
-            credit       : "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
-          - url          : "images/slider/background_6_2000px.webp"
-            url_smallish : "images/slider/background_6_1200px.webp"
-            url_tablet   : "images/slider/background_6_800px.webp"
-            url_mobile   : "images/slider/background_6_500px.webp"
-            credit       : "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Costume by me ;)"
-          - url          : "images/slider/background_4.webp"
-            credit       : "📅 2019-09-28 <small>|</small> 📷 Me <small>|</small> 💄 Me"
-          - url          : "images/slider/background11.webp"
-            credit       : "📅 2023-08-12 <small>|</small> 📷 <a href='https://www.instagram.com/adjastonascursol'>Adjaston Ascursol</a> <small>|</small> 💄 Me"
-            position     : "top center"
   links:
     - text    : "Instagram"
       url     : "https://www.instagram.com/angel_crawford_ftw"
