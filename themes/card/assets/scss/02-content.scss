@@ -300,47 +300,41 @@ body.page-template-page-fullsingle-split {
     @include font-light;
   }
 
-  h1, .h1 {
-    font-size: 1.5em;
+  h1, .h1, 
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
     line-height: inherit;
     margin-top: 0;
     margin-bottom: 20px;
   }
 
+
+  h1, .h1 {
+    font-size: 1.5em;
+  }
+
   h2, .h2 {
     font-size: 1.25em;
-    line-height: inherit;
-    margin-top: 0;
-    margin-bottom: 20px;
     color: $secondary;
   }
 
   h3, .h3 {
     font-size: 1.1875em;
-    line-height: inherit;
-    margin-top: 0;
-    margin-bottom: 20px;
   }
 
   h4, .h4 {
     font-size: 1.125em;
-    line-height: inherit;
-    margin-top: 0;
-    margin-bottom: 20px;
   }
 
   h5, .h5 {
     font-size: 1.0625em;
-    line-height: inherit;
-    margin-top: 0;
-    margin-bottom: 20px;
   }
 
   h6, .h6 {
     font-size: 1em;
-    line-height: inherit;
-    margin-top: 0;
-    margin-bottom: 20px;
   }
 
   ul,
@@ -623,7 +617,7 @@ body.page-template-page-fullsingle-split {
     @include font-light;
     color: rgba($color-text, .5);
     a {
-      color: rgba($secondary, .6);
+      color: rgba($secondary, .8);
       transition-duration: 0.5s;
       &:hover {
         color: $color-text;
@@ -646,14 +640,6 @@ body.page-template-page-fullsingle-split {
   }
   span.split-languages, span.footer-menu {
     padding-left: 0;
-    .active {
-      color: rgba($secondary, .6);
-      &:before {
-        content: " | ";
-        font-size: 0.8571rem;
-        color: rgba($color-text, .2);
-      }
-    }
     img {
       height: 13px;
       width: 17px;
