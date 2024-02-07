@@ -27,21 +27,18 @@ caches:
     dir: :resourceDir/_gen
     maxAge: "800h"
 
-resources:
-  - src: "assets/slider-1.webp"
-    name: "test 10"
-    weight   : 20
-    params:
+params:
+  slider:
+    - name: "slider-1.webp"
+      path: "assets/images/slider-1.webp"
+      weight   : 2
       credit   : "📅 2021-10-02 <small>|</small> 📷 Me <small>|</small> 💄 Me"
       position : "center"
-  - src: "slider-8.webp"
-    name: "test 30"
-    params:
-      weight   : 10
+    - name: "slider-8.webp"
+      path: "assets/images/slider-8.webp"
+      weight   : 1
       credit   : "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Costume by me ;)"
       position : "center"
-
-params:
   breakpoints:
     bp_smallish: "1200px"
     bp_tablet  : "800px"

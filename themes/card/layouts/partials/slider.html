@@ -12,18 +12,25 @@
       {{ end }}
     {{ end }}
     <ul class="s-content">
+      {{ $slider := sort .Site.Params.slider "weight" }}
+      {{ range $slider }}
+        {{ $imagePath := print "images/" .name }}
+
+        {{ with resources.Get $imagePath }}
+
+          {{ printf "%#v" . }}
+
+          {{ $resizedImage := .Resize "600x" }}
+          <li class="s-item s-item-count">
+            <img src="{{ $resizedImage.RelPermalink }}" alt="" type="image/webp" style="
+              background-size: {{ if .Params.visual.image.size }}{{ .Params.visual.image.size }}{{ else }}cover{{ end }};
+              background-position: {{ if .Params.visual.image.position }}{{ .Params.visual.image.position }}{{ else }}center center{{ end }};
+            ">
+          </li>
+        {{ end }}
+      {{ end }}
 
       
-      {{ range sort (resources.ByType "image") "weight" }} 
-      
-      
-        <li class="s-item s-item-{{ .RelPermalink }}">
-          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" type="image/webp" style="
-            background-size: {{ if .Params.visual.image.size }}{{ .Params.visual.image.size }}{{ else }}cover{{ end }};
-            background-position: {{ if .Params.visual.image.position }}{{ .Params.visual.image.position }}{{ else }}center center{{ end }};
-          ">
-        </li>
-      {{ end }}
     </ul>
 
     {{ if not (eq $len 1) }}
