@@ -133,6 +133,7 @@ body.page-template-page-fullsingle-split {
     padding: 2.4rem 2.5rem;
     box-sizing: border-box;
     overflow-y: auto;
+    scroll-behavior: smooth;
 
     @media (max-width: $bp-mobile) {
       padding: 2rem 1rem;
@@ -707,8 +708,8 @@ video.video {
 }
 
 
-#back-to-top-button {
-  display: none;
+a#back-to-top-button {
+  display: inline-block;
   background-color: darken($secondary, 10%);
   width: 30px;
   height: 30px;
@@ -718,15 +719,22 @@ video.video {
   right: 1.5em;
   border: 1px solid $secondary;
   transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 1;
+  visibility: visible;
   z-index: 1000;
+  transition: opacity .5s, visibility .5s;
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  svg path {
+    fill: $color-text;
+  }
   &:hover {
     cursor: pointer;
     background-color: $color-background;
   }
   &:active {
     background-color: $color-background;
-  }
-  &.show {
-    display: inline-block; 
   }
 }

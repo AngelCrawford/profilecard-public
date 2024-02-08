@@ -7,7 +7,7 @@
 
 <body id="fullsingle" class="page-template-page-fullsingle-split">
 
-  <div class="fs-split" id="back-to-top">
+  <div class="fs-split">
 
     {{ partial "slider" . }}
 
@@ -25,9 +25,9 @@
         {{ partial "footer" . }}
       </div>
 
-      <span id="back-to-top-button" class="">
+      <a href="{{ .Permalink }}#back-to-top" id="back-to-top-button" class="hidden" title="Back to top Button">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z" fill="currentColor"></path></svg>
-      </span>
+      </a>
     </div>
 
   </div>

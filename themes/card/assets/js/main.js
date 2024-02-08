@@ -4,69 +4,26 @@ function addEventListener(selector, event, callback) {
   for (var i = 0; i < elements.length; i++) {
       elements[i].addEventListener(event, callback);
   }
-}
+};
 
-// Improved function to add an event listener
-function addEventListenerImproved(selector, event, callback) {
-  if (selector === window) {
-    window.addEventListener(event, callback);
+// **************************************************************************************************
+
+// ************************************** SCROLL TO TOP BUTTON **************************************
+
+addEventListener("#mainContent", "scroll", scrollFunction);
+function scrollFunction() {
+  var myButton = document.getElementById("back-to-top-button");
+
+  if (document.getElementById("mainContent").scrollTop >= 400 || document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400 ) {
+    myButton.classList.remove("hidden");
+    console.log("Class hidden removed");
   } else {
-    var elements = document.querySelectorAll(selector);
-    for (var i = 0; i < elements.length; i++) {
-        elements[i].addEventListener(event, callback);
-    }
-  }
-}
-
-// Improved event binding
-document.addEventListener('DOMContentLoaded', function() {
-  addEventListenerImproved(window, "scroll", onScroll); // Bind scroll to window
-  addEventListenerImproved(window, "load", onScroll); // Ensure onScroll runs after page load
-  topScroll(); // Bind the click event listener to the back-to-top button
-});
-
-// Bind clicks für Spotify Modal
-addEventListener("#overlay-img", "click", handleRemoveImgClick);
-addEventListener("#accept", "click", handleAcceptClick);
-addEventListener("#abort", "click", handleAbortClick);
-addEventListener("body", "click", handleBodyClick);
-// Check for existing cookie and remove overlay if present
-if (getCookie("spotifyWidget")) {
-  removeOverlay();
-}
-
-createPie(".pieID.legend", ".pieID.pie");
-
-// Function to remove an event listener
-function removeEventListener(selector, event, callback) {
-  var elements = document.querySelectorAll(selector);
-  for (var i = 0; i < elements.length; i++) {
-      elements[i].removeEventListener(event, callback);
+    myButton.classList.add("hidden");
+    console.log("Class hidden added");
   }
 };
 
-// Back to Top Scroll Button
-function onScroll() {
-  // Check the page scroll or element scroll based on your layout
-  var scrollPosition = window.pageYOffset || document.getElementById('mainContent').scrollTop;
-  // Show or hide back-to-top button
-  if (scrollPosition >= 300) {
-    document.getElementById('back-to-top-button').classList.add('show');
-  } else {
-    document.getElementById('back-to-top-button').classList.remove('show');
-  }
-}
-// Scroll to the top of the page
-function topScroll() {
-  document.getElementById('back-to-top-button').addEventListener('click', function(e) {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-}
-
+// ********************************************* SPOTIFY ********************************************
 // Spotify Modal Functions
 function handleRemoveImgClick() {
   document.getElementById("spotifyModal").style.display = "block";
@@ -84,9 +41,9 @@ function handleBodyClick(event) {
   if (event.target == document.getElementById("spotifyModal")) {
       document.getElementById("spotifyModal").style.display = "none";
   }
-}
+};
 
-// Remove Spotify Overlay and if smaller screen size place with smaller Spotify and/or Overlay image
+// Remove Spotify Overlay and if smaller screen replace with smaller Spotify Overlay
 function removeOverlay() {
   var overlayImg = document.querySelector('img#overlay-img');
   if (overlayImg !== null) {
@@ -108,7 +65,17 @@ function removeOverlay() {
   }
 };
 
-// Cookie
+// Bind clicks für Spotify Modal
+addEventListener("#overlay-img", "click", handleRemoveImgClick);
+addEventListener("#accept", "click", handleAcceptClick);
+addEventListener("#abort", "click", handleAbortClick);
+addEventListener("body", "click", handleBodyClick);
+// Check for existing cookie and remove overlay if present
+if (getCookie("spotifyWidget")) {
+  removeOverlay();
+}
+
+// ********************************************* COOKIE *********************************************
 function setCookie(name, value, days) {
   var expires = "";
   if (days) {
@@ -132,7 +99,7 @@ function eraseCookie(name) {
   document.cookie = name+'=; Max-Age=-99999999;';
 };
 
-// Pie Chart
+// ******************************************** PIE CHART *******************************************
 function sliceSize(dataNum, dataTotal) {
   return (dataNum / dataTotal) * 360;
 }
@@ -191,3 +158,13 @@ function createPie(dataElement, pieElement) {
     offset += size;
   });
 }
+createPie(".pieID.legend", ".pieID.pie");
+
+// **************************************************************************************************
+// Function to remove an event listener
+function removeEventListener(selector, event, callback) {
+  var elements = document.querySelectorAll(selector);
+  for (var i = 0; i < elements.length; i++) {
+      elements[i].removeEventListener(event, callback);
+  }
+};
