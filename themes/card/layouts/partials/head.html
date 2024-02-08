@@ -47,19 +47,13 @@
 {{ $style := $sass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-<!-- Scripts -->
-{{ $jQuery := resources.Get "js/jquery-3.7.1.js" }}
+<!-- Scripts (JS in the footer -> baseof.html -->
+{{/*  {{ $jQuery := resources.Get "js/jquery-3.7.1.js" }}
 {{ $script := $jQuery | resources.Minify | resources.Fingerprint }}
-<script src="{{ $script.Permalink }}"></script>
+<script src="{{ $script.Permalink }}"></script>  */}}
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-{{ $js := resources.Get "js/main.js" }}
-{{ $script := $js | resources.Minify | resources.Fingerprint }}
-<script src="{{ $script.Permalink }}"></script>
-
 <link type="text/plain" rel="author" href="humans.{{ .Site.Language }}.txt" />
-
-
 
 <!-- Google Analytics -->
 {{ if and (.Site.GoogleAnalytics) (not (in (printf "%#v" .Site.BaseURL) "localhost")) }}

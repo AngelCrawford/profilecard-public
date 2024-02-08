@@ -708,7 +708,7 @@ video.video {
 
 
 #back-to-top-button {
-  display: inline-block;
+  display: none;
   background-color: darken($secondary, 10%);
   width: 30px;
   height: 30px;
@@ -718,8 +718,6 @@ video.video {
   right: 1.5em;
   border: 1px solid $secondary;
   transition: background-color .3s, opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
   z-index: 1000;
   &:hover {
     cursor: pointer;
@@ -729,7 +727,6 @@ video.video {
     background-color: $color-background;
   }
   &.show {
-    opacity: 1;
-    visibility: visible;
+    display: inline-block; 
   }
 }

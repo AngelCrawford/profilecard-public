@@ -33,4 +33,9 @@
   </div>
 
 </body>
+
+{{ $js := resources.Get "js/main.js" }}
+{{ $script := $js | resources.Minify | resources.Fingerprint }}
+<script src="{{ $script.Permalink }}"></script>
+
 </html>

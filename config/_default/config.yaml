@@ -75,7 +75,6 @@ params:
     bp_tablet  : "800px"
     bp_mobile  : "500px"
   birthdate       : "1987-02-05"
-  spotifyPlaylist : "https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd"
   shareImage      : "images/social.jpg"
   favicon         : "favicon.ico"
   links:
