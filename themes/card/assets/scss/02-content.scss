@@ -617,7 +617,7 @@ body.page-template-page-fullsingle-split {
     @include font-light;
     color: rgba($color-text, .5);
     a {
-      color: rgba($secondary, .8);
+      color: $secondary;
       transition-duration: 0.5s;
       &:hover {
         color: $color-text;
@@ -647,7 +647,8 @@ body.page-template-page-fullsingle-split {
       margin-bottom: -3px;
     }
   }
-  span.footer-menu a:before {
+  span.footer-menu a:before,
+  span.footer-menu span.active:before {
     content: " | ";
     font-size: 0.8571rem;
     color: rgba($color-text, .2);

@@ -26,7 +26,8 @@
     </span>
     <span class="footer-menu" role="navigation" aria-label="Navigation Footer">
       {{ range .Site.Menus.footer }}
-        {{ if eq $currentPage.RelPermalink .URL }}
+      {{ $activeClass := $currentPage.RelPermalink | strings.TrimPrefix "/" }}
+        {{ if eq $activeClass .URL }}
           <span class="active">{{ .Name }}</span>
         {{ else }}
           <a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
