@@ -20,14 +20,17 @@ else
   read -p "$(echo -e $Red"Enter Tag Version: "$Color_Off)" version
 fi
 
-# Empty the public folder.
-rm -rf public/*
-
 # Change the version file
 rm version.txt
 rm buildDate.txt
 echo "v$version" >> version.txt
 echo "`date +'%a, %Y-%m-%d %T'`" >> buildDate.txt
+
+# Get the subtree files, to avoid conflicts on puhs
+git subtree pull --prefix=public git@github.com:AngelCrawford/profilecard-public.git gh-pages
+
+# Empty the public folder
+rm -rf public/*
 
 # Build the project.
 hugo
