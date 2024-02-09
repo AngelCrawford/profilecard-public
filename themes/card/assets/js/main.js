@@ -79,31 +79,33 @@ function reloadScripts(callback) {
   });
 }
 
-// Slider stops working after reload Scripts 
+// ************************************** SLIDER MOBILE TOUCH ***************************************
+if (typeof isSliderEventAttached === 'undefined') {
+  // Slider stops working after reload Scripts 
+  var isSliderEventAttached = false; // 'var' allows for redeclaration but be mindful of scoping
+}
+reinitializeSlider();
+
 function reinitializeSlider() {
   // Reattach event listeners for the slider here
-  // addEventListener("#image-slider", "touchstart", touchSlider(event));
+  if (!isSliderEventAttached) {
+    addEventListener("#image-slider", "touchstart", touchSlider);
+    isSliderEventAttached = true;
+  }
 }
 
-
-// ************************************** SLIDER MOBILE TOUCH ***************************************
 // Listen to input event on all inputs within .s-wrap
 document.querySelectorAll('.s-wrap > input').forEach(input => {
   input.addEventListener('input', function() {
     var index = document.querySelector('.s-wrap > input:checked');
   });
 });
-addEventListener("#image-slider", "touchstart", touchSlider);
 
 // Handle touchstart event on #image-slider
 function touchSlider(event) {
   // Get the count of all inputs within .s-wrap
   const slidesCount = document.querySelectorAll('.s-wrap > input').length;
   const xClick = event.touches[0].pageX;
-  // BUG: Nach dem asynchronously reload der Seite, scheint xClick andere Werte zu haben
-    // Enventuell ist event verändert? (event scheint leer zu sein nach dem reload!)
-  // git commit -am "Working on the slider JS after reloading content asynchronously, see ToDo Tree in Visual Studio Code, #55"
-  console.log(xClick);
 
   this.addEventListener('touchmove', function(event) {
     const xMove = event.touches[0].pageX;
