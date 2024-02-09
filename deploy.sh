@@ -48,3 +48,5 @@ git tag v$version
 git push origin master --tags
 git subtree push --prefix=public git@github.com:AngelCrawford/profilecard-public.git gh-pages
 
+# Empty the public folder again, after everything is up
+rm -rf public/*

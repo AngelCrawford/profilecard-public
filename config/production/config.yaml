@@ -12,10 +12,10 @@ caches:
 
 params:
   csp:
-    default        : ["'self'"]
+    default        : ["'self'", "https://eu.umami.is"]
     formaction     : ["'self'"]
     framesrc       : ["'self'", "*.spotify.com", "http://spotifycdn.com"]
     imgsrc         : ["'self'"]
     objectsrc      : ["'none'"]
     stylesrc       : ["'self'", "'unsafe-inline'"]
-    scriptsrc      : ["'self'", "https://eu.umami.is"]    
+    scriptsrc      : ["'self'"]    
