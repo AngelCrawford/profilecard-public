@@ -63,7 +63,7 @@
 
 <link type="text/plain" rel="author" href="humans.{{ .Site.Language }}.txt" />
 
-<!-- Google Analytics -->
-{{ if and (.Site.GoogleAnalytics) (not (in (printf "%#v" .Site.BaseURL) "localhost")) }}
-  {{ template "_internal/google_analytics.html" . }}
-{{ end }}
+<!-- Umami Analytics -->
+{{- if hugo.IsProduction -}}
+  <script async src="https://eu.umami.is/script.js" data-website-id="3c41a204-0ff3-4495-ba84-cc6e7daddff2"></script>
+{{- end }}

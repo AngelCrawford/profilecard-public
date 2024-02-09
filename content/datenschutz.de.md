@@ -11,9 +11,14 @@ smallBodyText = true
 Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Deinen personenbezogenen Daten passiert, wenn Du diese Website besuchst. Personenbezogene Daten sind alle Daten, mit denen Du persönlich identifiziert werden kannst. Ausführliche Informationen zum Thema Datenschutz entnimmst Du unserer unter diesem Text aufgeführten Datenschutzerklärung.
 
 ### Datenerfassung auf dieser Website
-Ich selbst erfasse oder speichere keinerlei Daten oder persönliche Informationen.
+Ich selbst erfasse oder speichere keinerlei persönliche Daten oder Informationen.
 
 Allerdings wird diese Seite auf Servern von Dritten gehostet, andererseits werden Inhalte von Dritten von externen Websites eingebunden. Dies setzt voraus, dass diese Dritten unter Umständen Deine IP-Adresse speichern. Bedenke aber bitte, dass zur Darstellung einer Internetseite Deine IP bekannt sein muss. Darauf habe ich somit keinerlei Einfluss. Sollte ich aber darüber Informiert worden sein, schreibe ich es hier mit dazu.
+
+### Umami Tracking
+Diese Website arbeitet im Einklang mit der DSGVO und sammelt keine persönlichen Daten. Sie verwendet ein first-party, datenschutzfreundliches Analysesystem namens [Umami](https://umami.is), um Einblicke zu gewinnen, wie Besucher die Seite nutzen. Die einzigen gesammelten Informationen sind die grundlegenden Daten, die vom Browser oder Gerät beim Zugriff auf diese und andere Websites bereitgestellt werden. Wichtig ist, dass keine der gesammelten Informationen verwendet werden kann, um eine Person oder ein Gerät, das auf die Seite zugreift, persönlich zu identifizieren. Zusätzlich wird diese Information aus keinem Grund an Dritte weitergegeben.
+
+Umami setzt kein Cookie und speichert nichts im Browser. Es respektiert auch AdBlocker.
 
 ### Google Analytics und Google Web Fonts
 Werden nicht eingebunden oder benutzt.

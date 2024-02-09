@@ -8,19 +8,27 @@ function addEventListener(selector, event, callback) {
 
 // *************************************** LOAD HUGO CONTENT ****************************************
  // Make links load asynchronously
-document.body.addEventListener("click", function(event) {
+ document.body.addEventListener("click", function(event) {
   // Check if the clicked element is a link
   if (event.target.tagName !== "A")
     return;
-  
+
+  const newUrl = event.target.href;
+  const domain = window.location.origin;
+
+  // Check if the link is an anchor link on the same page
+  if (newUrl.startsWith(domain + window.location.pathname + '#') || newUrl.startsWith('#') ) {
+
+    console.log("Abbruch");
+    // It's an anchor link, do nothing and let the browser handle it naturally
+    return;
+  }
+
   // History API needed to make sure back and forward still work
   if (!window.history)
     return;
-  
+
   // External links should instead open in a new tab
-  const newUrl = event.target.href;
-  const domain = window.location.origin;
-  
   if (typeof domain !== "string" || !newUrl.startsWith(domain)) {
     event.preventDefault(); // Prevent default link behavior
     window.open(newUrl, "_blank"); // Open in a new tab
@@ -30,11 +38,6 @@ document.body.addEventListener("click", function(event) {
     window.history.pushState(null, "", newUrl); // Update the history
   }
 });
-
-// Handle the back and forward buttons
-window.onpopstate = function(event) {
-  loadPage(window.location.href);
-};
 
 function loadPage(newUrl) {
   fetch(newUrl)
@@ -54,12 +57,13 @@ function loadPage(newUrl) {
 
       // Now reload the scripts
       reloadScripts(reinitializeSlider);
+      loadUmamiScript();
     })
     .catch(e => console.error('Error loading the page: ', e));
 }
 
 function reloadScripts(callback) {
-  const scripts = document.querySelectorAll('script[src]');
+  const scripts = document.querySelectorAll('script[src]:not([src*="umami"])'); // Skip Umami script
   let loadedScripts = 0;
   scripts.forEach(oldScript => {
     const newScript = document.createElement('script');
@@ -77,6 +81,20 @@ function reloadScripts(callback) {
     newScript.onerror = () => console.error(`Failed to reload ${oldScript.src}`);
     oldScript.parentNode.replaceChild(newScript, oldScript);
   });
+}
+
+// ***************************************** RELOAD UMAMI *******************************************
+function loadUmamiScript() {
+  // Check if the Umami script is already loaded to avoid duplicates
+  const existingScript = document.querySelector('script[src*="umami"]');
+  if (!existingScript) {
+    const umamiScript = document.createElement('script');
+    umamiScript.src = 'https://eu.umami.is/script.js'; // Replace with your Umami script URL
+    umamiScript.setAttribute('data-website-id', '3c41a204-0ff3-4495-ba84-cc6e7daddff2'); // Set your website's unique ID
+    umamiScript.async = true;
+    umamiScript.defer = true;
+    document.head.appendChild(umamiScript);
+  }
 }
 
 // ************************************** SLIDER MOBILE TOUCH ***************************************

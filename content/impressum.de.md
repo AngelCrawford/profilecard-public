@@ -8,7 +8,7 @@ smallBodyText = true
 +++
 
 Es handelt sich hier um eine rein private Website.
-* Ich speicher keine Daten
+* Ich speicher keine persönliche Daten, siehe [hier](de/datenschutz), was genau ich speichere
 * Verwende keine Google Dienste
 * Nutze keine Bilder ohne Genehmigung
 * **Fazit:** Meine Daten
@@ -34,6 +34,7 @@ Gebaut mit Hugo CMS und auf Github Pages Veröffentlicht. Du kannst den Code daz
 * [Split Theme](https://onepagelove.com/split)
 * [Remix Icon](https://remixicon.com)
 * [Github Pages](https://pages.github.com/)
+* [Umami](https://umami.is)
 
 ### CSS und JS/jQuery
 * [Tooltip](https://codepen.io/redouglas/pen/yyyXjm)

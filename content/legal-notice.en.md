@@ -7,7 +7,7 @@ smallBodyText = true
 +++
 
 This is a private website.
-* I don't save any data
+* I don't save personal data from you, see [here](privacy-policy) what exactly I save
 * Don't use any Google service
 * Don't use pictures without permission
 * **Conclusion:** My data
@@ -33,6 +33,7 @@ Built with Hugo CMS and hosted on Github Pages. You can find the Code on [Github
 * [Split Theme](https://onepagelove.com/split)
 * [Remix Icon](https://remixicon.com)
 * [Github Pages](https://pages.github.com/)
+* [Umami](https://umami.is)
 
 ### CSS and JS/jQuery
 * [Tooltip](https://codepen.io/redouglas/pen/yyyXjm)

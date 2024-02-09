@@ -10,9 +10,15 @@ smallBodyText = true
 The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data are all data with which you can be personally identified. You can find detailed information on data protection in our data protection declaration below this text.
 
 ### Data collection on this website
-I personally do not collect or save any data or personal information.
+I personally do not collect or save any personal data or information.
 
 However, this page is hosted on third-party servers; on the other hand, third-party content from external websites is integrated. This assumes that these third parties may save your IP address. Please note, however, that your IP must be known in order to display a website. So I have no influence on that. But if I have been informed about it, I will write it here.
+
+### Umami Tracking
+This Website operates in compliance with the GDPR and does not collect any personal data. It employs a first-party, privacy-friendly analytics system named [Umami](https://umami.is) to gain insights into how visitors use the site. The only information collected is the basic data provided by the browser or device used to access this website and others. 
+Importantly, none of the collected information can be used to personally identify any individual or device accessing the site. Additionally, this information is not shared with any third party for any reason. 
+
+Umami does not set a cookie or store anything in the browser. It also respects AdBlocker.
 
 ### Google Analytics and Google Web Fonts
 Are not involved or used.
