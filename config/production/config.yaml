@@ -18,4 +18,4 @@ params:
     imgsrc         : ["'self'"]
     objectsrc      : ["'none'"]
     stylesrc       : ["'self'", "'unsafe-inline'"]
-    scriptsrc      : ["'self'"]    
+    scriptsrc      : ["'self'", "https://eu.umami.is"]    
