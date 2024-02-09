@@ -1,0 +1,26 @@
+sitemap:
+  ChangeFreq: "weekly"
+  Priority: "0.9"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+caches:
+  assets:
+    dir: :resourceDir/_gen
+    maxAge: "800h"
+  images:
+    dir: :resourceDir/_gen
+    maxAge: "800h"
+
+params:
+  csp:
+    default        : ["'self'"]
+    formaction     : ["'self'"]
+    framesrc       : ["'self'", "*.spotify.com", "http://spotifycdn.com"]
+    imgsrc         : ["'self'"]
+    objectsrc      : ["'none'"]
+    stylesrc       : ["'self'", "'unsafe-inline'"]
+    scriptsrc      : ["'self'"]    

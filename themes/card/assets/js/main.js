@@ -181,13 +181,13 @@ function removeOverlay() {
   if (removeImg !== null) {
     if (window.innerWidth > 800 && window.innerWidth < 868) {
       removeImg.innerHTML =
-        '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
+        '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd?utm_source=generator&theme=0" width="80" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
     } else if (window.innerWidth > 388) {
       removeImg.innerHTML =
-        '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
+        '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd?utm_source=generator&theme=0" width="300" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
     } else {
       removeImg.innerHTML =
-        '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
+        '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd?utm_source=generator&theme=0" width="80" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
     }
   }
 };

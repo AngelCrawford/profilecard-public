@@ -10,23 +10,6 @@ twitterHandle: "crawford_ftw" #Twitter name, to bind shared cards to your profil
 #googleAnalytics = ""
 defaultContentLanguage: en
 
-sitemap:
-  ChangeFreq: "weekly"
-  Priority: "0.9"
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-
-caches:
-  assets:
-    dir: :resourceDir/_gen
-    maxAge: "800h"
-  images:
-    dir: :resourceDir/_gen
-    maxAge: "800h"
-
 imaging:
   quality: 100
 
@@ -161,4 +144,3 @@ languages:
           identifier : "datenschutz"
           url        : "datenschutz/"
           weight     : 0
-

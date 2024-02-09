@@ -17,6 +17,14 @@
 {{ end }}
 <meta name="referrer" content="always" />
 
+<!-- \Security -->
+{{- if hugo.IsProduction -}}
+  <!-- FIXME: EINBLENDEN BEI PRODUCTION! Muss unter umständen immer mal wieder angepasst werden -->
+  <!-- THANKS: https://blog.jeremylikness.com/blog/create-content-security-policy-csp-in-hugo/ -->
+  <meta name="referrer" content="always" />
+  {{ printf `<meta http-equiv="Content-Security-Policy" content="default-src %s; form-action %s; frame-src %s; img-src %s; object-src %s; style-src %s; script-src %s">` (delimit .Site.Params.csp.default " ") (delimit .Site.Params.csp.formaction " ") (delimit .Site.Params.csp.framesrc " ") (delimit .Site.Params.csp.imgsrc " ") (delimit .Site.Params.csp.objectsrc " ") (delimit .Site.Params.csp.stylesrc " ") (delimit .Site.Params.csp.scriptsrc " ") | safeHTML }}
+{{- end }}
+
 <!-- Social & Open Graph -->
 <meta property="og:title" content="{{ if .IsPage }}{{ .Title }} - {{ end }}{{ .Site.Title }}" />
 {{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}
