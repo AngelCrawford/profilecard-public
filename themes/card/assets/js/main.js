@@ -6,20 +6,145 @@ function addEventListener(selector, event, callback) {
   }
 };
 
-// **************************************************************************************************
+// *************************************** LOAD HUGO CONTENT ****************************************
+ // Make links load asynchronously
+document.body.addEventListener("click", function(event) {
+  // Check if the clicked element is a link
+  if (event.target.tagName !== "A")
+    return;
+  
+  // History API needed to make sure back and forward still work
+  if (!window.history)
+    return;
+  
+  // External links should instead open in a new tab
+  const newUrl = event.target.href;
+  const domain = window.location.origin;
+  
+  if (typeof domain !== "string" || !newUrl.startsWith(domain)) {
+    event.preventDefault(); // Prevent default link behavior
+    window.open(newUrl, "_blank"); // Open in a new tab
+  } else {
+    event.preventDefault(); // Prevent default link behavior
+    loadPage(newUrl); // Call your loadPage function
+    window.history.pushState(null, "", newUrl); // Update the history
+  }
+});
+
+// Handle the back and forward buttons
+window.onpopstate = function(event) {
+  loadPage(window.location.href);
+};
+
+function loadPage(newUrl) {
+  fetch(newUrl)
+    .then(response => {
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      return response.text();
+    })
+    .then(html => {
+      const parser = new DOMParser();
+      const newDocument = parser.parseFromString(html, "text/html");
+      const newContent = newDocument.getElementById("mainContent");
+      if (!newContent) return;
+
+      document.title = newDocument.title;
+      const contentElement = document.getElementById("mainContent");
+      contentElement.replaceWith(newContent.cloneNode(true));
+
+      // Now reload the scripts
+      reloadScripts(reinitializeSlider);
+    })
+    .catch(e => console.error('Error loading the page: ', e));
+}
+
+function reloadScripts(callback) {
+  const scripts = document.querySelectorAll('script[src]');
+  let loadedScripts = 0;
+  scripts.forEach(oldScript => {
+    const newScript = document.createElement('script');
+    newScript.src = oldScript.src;
+    newScript.onload = () => {
+      console.log(`${oldScript.src} reloaded successfully`);
+      loadedScripts++;
+      if (loadedScripts === scripts.length) {
+        console.log('All scripts reloaded');
+        if (typeof callback === 'function') {
+          callback();
+        }
+      }
+    };
+    newScript.onerror = () => console.error(`Failed to reload ${oldScript.src}`);
+    oldScript.parentNode.replaceChild(newScript, oldScript);
+  });
+}
+
+// Slider stops working after reload Scripts 
+function reinitializeSlider() {
+  // Reattach event listeners for the slider here
+  // addEventListener("#image-slider", "touchstart", touchSlider(event));
+}
+
+
+// ************************************** SLIDER MOBILE TOUCH ***************************************
+// Listen to input event on all inputs within .s-wrap
+document.querySelectorAll('.s-wrap > input').forEach(input => {
+  input.addEventListener('input', function() {
+    var index = document.querySelector('.s-wrap > input:checked');
+  });
+});
+addEventListener("#image-slider", "touchstart", touchSlider);
+
+// Handle touchstart event on #image-slider
+function touchSlider(event) {
+  // Get the count of all inputs within .s-wrap
+  const slidesCount = document.querySelectorAll('.s-wrap > input').length;
+  const xClick = event.touches[0].pageX;
+  // BUG: Nach dem asynchronously reload der Seite, scheint xClick andere Werte zu haben
+    // Enventuell ist event verändert? (event scheint leer zu sein nach dem reload!)
+  // git commit -am "Working on the slider JS after reloading content asynchronously, see ToDo Tree in Visual Studio Code, #55"
+  console.log(xClick);
+
+  this.addEventListener('touchmove', function(event) {
+    const xMove = event.touches[0].pageX;
+    const sensitivityInPx = 20;
+
+    if (Math.floor(xClick - xMove) > sensitivityInPx ) {
+      var index = document.querySelector('input:checked');
+      var slider = parseInt(index.id.replace('s-', '')) + 1;
+
+      if (slider == (slidesCount + 1)) {
+        slider = slidesCount;
+      }
+
+      document.querySelector('.s-wrap #' + index.id + ':checked ~ .s-content').style.transform = `translateX(calc(-(100% / ${slidesCount}) * (${slider} - 1)))`;
+      document.getElementById('s-' + slider).checked = true;
+      this.removeEventListener('touchmove', arguments.callee);
+
+    } else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
+      var index = document.querySelector('input:checked');
+      var slider = parseInt(index.id.replace('s-', '')) - 1;
+
+      if (slider == 0) {
+        slider = 1;
+      }
+
+      document.querySelector('.s-wrap #' + index.id + ':checked ~ .s-content').style.transform = `translateX(calc(-(100% / ${slidesCount}) * (${slider} - 1)))`;
+      document.getElementById('s-' + slider).checked = true;
+      this.removeEventListener('touchmove', arguments.callee);
+    }
+  });
+};
 
 // ************************************** SCROLL TO TOP BUTTON **************************************
-
 addEventListener("#mainContent", "scroll", scrollFunction);
 function scrollFunction() {
   var myButton = document.getElementById("back-to-top-button");
 
   if (document.getElementById("mainContent").scrollTop >= 400 || document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400 ) {
     myButton.classList.remove("hidden");
-    console.log("Class hidden removed");
   } else {
     myButton.classList.add("hidden");
-    console.log("Class hidden added");
   }
 };
 
