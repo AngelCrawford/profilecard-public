@@ -1,0 +1,11 @@
+User-agent: *
+
+
+Disallow: /legal-notice/
+
+Disallow: /privacy-policy/
+
+Disallow: /series_movies/
+
+
+Sitemap: https://angel-crawford.de/sitemap.xml
