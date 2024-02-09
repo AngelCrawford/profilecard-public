@@ -10,6 +10,11 @@ twitterHandle: "crawford_ftw" #Twitter name, to bind shared cards to your profil
 #googleAnalytics = ""
 defaultContentLanguage: en
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 imaging:
   quality: 100
 
