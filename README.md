@@ -1,33 +1,32 @@
-![Screenshot](static/social.jpg)
+![Screenshot](images/social.jpg)
 
-![](https://img.shields.io/badge/Platform-Windows-blue) ![](https://img.shields.io/badge/Editor-Atom-green) ![](https://img.shields.io/badge/Editor-Visual_Studio_Code-green) ![](https://img.shields.io/badge/Image_Edit-Gimp-purple)
+![](https://img.shields.io/badge/Platform-Windows-blue) ![](https://img.shields.io/badge/Editor-Atom-green) ![](https://img.shields.io/badge/Editor-Visual_Studio_Code-green)
 
 ## Information
-The whole Hugo Project for my personal Webcard (Short Profile).
+My personal Webcard (Short Profile).
+
 Built with Hugo CMS and hosted on Github Pages.
+This repository hosted the webpage from the public folder only, not the whole Hugo Project.
 
 * https://angel-crawford.de
-* Languages: German / English
+* Languages: Deutsch / English
 * Build with [Hugo](https://gohugo.io)
 
-## Includes
-* [Hugo](https://gohugo.io) => Extented Version
-* Deploy file => [View Tutorial here](https://gist.github.com/AngelCrawford/06dbd50beee9f96064b8dc1d71dfa120)
-* Original [Split](https://github.com/AngelCrawford/profilecard/tree/master/themes/hugo-split-theme) Theme (Buyed the Pro Version)
-* [Remix Icon](https://remixicon.com)
+## Thanks
+* Hugo @ https://gohugo.io
+* Split Theme @ https://onepagelove.com/split
+* Remix Icon @ https://remixicon.com
+* Github Pages @ https://pages.github.com
 
----
-
-## Used Tutorials
 ### CSS, JS, jQuery
-* [Tooltip](https://codepen.io/redouglas/pen/yyyXjm)
-* [Slider](https://codepen.io/geekwen/pen/QNxymm)
-* [Pie Chart](https://codepen.io/ejsado/pen/cLrlm)
-* [Page Loader](https://github.com/aarmea/mfw-singlepage)
+* Tooltip @ https://codepen.io/redouglas/pen/yyyXjm
+* Slider @ https://codepen.io/geekwen/pen/QNxymm
+* PX-to-REM @ https://daniellamb.com/experiments/px-to-rem-calc
+* Pie Chart @ https://codepen.io/ejsado/pen/cLrlm
+* Page Loader @ https://github.com/aarmea/mfw-singlepage
 
 ### Images
-* [Licht- und Schattenspiel](https://www.facebook.com/lichtundschattenspiel)
-* [Kara Kuckoo](https://www.facebook.com/KaraKuckoo)
-* [Brainfood Photography & Layout](https://www.facebook.com/BrainfoodPhotographyDesign)
-* [Favicon Generator](https://realfavicongenerator.net)
-* [The High Resolution Flag Sprite](https://www.freakflagsprite.com)
+* Licht- und Schattenspiel @ https://www.facebook.com/lichtundschattenspiel
+* Kara Kuckoo @ https://www.facebook.com/KaraKuckoo
+* Favicon Generator @ https://realfavicongenerator.net
+* The High Resolution Flag Sprite @ https://www.freakflagsprite.com

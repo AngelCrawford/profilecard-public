@@ -1,0 +1,31 @@
+/* TEAM */
+    Chef: Angel Crawford
+    From: Germany
+
+/* INFORMATION */
+    Gebaut mit Hugo CMS und auf Github Pages Veröffentlicht. 
+    Du kannst den Code dazu auf Github @ https://github.com/AngelCrawford/profilecard-public finden.
+
+    https://angel-crawford.de
+
+    Sprachen: Deutsch / English
+    IDE: Atom, Visual Studio Code, Gimp, Git
+
+/* DANKE */
+    * Hugo @ https://gohugo.io
+    * Split Theme @ https://onepagelove.com/split
+    * Remix Icon @ https://remixicon.com
+    * Github Pages @ https://pages.github.com
+
+  /* CSS, JS, jQuery */
+    * Tooltip @ https://codepen.io/redouglas/pen/yyyXjm
+    * Slider @ https://codepen.io/geekwen/pen/QNxymm
+    * PX-to-REM @ https://daniellamb.com/experiments/px-to-rem-calc
+    * Pie Chart @ https://codepen.io/ejsado/pen/cLrlm
+    * Page Loader @ https://github.com/aarmea/mfw-singlepage
+
+  /* BILDER */
+    * Licht- und Schattenspiel @ https://www.facebook.com/lichtundschattenspiel
+    * Kara Kuckoo @ https://www.facebook.com/KaraKuckoo
+    * Favicon Generator @ https://realfavicongenerator.net
+    * The High Resolution Flag Sprite @ https://www.freakflagsprite.com  
