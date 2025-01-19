@@ -66,6 +66,11 @@ params:
   shareImage      : "images/social.jpg"
   favicon         : "favicon.ico"
   links:
+    - text    : "Mastodon"
+      url     : "https://norden.social/@Angel_Crawford_ftw"
+      icon    : "ri-mastodon-fill"
+      color   : "#6364FF"
+      opacity : "0.9"
     - text    : "Instagram"
       url     : "https://www.instagram.com/angel_crawford_ftw"
       icon    : "ri-instagram-line"

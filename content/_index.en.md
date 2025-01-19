@@ -9,8 +9,8 @@ tagline = "Developer. <br />Sun lover. Goth."
   * PHP, CSS (Sass), HTML, JavaScript, WordPress, Hugo
   * Photoshop, Affinity Photo, Krita, Filmora 9
 * Cosplayer | <small>a relatively new love</small>
+* Cake, 🐄 or gold-colored things | <small>You can definitely bribe me with that</small>
 * Addicted to music, series and movies
   * [Genres](genres "Genres list"): Action, Anime, Horror, Sci-Fi, Fantasy, Thriller ...
   * At the moment it's trash movies. Bad CGI and/or bad scripts? Even hotter!
   * {{< spotifyPlaylist >}}
-* Cake, 🐄 or gold-colored things | <small>You can definitely bribe me with that</small>
