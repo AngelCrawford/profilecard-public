@@ -1,46 +1,7 @@
-//-------------------------------------------------------------------------------
-// Fade In
-//-------------------------------------------------------------------------------
-
-@keyframes fadein {
-    from { opacity: 0;}
-    to   { opacity: 1;}
-}
-
-::-moz-selection {
-  background: darken($secondary, 20%);
-  -webkit-text-fill-color: #f2ebe3;
-  color: #f2ebe3;
-}
-::selection {
-  background: darken($secondary, 20%);
-  -webkit-text-fill-color: #f2ebe3;
-  color: #f2ebe3;
-}
-:root {
-  font-size: 21px;
-}
-
-main p a[href^="http://"]:after, main li a[href^="http://"]:after,
-main p a[href^="https://"]:after, main li a[href^="https://"]:after {
-  content: "\ecaf";
-  font-family: "remixicon";
-  font-size: 80%;
-  color: rgba($color-text, .5);
-  padding-left: 0.3em;
-  margin-top: -0.3em;
-  height:  2em;
-  vertical-align: top;
-  display: inline-block;
-}
-
-//-------------------------------------------------------------------------------
-// Content
-//-------------------------------------------------------------------------------
-
 html {
   background-color: $color-background;
   scrollbar-color: rgba($secondary, .5) rgba(0, 0, 0, .4);
+  height: 100%;
 }
 ::-webkit-scrollbar {
   width: 12px;
@@ -59,22 +20,25 @@ body {
   line-height: 33px;
   letter-spacing: -0.2px;
   color: $color-text;
-  animation: fadein 2s;
+  // width: max-content;
+  max-width: 660px;
+  min-height: calc(100vh - 6em);
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  margin: 3em auto;
+
   p {
     color: $color-text;
   }
 
 }
 
-//-------------------------------------------------------------------------------
-// Intro Text
-//-------------------------------------------------------------------------------
-
 header {
   @include font-bold;
-  // font-size: 3.048rem;
   line-height: 80px;
   letter-spacing: -2px;
+  text-align: center;
 
   h1 {
     line-height: 1.25em;
@@ -100,6 +64,11 @@ header {
     @media (max-width: $bp-mobile) {
       font-size: 1.9rem;
     }
+  }
+
+  img {
+    width: 200px;
+    border-radius: 50%;
   }
 }
 
@@ -311,10 +280,11 @@ main {
 
   .spotify-overlay {
     // background: url("/images/spotify-overlay.png") no-repeat;
+    margin: auto;
     height: 80px;
     width: 300px;
     display: block;
-    padding-top: .4em;
+    padding-top: .6em;
     background-color: $color-background;
     cursor: pointer;
     @media (max-width: 388px ) {
@@ -440,57 +410,6 @@ main .links {
     }
   }
 
-
-  .split-list {
-    width: 30%;
-    display: inline-block;
-    margin-bottom: 40px;
-    vertical-align: top;
-
-    @media (max-width: $bp-mobile ) {
-      width: 90%;
-    }
-
-    h3 {
-      text-transform: uppercase;
-      font-size: 0.5238rem;
-      line-height: 11px;
-      margin-bottom: 31px;
-      color: $color-text;
-      letter-spacing: 2px;
-      opacity: 0.5;
-    }
-
-    ul {
-
-      li {
-        font-size: 0.7619rem;
-        line-height: 16px;
-        margin-bottom: 12px;
-
-        a {
-          color: $color-text;
-          transition-duration: 0.5s;
-
-          &:hover {
-            color: $secondary;
-            transition-duration: 0.1s;
-          }
-
-          i {
-            padding: 0 0.3em 0.3rem 0;
-            font-size: 0.9em;
-            opacity: 0.5;
-          }
-
-        }
-
-      }
-
-    }
-
-  }
-
 }
 
 
@@ -499,7 +418,6 @@ footer {
   font-size: 0.5714rem;
   line-height: 14px;
   @include font-light;
-  height: 100%;
 
   span {
     & a {

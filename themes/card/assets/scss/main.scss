@@ -37,3 +37,30 @@ $tt-anim-delay      : .2s;
 @import "01-fonts";
 @import "02-content";
 @import "03-modal";
+
+::-moz-selection {
+    background: darken($secondary, 20%);
+    -webkit-text-fill-color: #f2ebe3;
+    color: #f2ebe3;
+}
+::selection {
+    background: darken($secondary, 20%);
+    -webkit-text-fill-color: #f2ebe3;
+    color: #f2ebe3;
+}
+:root {
+    font-size: 21px;
+}
+  
+main p a[href^="http://"]:after, main li a[href^="http://"]:after,
+main p a[href^="https://"]:after, main li a[href^="https://"]:after {
+  content: "\ecaf";
+  font-family: "remixicon";
+  font-size: 80%;
+  color: rgba($color-text, .5);
+  padding-left: 0.3em;
+  margin-top: -0.3em;
+  height:  2em;
+  vertical-align: top;
+  display: inline-block;
+}
