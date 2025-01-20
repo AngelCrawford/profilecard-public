@@ -21,8 +21,8 @@
   font-size: 21px;
 }
 
-.split-bio p a[href^="http://"]:after, .split-bio li a[href^="http://"]:after,
-.split-bio p a[href^="https://"]:after, .split-bio li a[href^="https://"]:after {
+main p a[href^="http://"]:after, main li a[href^="http://"]:after,
+main p a[href^="https://"]:after, main li a[href^="https://"]:after {
   content: "\ecaf";
   font-family: "remixicon";
   font-size: 80%;
@@ -52,7 +52,7 @@ html {
   background: rgba($secondary, .5);
 }
 
-body.page-template-page-fullsingle-split {
+body {
   background-color: $color-background;
   @include font-regular;
   font-size: 1rem;
@@ -67,93 +67,10 @@ body.page-template-page-fullsingle-split {
 }
 
 //-------------------------------------------------------------------------------
-// Sections and Columns
-//-------------------------------------------------------------------------------
-.fs-split {
-  display: flex;
-  height: 100vh;
-
-  @media (max-width: $bp-tablet) {
-    display: block;
-  }
-
-  .split-image {
-    flex: 0 0 50%; /* flex-basis: 50% */
-
-    span[class^="s-credit-"] {
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: .6em 1.3em .6em .7em;
-      background: rgba($color-background, .7);
-      color: $color-text;
-      font-size: 60%;
-      max-width: 1em;
-      // transition: max-width .6s;
-      // -webkit-transition: max-width .6s;
-      white-space: nowrap;
-      line-height: 20px;
-      overflow: hidden;
-      svg {
-        height: 29px;
-        margin-left: -5px;
-        margin-top: -5px;
-        position: absolute;
-      }
-      span.s-text-credit {
-        color: $color-text;
-        @include font-light;
-        line-height: 0px;
-        padding-left: 30px;
-        a {
-          color: $color-text;
-          border-bottom: 1px dotted $color-text;
-          &:hover {
-            color: $secondary;
-            border-bottom: 1px dotted $secondary;
-          }
-        }
-        small {
-          color: rgba($color-text, .5);
-          padding: 0 .2em;
-        }
-      }
-      &:hover {
-        width: auto;
-        max-width: 100%;
-        color: $secondary;
-        white-space: inherit;
-      }
-    }
-
-  }
-
-  .split-content {
-    flex: 0 0 50%; /* flex-basis: 50% */
-    padding: 2.4rem 2.4rem calc(2.4rem - 20px) 2.4rem;
-    box-sizing: border-box;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-
-    @media (max-width: $bp-mobile) {
-      padding: 2rem 1rem;
-    }
-  }
-}
-
-//-------------------------------------------------------------------------------
-// Content
-//-------------------------------------------------------------------------------
-.split-content-vertically-center {
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-//-------------------------------------------------------------------------------
 // Intro Text
 //-------------------------------------------------------------------------------
 
-.split-intro {
+header {
   @include font-bold;
   // font-size: 3.048rem;
   line-height: 80px;
@@ -186,14 +103,11 @@ body.page-template-page-fullsingle-split {
   }
 }
 
-//-------------------------------------------------------------------------------
-// Biography
-//-------------------------------------------------------------------------------
 
-.split-bio {
+main {
   padding: 30px 0 0 0;
 
-  &.small-body-text {
+  .small-text {
     span.ltrText {
       unicode-bidi: bidi-override;
       direction: rtl;
@@ -279,29 +193,15 @@ body.page-template-page-fullsingle-split {
     font-style: normal;
     color: inherit;
     @include font-bold;
-  }
-
-  h1 small, .h1 small,
-  h2 small, .h2 small,
-  h3 small, .h3 small,
-  h4 small, .h4 small,
-  h5 small, .h5 small,
-  h6 small, .h6 small {
-    line-height: 0;
-    @include font-light;
-  }
-
-  h1, .h1, 
-  h2, .h2,
-  h3, .h3,
-  h4, .h4,
-  h5, .h5,
-  h6, .h6 {
     line-height: inherit;
     margin-top: 0;
     margin-bottom: 20px;
-  }
 
+    &.small {
+      line-height: 0;
+      @include font-light;
+    }
+  }
 
   h1, .h1 {
     font-size: 1.5em;
@@ -428,11 +328,8 @@ body.page-template-page-fullsingle-split {
   }
 }
 
-//-------------------------------------------------------------------------------
-// Lists
-//-------------------------------------------------------------------------------
 
-.split-lists {
+main .links {
   margin: 2.2em 0 calc(2.2em - 20px) -12px;
 
   ul.icons {
@@ -460,6 +357,10 @@ body.page-template-page-fullsingle-split {
       //   flex-grow: 1;
       // }
 
+      &::before {
+        display: none;
+      }
+
       &:hover  {
         opacity: 1;
       }
@@ -469,7 +370,7 @@ body.page-template-page-fullsingle-split {
         width: 100%;
         height: 100%;
         // border: 1px solid orange;
-
+        border: none;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -592,153 +493,67 @@ body.page-template-page-fullsingle-split {
 
 }
 
-//-------------------------------------------------------------------------------
-// Credit
-//-------------------------------------------------------------------------------
 
-//  To edit this credit you can remove the CC3.0 license for only $5 here: https://onepagelove.com/split
-//  this really helps contribute towards us developing more templates and means the world to me!
-//  Cheers, Rob (@robhope)
-
-.split-credit {
+footer {
   height: 50px;
+  font-size: 0.5714rem;
+  line-height: 14px;
+  @include font-light;
+  height: 100%;
 
-  p {
-    font-size: 0.5714rem;
-    line-height: 14px;
-    @include font-light;
-    height: 100%;
+  span {
+    & a {
+      vertical-align: middle;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+    }
 
-    span {
+    &.copyright {
+      color: rgba($color-text, .5);
+      &:after {
+        content: " | ";
+        font-size: 0.8571rem;
+        color: rgba($color-text, .2);
+      }
+      .copyright-config:before  {
+        content: " | ";
+        font-size: 0.8571rem;
+        color: rgba($color-text, .2);
+      }
+    }
 
+    &.languages {
+      opacity: .5;
+      padding: 0;
+      img {
+        height: 13px;
+        width: 17px;
+        border: 1px solid rgba($color-text, .5);
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &.footer-menu {
       & a {
-        vertical-align: middle;
-        height: 100%;
-        display: inline-flex;
-        align-items: center;
-      }
-
-      &.split-copyright {
-        color: rgba($color-text, .5);
-        &:after {
-          content: " | ";
-          font-size: 0.8571rem;
-          color: rgba($color-text, .2);
-        }
-        .split-copyright-config:before  {
-          content: " | ";
-          font-size: 0.8571rem;
-          color: rgba($color-text, .2);
-        }
-      }
-
-      &.split-languages {
+        color: $secondary;
+        // transition-duration: 0.5s;
+        display: contents;
         opacity: .5;
-        padding: 0;
-        img {
-          height: 13px;
-          width: 17px;
-          border: 1px solid rgba($color-text, .5);
-        }
-        &:hover {
+        &::before {
+          color: $color-text;
           opacity: 1;
         }
       }
 
-      &.footer-menu {
-        & a {
-          color: $secondary;
-          transition-duration: 0.5s;
-          display: contents;
-          &::before {
-            color: $color-text;
-            opacity: 1;
-          }
-        }
-
-        & a::before,
-        & .active:before {
-          content: " | ";
-          font-size: 0.8571rem;
-          color: rgba($color-text, .2);
-        }
+      & a::before,
+      & .active:before {
+        content: " | ";
+        font-size: 0.8571rem;
+        color: rgba($color-text, .2);
       }
     }
-  }
-}
-
-//-------------------------------------------------------------------------------
-// Videos - shout out to my bud https://twitter.com/manuelmoreale for the Ninja skills
-//-------------------------------------------------------------------------------
-
-// YouTube
-.split-video {
-  overflow:hidden;
-  position:relative;
-}
-.video-wrap{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-}
-.video-container {
-  position:relative;
-  overflow:hidden;
-  height: 56.25vw;
-  width: 100vw;
-  @media (max-aspect-ratio:16/9) {
-    height: 100vh;
-    width: 177.7777777778vh; // this is for the ration 16:9
-  }
-}
-.video-container iframe,
-.video-container object,
-.video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-// Self-Hosted
-
-video.video {
-  object-fit      : cover;
-  object-position : 50% 50%;
-  width           : 100%;
-  height          : 100%;
-}
-
-
-a#back-to-top-button {
-  display: inline-block;
-  background-color: darken($secondary, 10%);
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  position: fixed;
-  bottom: 1.5em;
-  right: 1.5em;
-  border: 1px solid $secondary;
-  transition: background-color .3s, opacity .5s, visibility .5s;
-  opacity: 1;
-  visibility: visible;
-  z-index: 1000;
-  transition: opacity .5s, visibility .5s;
-  &.hidden {
-    opacity: 0;
-    visibility: hidden;
-  }
-  svg path {
-    fill: $color-text;
-  }
-  &:hover {
-    cursor: pointer;
-    background-color: $color-background;
-  }
-  &:active {
-    background-color: $color-background;
   }
 }

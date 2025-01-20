@@ -30,16 +30,13 @@ Gebaut mit Hugo CMS und auf Github Pages Veröffentlicht. Du kannst den Code daz
 ## Urheberrechtshinweise
 ### Allgemein
 * [Hugo](https://gohugo.io)
-* [Split Theme](https://onepagelove.com/split)
 * [Remix Icon](https://remixicon.com)
 * [Github Pages](https://pages.github.com/)
 * [Umami](https://umami.is)
 
 ### CSS und JS/jQuery
 * [Tooltip](https://codepen.io/redouglas/pen/yyyXjm)
-* [Slider](https://codepen.io/geekwen/pen/QNxymm)
 * [PX-to-REM](https://daniellamb.com/experiments/px-to-rem-calc)
-* [Page Loader](https://github.com/aarmea/mfw-singlepage)
 
 ### Bilder
 * [Licht- und Schattenspiel](https://www.facebook.com/lichtundschattenspiel)

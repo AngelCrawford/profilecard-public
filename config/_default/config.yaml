@@ -19,45 +19,6 @@ imaging:
   quality: 100
 
 params:
-  slider:
-    count        : 9 # wird für das CSS benötigt!
-    clickSpeed   : "1s"
-    images:
-      - name     : "profile-pic.jpg"
-        credit   : "📅 2021-10-02 <small>|</small> 📷 Me <small>|</small> 💄 Me"
-        weight   : 1
-        position : "center 20%"
-      - name     : "berlin-reise.jpeg"
-        credit   : "📅 2022-09-22 <small>|</small> 📷 A friend <small>|</small> 💄 Me"
-        weight   : 2
-      - name     : "wgt.jpg"
-        credit   : "📅 2023-05-28 <small>|</small> 📷 A friend <small>|</small> 💄 Me"
-        weight   : 3
-        position : "center 40%"
-      - name     : "2013-05-14.jpg"
-        credit   : "📅 2013-05-14 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 Me"
-        position : "center top"
-        weight   : 4
-      - name     : "IMG_7764.jpg"
-        credit   : "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"    
-        position : "center 5%"
-        weight   : 5
-      - name     : "IMG_7556.jpg"
-        credit   : "📅 2015-01-11 <small>|</small> 📷 <a href='https://www.facebook.com/lichtundschattenspiel'>Licht- und Schattenspiel</a> <small>|</small> 💄 <a href='https://www.facebook.com/KaraKuckoo'>Kara Kuckoo</a>"
-        position : "center 5%"
-        weight   : 6
-      - name     : "witch.jpg"
-        credit   : "📅 2022-09-03 <small>|</small> 📷 A friend <small>|</small> 💄 Costume by me ;)"
-        position : "center 20%"
-        weight   : 8
-      - name     : "pest-doktor.jpg"
-        credit   : "📅 2020-08-01 <small>|</small> 📷 <a href='https://www.facebook.com/BrainfoodPhotographyDesign'>Brainfood Photography & Layout</a> <small>|</small> 💄 Costume by me ;)"
-        position : "center 20%"
-        weight   : 7
-      - name     : "IMG-20230818-WA0001.jpg"
-        credit   : "📅 2023-08-12 <small>|</small> 📷 <a href='https://www.instagram.com/adjastonascursol'>Adjaston Ascursol</a>"
-        position : "center 10%"
-        weight   : 9
   breakpoints:
     bp_smallish: "1200px"
     bp_tablet  : "800px"
@@ -65,6 +26,7 @@ params:
   birthdate       : "1987-02-05"
   shareImage      : "images/social.jpg"
   favicon         : "favicon.ico"
+  profile         : "images/profile.jpg"
   links:
     - text    : "Mastodon"
       url     : "https://norden.social/@Angel_Crawford_ftw"

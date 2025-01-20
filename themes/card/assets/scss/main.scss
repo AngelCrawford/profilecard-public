@@ -33,13 +33,7 @@ $tt-bg-color        : rgba(0, 0, 0, 0.5);
 $tt-anim-duration   : 0s;
 $tt-anim-delay      : .2s;
 
-// Slider
-$slider-number: {{ .Site.Params.slider.count | default "3" }};
-$switch-speed : {{ .Site.Params.slider.clickSpeed | default "1s" }};
-
-
 @import "00-reset";
 @import "01-fonts";
 @import "02-content";
-@import "03-slider";
-@import "04-modal";
+@import "03-modal";

@@ -29,16 +29,13 @@ Built with Hugo CMS and hosted on Github Pages. You can find the Code on [Github
 ## Thanks to
 ### Generally
 * [Hugo](https://gohugo.io)
-* [Split Theme](https://onepagelove.com/split)
 * [Remix Icon](https://remixicon.com)
 * [Github Pages](https://pages.github.com/)
 * [Umami](https://umami.is)
 
 ### CSS and JS/jQuery
 * [Tooltip](https://codepen.io/redouglas/pen/yyyXjm)
-* [Slider](https://codepen.io/geekwen/pen/QNxymm)
 * [PX-to-REM](https://daniellamb.com/experiments/px-to-rem-calc)
-* [Page Loader](https://github.com/aarmea/mfw-singlepage)
 
 ### Images
 * [Licht- und Schattenspiel](https://www.facebook.com/lichtundschattenspiel)

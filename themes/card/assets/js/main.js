@@ -6,7 +6,6 @@ function addEventListener(selector, event, callback) {
   }
 };
 
-
 // ***************************************** RELOAD UMAMI *******************************************
 function loadUmamiScript() {
   // Check if the Umami script is already loaded to avoid duplicates
@@ -20,77 +19,6 @@ function loadUmamiScript() {
     document.head.appendChild(umamiScript);
   }
 }
-
-// ************************************** SLIDER MOBILE TOUCH ***************************************
-if (typeof isSliderEventAttached === 'undefined') {
-  // Slider stops working after reload Scripts 
-  var isSliderEventAttached = false; // 'var' allows for redeclaration but be mindful of scoping
-}
-reinitializeSlider();
-
-function reinitializeSlider() {
-  // Reattach event listeners for the slider here
-  if (!isSliderEventAttached) {
-    addEventListener("#image-slider", "touchstart", touchSlider);
-    isSliderEventAttached = true;
-  }
-}
-
-// Listen to input event on all inputs within .s-wrap
-document.querySelectorAll('.s-wrap > input').forEach(input => {
-  input.addEventListener('input', function() {
-    var index = document.querySelector('.s-wrap > input:checked');
-  });
-});
-
-// Handle touchstart event on #image-slider
-function touchSlider(event) {
-  // Get the count of all inputs within .s-wrap
-  const slidesCount = document.querySelectorAll('.s-wrap > input').length;
-  const xClick = event.touches[0].pageX;
-
-  this.addEventListener('touchmove', function(event) {
-    const xMove = event.touches[0].pageX;
-    const sensitivityInPx = 20;
-
-    if (Math.floor(xClick - xMove) > sensitivityInPx ) {
-      var index = document.querySelector('input:checked');
-      var slider = parseInt(index.id.replace('s-', '')) + 1;
-
-      if (slider == (slidesCount + 1)) {
-        slider = slidesCount;
-      }
-
-      document.querySelector('.s-wrap #' + index.id + ':checked ~ .s-content').style.transform = `translateX(calc(-(100% / ${slidesCount}) * (${slider} - 1)))`;
-      document.getElementById('s-' + slider).checked = true;
-      this.removeEventListener('touchmove', arguments.callee);
-
-    } else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
-      var index = document.querySelector('input:checked');
-      var slider = parseInt(index.id.replace('s-', '')) - 1;
-
-      if (slider == 0) {
-        slider = 1;
-      }
-
-      document.querySelector('.s-wrap #' + index.id + ':checked ~ .s-content').style.transform = `translateX(calc(-(100% / ${slidesCount}) * (${slider} - 1)))`;
-      document.getElementById('s-' + slider).checked = true;
-      this.removeEventListener('touchmove', arguments.callee);
-    }
-  });
-};
-
-// ************************************** SCROLL TO TOP BUTTON **************************************
-addEventListener("#mainContent", "scroll", scrollFunction);
-function scrollFunction() {
-  var myButton = document.getElementById("back-to-top-button");
-
-  if (document.getElementById("mainContent").scrollTop >= 400 || document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400 ) {
-    myButton.classList.remove("hidden");
-  } else {
-    myButton.classList.add("hidden");
-  }
-};
 
 // ********************************************* SPOTIFY ********************************************
 // Spotify Modal Functions
