@@ -22,7 +22,6 @@ Built with Hugo CMS and hosted on Github Pages.
 ### CSS, JS, jQuery
 * [Tooltip](https://codepen.io/redouglas/pen/yyyXjm)
 * [Slider](https://codepen.io/geekwen/pen/QNxymm)
-* [Pie Chart](https://codepen.io/ejsado/pen/cLrlm)
 * [Page Loader](https://github.com/aarmea/mfw-singlepage)
 
 ### Images

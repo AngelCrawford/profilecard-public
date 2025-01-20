@@ -5,7 +5,5 @@ Disallow: /legal-notice/
 
 Disallow: /privacy-policy/
 
-Disallow: /series_movies/
 
-
-Sitemap: https://angel-crawford.de/sitemap.xml
+Sitemap: http://localhost:1313/sitemap.xml

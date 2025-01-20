@@ -244,67 +244,6 @@ function eraseCookie(name) {
   document.cookie = name+'=; Max-Age=-99999999;';
 };
 
-// ******************************************** PIE CHART *******************************************
-function sliceSize(dataNum, dataTotal) {
-  return (dataNum / dataTotal) * 360;
-}
-function addSlice(sliceSize, pieElement, offset, sliceID, color) {
-  var pie = document.querySelector(pieElement);
-  var slice = document.createElement("div");
-  slice.className = "slice " + sliceID;
-  slice.innerHTML = "<span></span>";
-  pie.appendChild(slice);
-
-  offset = offset - 1;
-  var sizeRotation = -179 + sliceSize;
-  slice.style.transform = "rotate(" + offset + "deg) translate3d(0,0,0)";
-  slice.querySelector("span").style.transform = "rotate(" + sizeRotation + "deg) translate3d(0,0,0)";
-  slice.querySelector("span").style.backgroundColor = color;
-}
-function iterateSlices(sliceSize, pieElement, offset, dataCount, sliceCount, color) {
-  var sliceID = "s" + dataCount + "-" + sliceCount;
-  var maxSize = 179;
-  if (sliceSize <= maxSize) {
-    addSlice(sliceSize, pieElement, offset, sliceID, color);
-  } else {
-    addSlice(maxSize, pieElement, offset, sliceID, color);
-    iterateSlices(sliceSize - maxSize, pieElement, offset + maxSize, dataCount, sliceCount + 1, color);
-  }
-}
-function createPie(dataElement, pieElement) {
-  var listData = [];
-  var spans = document.querySelectorAll(dataElement + " span");
-  spans.forEach(function(span) {
-    listData.push(Number(span.innerHTML));
-  });
-
-  var listTotal = listData.reduce(function(acc, val) {
-    return acc + val;
-  }, 0);
-
-  var offset = 0;
-  var color = [
-    "#3f3f3f",
-    "#717171",
-    "#b6b6b6",
-    "#ffffff",
-    "#137457",
-    "#0c4836",
-    "#17a2b8",
-    "#0f6674",
-    "#296ACC",
-  ];
-
-  listData.forEach(function(data, i) {
-    var size = sliceSize(data, listTotal);
-    iterateSlices(size, pieElement, offset, i, 0, color[i]);
-    var listItem = document.querySelector(dataElement + " li:nth-child(" + (i + 1) + ")");
-    listItem.style.borderColor = color[i];
-    offset += size;
-  });
-}
-createPie(".pieID.legend", ".pieID.pie");
-
 // **************************************************************************************************
 // Function to remove an event listener
 function removeEventListener(selector, event, callback) {

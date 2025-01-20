@@ -39,7 +39,6 @@ Built with Hugo CMS and hosted on Github Pages. You can find the Code on [Github
 * [Tooltip](https://codepen.io/redouglas/pen/yyyXjm)
 * [Slider](https://codepen.io/geekwen/pen/QNxymm)
 * [PX-to-REM](https://daniellamb.com/experiments/px-to-rem-calc)
-* [Pie Chart](https://codepen.io/ejsado/pen/cLrlm)
 * [Page Loader](https://github.com/aarmea/mfw-singlepage)
 
 ### Images
