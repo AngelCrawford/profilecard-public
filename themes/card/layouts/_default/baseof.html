@@ -15,7 +15,9 @@
     <div class="split-content" id="mainContent">
       <div class="split-content-vertically-center" id="back-to-top">
         {{ if not (eq .RelPermalink "404.html") }}
-          {{ partial "intro" . }}
+          <div class="split-intro">
+            {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+          </div>        
         {{ end }}
 
         {{ block "main" .  }}

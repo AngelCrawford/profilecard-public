@@ -1,6 +1,5 @@
 +++
-title = "Angel Crawford"
-tagline = "Privacy Policy"
+title = "Privacy Policy"
 translationKey = "privacy-policy"
 robotsdisallow = true
 smallBodyText = true

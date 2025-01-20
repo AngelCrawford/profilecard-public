@@ -1,6 +1,5 @@
 +++
-title = "Angel Crawford"
-tagline = "Impressum"
+title = "Impressum"
 translationKey = "legal-notice"
 slug = "impressum"
 robotsdisallow = true

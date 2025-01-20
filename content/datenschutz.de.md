@@ -1,6 +1,5 @@
 +++
-title = "Angel Crawford"
-tagline = "Datenschutzerklärung"
+title = "Datenschutz-erklärung"
 translationKey = "privacy-policy"
 slug = "datenschutz"
 robotsdisallow = true

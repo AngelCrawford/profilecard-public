@@ -1,6 +1,5 @@
 +++
-title = "Angel Crawford"
-tagline = "Legal Notice"
+title = "Legal Notice"
 translationKey = "legal-notice"
 robotsdisallow = true
 smallBodyText = true
