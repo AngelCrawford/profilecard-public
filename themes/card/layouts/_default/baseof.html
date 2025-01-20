@@ -7,17 +7,27 @@
 
 <body>
 
+  <!-- Links -->
+  {{ partial "links" . }}
+
+  <main>
+
     {{ if not (eq .RelPermalink "404.html") }}
       <header>
         <img src="{{ .Site.Params.profile }}" />
-        
+
         {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
       </header>
     {{ end }}
 
-    <main>{{ block "main" .  }}{{ end }}</main>
+    {{ block "main" .  }}{{ end }}
+
 
     <footer>{{ partial "footer" . }}</footer>
+
+  </main>
+
+
 
 
 

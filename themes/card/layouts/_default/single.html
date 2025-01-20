@@ -2,10 +2,9 @@
 
   <div class="small-text">
 
-  {{ .Content }}
-
-  <a class="back-button" href="{{ .Site.Params.baseURL | absLangURL }}">{{ i18n "back" }}</a>
+    {{ .Content }}
+    <a class="back-button" href="{{ .Site.Params.baseURL | absLangURL }}">{{ i18n "back" }}</a>
 
   </div>
-  {{  partial "links" . }}
+
 {{ end }}
