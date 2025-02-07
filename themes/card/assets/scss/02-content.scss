@@ -20,17 +20,8 @@ body {
   line-height: 33px;
   letter-spacing: -0.2px;
   color: $color-text;
-  min-height: calc(100vh - 6em);
-  margin: 3em auto;
-
-
-  display: grid;
-  grid-template-columns: 300px 2fr;
-  grid-template-rows: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: column;
-
+  height: 100vh;
+  display: flex;
   
   p {
     color: $color-text;
@@ -38,10 +29,47 @@ body {
 
 }
 
+.container {
+  display: flex;
+  min-width: 800px;
+  height: fit-content;
+  padding: 1.5em 1.5em 1em 1em;
+  margin: 2em auto;
+
+  background: rgba($primary, 0.03);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba($primary, 0.2);
+
+  @media screen and (max-width: 924px) {
+    margin: 2em;
+    min-width: unset;
+    flex-direction: column;
+  }
+  @media (max-width: 532px ) {
+    margin: 1em;
+  }
+  @media (max-width: 500px ) {
+    margin: 1em;
+    padding: .5em .5em .3em .3em;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+}
 
 .links {
-  margin: 2.2em 0 calc(2.2em - 20px) -12px;
-  grid-area: 1 / 1 / 2 / 2;
+  width: 80px;
+  height: 700px;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  @media screen and (max-width: 924px) {
+    width: 100%;
+    height: max-content;
+  }
 
   ul.icons {
     list-style-type: none;
@@ -49,6 +77,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    height: 100%;
+
+    @media screen and (max-width: 924px) {
+      flex-direction: row;
+    }
 
     .round-icons {
       margin-left: -5px;
@@ -60,10 +93,13 @@ body {
     li {
       display: inline-block;
       transition-duration: 0.2s;
-      min-width: 50px;
-      height: 50px;
       flex-grow: 1;
-      // border: 1px solid red;
+      // border: 1px solid purple;
+
+      @media screen and (max-width: 924px) {
+          min-width: 80px;
+          min-height: 60px;
+      }
     
       // @media (min-width: 1288px) {
       //   flex-grow: 1;
@@ -155,48 +191,69 @@ body {
 }
 
 
-header {
-  @include font-bold;
-  line-height: 80px;
-  letter-spacing: -2px;
-  text-align: center;
-
-  h1 {
-    line-height: 1.25em;
-    color: $color-tagline;
-    font-weight: 900;
-    letter-spacing: 1px;
-    background: -moz-linear-gradient(left, $primary 0%, $accent 100%);
-    background: -webkit-linear-gradient(left, $primary 0%, $accent 100%);
-    background: linear-gradient(135deg, $primary, $accent);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17a2b8', endColorstr='#20c997',GradientType=1 );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    @media (min-width: $bp-smallish + 1px) {
-      font-size: 3.74vw;
-    }
-    @media (max-width: $bp-smallish) {
-      font-size: 3.6vw;
-    }
-    @media (max-width: $bp-smallish) {
-      font-size: 2.429rem;
-    }
-    @media (max-width: $bp-mobile) {
-      font-size: 1.9rem;
-    }
-  }
-
-  img {
-    width: 200px;
-    border-radius: 50%;
-  }
-}
-
-
 main {
-  grid-area: 1 / 1 / 2 / 3;
-  padding: 30px 0 0 0;
+  // border: 1px solid red;
+  padding: 0 0 0 3em;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: fit-content;
+  min-height: 700px;
+
+  @media screen and (max-width: 924px) {
+    padding: 0;
+  }
+
+  header {
+    @include font-bold;
+    line-height: 80px;
+    letter-spacing: -2px;
+    text-align: center;
+
+    @media screen and (max-width: 924px) {
+      padding: 2em 0 0 0;
+    }
+  
+    h1 {
+      line-height: 1.25em;
+      color: $color-tagline;
+      font-weight: 900;
+      letter-spacing: 1px;
+      background: -moz-linear-gradient(left, $primary 0%, $accent 100%);
+      background: -webkit-linear-gradient(left, $primary 0%, $accent 100%);
+      background: linear-gradient(135deg, $primary, $accent);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17a2b8', endColorstr='#20c997',GradientType=1 );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: .2em 0 .7em 0;
+      @media (min-width: $bp-smallish + 1px) {
+        font-size: 3.74vw;
+      }
+      @media (max-width: $bp-smallish) {
+        font-size: 3.6vw;
+      }
+      @media (max-width: $bp-smallish) {
+        font-size: 2.429rem;
+      }
+      @media (max-width: $bp-mobile) {
+        font-size: 1.9rem;
+      }
+    }
+  
+    img {
+      width: 200px;
+      border-radius: 50%;
+
+      background: rgba($primary, 0.03);
+      // border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      border: 1px solid rgba($primary, 0.2);
+    }
+  }
+  
 
   .small-text {
     span.ltrText {
@@ -322,10 +379,11 @@ main {
   ul,
   ol,
   dl {
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     list-style-position: outside;
     line-height: inherit;
     list-style-type: none;
+    margin: 0 auto;
   }
 
   li {
@@ -362,12 +420,7 @@ main {
     }
   }
 
-  ul {
-    margin-left: 0.02em;
-  }
-
   ol {
-    margin-left: 2.25em;
     list-style-type: decimal;
   }
 
@@ -402,83 +455,85 @@ main {
 
   .spotify-overlay {
     // background: url("/images/spotify-overlay.png") no-repeat;
-    margin: auto;
+    margin: 2em auto;
     height: 80px;
     width: 300px;
     display: block;
     background-color: $color-background;
     cursor: pointer;
-    @media (max-width: 388px ) {
-      width: 80px;
-      overflow: hidden;
-    }
-    @media (min-width: 800px) and (max-width: 868px) {
+    @media (max-width: 496px ) {
       width: 80px;
       overflow: hidden;
     }
   }
-}
 
-
-footer {
-  height: 50px;
-  font-size: 0.5714rem;
-  line-height: 14px;
-  @include font-light;
-
-  span {
-    & a {
-      vertical-align: middle;
-      height: 100%;
-      display: inline-flex;
-      align-items: center;
+  
+  footer {
+    height: max-content;
+    font-size: 0.5714rem;
+    line-height: 14px;
+    @include font-light;
+    margin: auto 0 0 0;
+    text-align: center;
+      
+    span.copyright:after, .copyright-config:before {
+      content: " | ";
+      font-size: 0.8571rem;
+      color: rgba($color-text, .2);
     }
 
-    &.copyright {
-      color: rgba($color-text, .5);
-      &:after {
-        content: " | ";
-        font-size: 0.8571rem;
-        color: rgba($color-text, .2);
-      }
-      .copyright-config:before  {
-        content: " | ";
-        font-size: 0.8571rem;
-        color: rgba($color-text, .2);
-      }
-    }
-
-    &.languages {
-      opacity: .5;
-      padding: 0;
-      img {
-        height: 13px;
-        width: 17px;
-        border: 1px solid rgba($color-text, .5);
-      }
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    &.footer-menu {
+    span {
       & a {
-        color: $secondary;
-        // transition-duration: 0.5s;
-        display: contents;
-        opacity: .5;
-        &::before {
-          color: $color-text;
-          opacity: 1;
+        vertical-align: middle;
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        border: none;
+
+        &:hover {
+          border: none;
         }
       }
 
-      & a::before,
-      & .active:before {
-        content: " | ";
-        font-size: 0.8571rem;
-        color: rgba($color-text, .2);
+      &.copyright {
+        color: rgba($color-text, .5);
+      }
+
+      &.languages {
+        opacity: .5;
+        padding: 0;
+        img {
+          height: 13px;
+          width: 17px;
+          border: 1px solid rgba($color-text, .5);
+        }
+        &:hover {
+          opacity: 1;
+          border: none;
+        }
+      }
+
+      &.footer-menu {
+        a {
+          color: $accent;
+          transition-duration: .5s;
+          display: contents;
+          opacity: .5;
+
+          &:hover {
+            color: rgba($color-text, .5);
+          }
+        }
+
+        & a::before,
+        & .active:before {
+          content: " | ";
+          font-size: 0.8571rem;
+          color: rgba($color-text, .2);
+        }
       }
     }
   }
 }
+
+

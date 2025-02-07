@@ -7,29 +7,28 @@
 
 <body>
 
-  <!-- Links -->
-  {{ partial "links" . }}
+  <div class="container">
 
-  <main>
+    <!-- Links -->
+    {{ partial "links" . }}
 
-    {{ if not (eq .RelPermalink "404.html") }}
-      <header>
-        <img src="{{ .Site.Params.profile }}" />
+    <main>
 
-        {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
-      </header>
-    {{ end }}
+      {{ if not (eq .RelPermalink "404.html") }}
+        <header>
+          <img src="{{ .Site.Params.profile }}" />
 
-    {{ block "main" .  }}{{ end }}
+          {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+        </header>
+      {{ end }}
 
-
-    <footer>{{ partial "footer" . }}</footer>
-
-  </main>
+      {{ block "main" .  }}{{ end }}
 
 
+      <footer>{{ partial "footer" . }}</footer>
 
-
+    </main>
+  </div>
 
 </body>
 

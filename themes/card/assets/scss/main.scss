@@ -19,6 +19,7 @@ $primary            : #17a2b8;
 $accent             : #20c997;
 $secondary          : #b78846;
 
+
 // Breakpoints
 $bp-smallish        : {{ .Site.Params.breakpoints.bp_smallish | default "1200px" }};
 $bp-tablet          : {{ .Site.Params.breakpoints.bp_tablet | default "800px" }};

@@ -49,15 +49,12 @@ function removeOverlay() {
 
   var removeImg = document.getElementById('remove-img');
   if (removeImg !== null) {
-    if (window.innerWidth > 800 && window.innerWidth < 868) {
+    if (window.innerWidth < 496) {
       removeImg.innerHTML =
         '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd?utm_source=generator&theme=0" width="80" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
-    } else if (window.innerWidth > 388) {
-      removeImg.innerHTML =
-        '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd?utm_source=generator&theme=0" width="300" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
     } else {
       removeImg.innerHTML =
-        '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd?utm_source=generator&theme=0" width="80" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
+        '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd?utm_source=generator&theme=0" width="300" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
     }
   }
 };
