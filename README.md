@@ -23,8 +23,5 @@ Built with Hugo CMS and hosted on Github Pages.
 * [PX-to-REM](https://daniellamb.com/experiments/px-to-rem-calc)
 
 ### Images
-* [Licht- und Schattenspiel](https://www.facebook.com/lichtundschattenspiel)
-* [Kara Kuckoo](https://www.facebook.com/KaraKuckoo)
-* [Brainfood Photography & Layout](https://www.facebook.com/BrainfoodPhotographyDesign)
 * [Favicon Generator](https://realfavicongenerator.net)
 * [The High Resolution Flag Sprite](https://www.freakflagsprite.com)

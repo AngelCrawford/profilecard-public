@@ -26,7 +26,7 @@ params:
   birthdate       : "1987-02-05"
   shareImage      : "images/social.jpg"
   favicon         : "favicon.ico"
-  profile         : "images/profile.jpg"
+  profile         : "images/profile.webp"
   linkCounter : 10 # WICHTIG! Mobile circle not working, if not set
   links:
     - text    : "Mastodon"

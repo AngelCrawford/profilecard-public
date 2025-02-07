@@ -39,9 +39,6 @@ Gebaut mit Hugo CMS und auf Github Pages Veröffentlicht. Du kannst den Code daz
 * [PX-to-REM](https://daniellamb.com/experiments/px-to-rem-calc)
 
 ### Bilder
-* [Licht- und Schattenspiel](https://www.facebook.com/lichtundschattenspiel)
-* [Kara Kuckoo](https://www.facebook.com/KaraKuckoo)
-* [Brainfood Photography & Layout](https://www.facebook.com/BrainfoodPhotographyDesign)
 * [Favicon Generator](https://realfavicongenerator.net)
 * [The High Resolution Flag Sprite](https://www.freakflagsprite.com)
 

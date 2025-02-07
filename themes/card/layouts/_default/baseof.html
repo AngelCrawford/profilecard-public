@@ -17,7 +17,7 @@
 
       {{ if not (eq .RelPermalink "404.html") }}
         <header>
-          <img src="{{ .Site.Params.profile }}" />
+          <img src="{{ .Site.Params.profile }}" width="200" height="200" />
 
           {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
         </header>
