@@ -101,20 +101,20 @@ var month = dateObject.getMonth() + 1;
 var day = dateObject.getDate();
 var nowDate = dateObject.getFullYear() + "-" + (month < 10 ? '0' : '') + month + "-" + (day < 10 ? '0' : '') + day;
 
-// var xmasStart = dateObject.getFullYear() + "-12-01";
-// var xmasEnd = dateObject.getFullYear() + "-12-27";
-var xmasStart = dateObject.getFullYear() + "-02-01";
-var xmasEnd = dateObject.getFullYear() + "-02-27";
+var xmasStart = dateObject.getFullYear() + "-12-01";
+var xmasEnd = dateObject.getFullYear() + "-12-27";
+// var xmasStart = dateObject.getFullYear() + "-02-01";
+// var xmasEnd = dateObject.getFullYear() + "-02-27";
 if (nowDate >= xmasStart && nowDate <= xmasEnd) {
     document.getElementById("santahat").style.display = "block";
 } else {
     document.getElementById("santahat").style.display = "none";
 }
 
-// var halloweenStart = dateObject.getFullYear() + "-10-07";
-// var halloweenEnd = dateObject.getFullYear() + "-10-31";
-var halloweenStart = dateObject.getFullYear() + "-02-07";
-var halloweenEnd = dateObject.getFullYear() + "-02-31";
+var halloweenStart = dateObject.getFullYear() + "-10-07";
+var halloweenEnd = dateObject.getFullYear() + "-10-31";
+// var halloweenStart = dateObject.getFullYear() + "-02-07";
+// var halloweenEnd = dateObject.getFullYear() + "-02-31";
 if (nowDate >= halloweenStart && nowDate <= halloweenEnd) {
     document.getElementById("ghosty").style.display = "block";
 } else {

@@ -38,6 +38,8 @@ body {
   height: fit-content;
   padding: 1.5em 1.5em 1em 1em;
   margin: 2em auto;
+  position: relative;
+  z-index: 2;
 
   background: rgba($primary, 0.03);
   border-radius: 16px;
