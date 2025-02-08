@@ -1,0 +1,86 @@
+// THANKS: https://codepen.io/bennettfeely/pen/mEjio
+#santahat {
+    display: none;
+    position: absolute;
+    z-index: 55;
+    margin-top: 20px;
+    margin-left: 128px;
+
+    @media screen and (max-width: 924px) {
+        left: 50%;
+        margin-left: -205px;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin-left: -200px;
+    }
+
+    .front, .back {
+        position: absolute;
+        width: 50px;
+        height: 45px;
+        transform: rotate(-15deg);
+    }
+
+    .front { 
+        z-index: 9; 
+    }
+    .back {
+        z-index: 1;
+        animation: counter-wiggle 4s ease-in-out;
+        -webkit-animation: counter-wiggle 4s ease-in-out;
+        transform-origin: 20px 30px;
+    }
+    .santa-hat-piece {
+        fill: firebrick;
+    }
+    
+    @keyframes counter-wiggle {
+        33%{ transform: rotate(-20deg); }
+        66%{ transform: rotate(20deg); }
+    }
+}
+
+// THANKS: https://codepen.io/uchardon/pen/eGjJap?editors=0100
+#ghosty {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -10px;
+    width: 250px;
+    height: 200px;
+    z-index: 3;
+    display: none;
+
+    @media screen and (max-width: 924px) {
+        left: 50%;
+        margin-left: -350px;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin-left: -340px;
+    }
+
+    svg#ghost {
+        -webkit-filter: url("#disfilter");
+        filter: url("#disfilter") blur(1px);
+        animation: ghost 4s forwards 1;
+        animation-iteration-count: 1;
+        animation-delay: .5s;
+        opacity: 0;
+    }
+    @keyframes ghost {
+        0% { opacity: 0; }
+        50% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+}
+
+#firework {
+    width: 17vw;
+    height: 16.5vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0%;
+    z-index: 1;
+}
