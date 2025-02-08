@@ -49,13 +49,8 @@ function removeOverlay() {
 
   var removeImg = document.getElementById('remove-img');
   if (removeImg !== null) {
-    if (window.innerWidth < 496) {
-      removeImg.innerHTML =
-        '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd?utm_source=generator&theme=0" width="80" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
-    } else {
-      removeImg.innerHTML =
-        '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd?utm_source=generator&theme=0" width="300" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
-    }
+    removeImg.innerHTML =
+      '<iframe src="https://open.spotify.com/embed/playlist/520act29dQq3SDNilMbpfd?utm_source=generator&theme=0" width="300" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
   }
 };
 
@@ -111,16 +106,15 @@ if (nowDate >= xmasStart && nowDate <= xmasEnd) {
     document.getElementById("santahat").style.display = "none";
 }
 
-var halloweenStart = dateObject.getFullYear() + "-10-07";
-var halloweenEnd = dateObject.getFullYear() + "-10-31";
-// var halloweenStart = dateObject.getFullYear() + "-02-07";
-// var halloweenEnd = dateObject.getFullYear() + "-02-31";
+// var halloweenStart = dateObject.getFullYear() + "-10-07";
+// var halloweenEnd = dateObject.getFullYear() + "-10-31";
+var halloweenStart = dateObject.getFullYear() + "-02-07";
+var halloweenEnd = dateObject.getFullYear() + "-02-31";
 if (nowDate >= halloweenStart && nowDate <= halloweenEnd) {
     document.getElementById("ghosty").style.display = "block";
 } else {
     document.getElementById("ghosty").style.display = "none";
 }
-
 
 // Firework loads inanother file "firework.js"
 

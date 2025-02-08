@@ -22,8 +22,8 @@ body {
   line-height: 33px;
   letter-spacing: -0.2px;
   color: $color-text;
-  height: 100vh;
-  width: 100vw;
+  // height: 100vh;
+  // width: 100vw;
   display: flex;
   
   p {
@@ -35,7 +35,7 @@ body {
 .container {
   display: flex;
   width: 800px;
-  height: fit-content;
+  // height: fit-content;
   padding: 1.5em 1.5em 1em 1em;
   margin: 2em auto;
   position: relative;
@@ -291,7 +291,6 @@ body {
     }
   }
 }
-
 
 
 main {
@@ -553,10 +552,6 @@ main {
     display: block;
     background-color: $color-background;
     cursor: pointer;
-    @media (max-width: 496px ) {
-      width: 80px;
-      overflow: hidden;
-    }
   }
 
   
@@ -629,3 +624,16 @@ main {
 }
 
 
+#city {
+  background-image: url("/images/city.svg");
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  background-size: auto 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  filter: sepia(0.4);
+  height: 300px;
+  width: 100%;
+  opacity: .2;
+}
