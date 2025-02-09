@@ -90,7 +90,8 @@ function eraseCookie(name) {
 
 
 // ********************************************* EVENTS *********************************************
-    
+
+// X-MAS
 var dateObject = new Date();
 var month = dateObject.getMonth() + 1;
 var day = dateObject.getDate();
@@ -106,14 +107,72 @@ if (nowDate >= xmasStart && nowDate <= xmasEnd) {
     document.getElementById("santahat").style.display = "none";
 }
 
-// var halloweenStart = dateObject.getFullYear() + "-10-07";
-// var halloweenEnd = dateObject.getFullYear() + "-10-31";
-var halloweenStart = dateObject.getFullYear() + "-02-07";
-var halloweenEnd = dateObject.getFullYear() + "-02-31";
+// HALLOWEEN
+var halloweenStart = dateObject.getFullYear() + "-10-07";
+var halloweenEnd = dateObject.getFullYear() + "-10-31";
+// var halloweenStart = dateObject.getFullYear() + "-02-07";
+// var halloweenEnd = dateObject.getFullYear() + "-02-31";
 if (nowDate >= halloweenStart && nowDate <= halloweenEnd) {
     document.getElementById("ghosty").style.display = "block";
+    document.getElementById("container-pumpkin").style.display = "flex";
 } else {
     document.getElementById("ghosty").style.display = "none";
+    document.getElementById("container-pumpkin").style.display = "none";
+}
+
+// SNOW FALLING
+var winterStartOldYear = dateObject.getFullYear() + "-12-21";
+var winterEndOldYear = dateObject.getFullYear() + "-12-31";
+var winterStartNewYear = dateObject.getFullYear() + "-01-01";
+var winterEndNewYear = dateObject.getFullYear() + "-03-20";
+var nowDate = dateObject.getFullYear() + "-" + (month < 10 ? '0' : '') + month + "-" + (day < 10 ? '0' : '') + day;
+
+if ( (nowDate >= winterStartOldYear && nowDate <= winterEndOldYear) || (nowDate >= winterStartNewYear && nowDate <= winterEndNewYear) ) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const snowContainer = document.querySelector(".snow-container");
+    const snowflakeCount = 100; // Maximum number of snowflakes
+    const snowfallTime = 10 * 1000; // Stop creating new snowflakes after 10s
+    let snowflakes = [];
+  
+    function createSnowflake() {
+        let snowflake = document.createElement("div");
+        snowflake.classList.add("snowflake");
+  
+        // Random properties
+        let size = Math.random() * 6 + 2; // 2px to 8px
+        let leftPosition = Math.random() * 100; // 0% to 100%
+        let fallDuration = Math.random() * 5 + 3; // 3s to 8s
+        let delay = Math.random() * 5; // 0s to 5s
+  
+        // Apply styles
+        snowflake.style.width = `${size}px`;
+        snowflake.style.height = `${size}px`;
+        snowflake.style.left = `${leftPosition}%`;
+        snowflake.style.opacity = Math.random();
+        snowflake.style.animationDuration = `${fallDuration}s`;
+        snowflake.style.animationDelay = `${delay}s`;
+  
+        snowflakes.push(snowflake);
+        snowContainer.appendChild(snowflake);
+  
+        // Remove snowflake from DOM after it finishes falling (prevents memory leaks)
+        setTimeout(() => {
+            snowflake.remove();
+        }, (fallDuration + delay) * 1000);
+    }
+  
+    // Generate snowflakes continuously
+    let snowInterval = setInterval(() => {
+        if (snowflakes.length < snowflakeCount) {
+            createSnowflake();
+        }
+    }, 200); // New snowflake every 200ms
+  
+    // Stop snowfall after X seconds (no new flakes will be added, but existing ones finish naturally)
+    setTimeout(() => {
+        clearInterval(snowInterval); // Stop adding new snowflakes
+    }, snowfallTime);
+  });
 }
 
 // Firework loads inanother file "firework.js"
