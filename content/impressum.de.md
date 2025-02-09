@@ -37,6 +37,10 @@ Gebaut mit Hugo CMS und auf Github Pages Veröffentlicht. Du kannst den Code daz
 ### CSS und JS/jQuery
 * [Tooltip](https://codepen.io/redouglas/pen/yyyXjm)
 * [PX-to-REM](https://daniellamb.com/experiments/px-to-rem-calc)
+* Feuerwerk @ https://codepen.io/zystvan/details/LEbNRp
+* Kürbis @ https://codepen.io/krautgti/pen/ZEoMvrN?editors=1100
+* Geist @ https://codepen.io/uchardon/pen/eGjJap?editors=0100
+* Weihnachtsmütze @ https://codepen.io/bennettfeely/pen/mEjio
 
 ### Bilder
 * [Favicon Generator](https://realfavicongenerator.net)

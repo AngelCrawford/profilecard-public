@@ -36,6 +36,10 @@ Built with Hugo CMS and hosted on Github Pages. You can find the Code on [Github
 ### CSS and JS/jQuery
 * [Tooltip](https://codepen.io/redouglas/pen/yyyXjm)
 * [PX-to-REM](https://daniellamb.com/experiments/px-to-rem-calc)
+* Firework @ https://codepen.io/zystvan/details/LEbNRp
+* Pumpkin @ https://codepen.io/krautgti/pen/ZEoMvrN?editors=1100
+* Ghost @ https://codepen.io/uchardon/pen/eGjJap?editors=0100
+* Santahat @ https://codepen.io/bennettfeely/pen/mEjio
 
 ### Images
 * [Favicon Generator](https://realfavicongenerator.net)

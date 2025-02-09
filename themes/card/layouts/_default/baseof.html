@@ -15,7 +15,7 @@
 
     <main>
 
-      {{ if not (eq .RelPermalink "404.html") }}
+      {{ if not (eq .RelPermalink "/404.html") }}
         <header>
           <img src="{{ .Site.Params.profile }}" width="200" height="200" alt="Profile Pic of Angel Crawford" title="Profile Pic of Angel Crawford" loading="lazy" />
           {{ partial "events" . }}
