@@ -1,5 +1,5 @@
 +++
-title = "Datenschutz-erklärung"
+title = "Datenschutz"
 translationKey = "privacy-policy"
 slug = "datenschutz"
 robotsdisallow = true

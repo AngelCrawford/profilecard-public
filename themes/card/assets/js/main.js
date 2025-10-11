@@ -12,7 +12,7 @@ function loadUmamiScript() {
   const existingScript = document.querySelector('script[src*="umami"]');
   if (!existingScript) {
     const umamiScript = document.createElement('script');
-    umamiScript.src = 'https://eu.umami.is/script.js'; // Replace with your Umami script URL
+    umamiScript.src = 'https://cloud.umami.is/script.js'; // Replace with your Umami script URL
     umamiScript.setAttribute('data-website-id', '3c41a204-0ff3-4495-ba84-cc6e7daddff2'); // Set your website's unique ID
     umamiScript.async = true;
     umamiScript.defer = true;

@@ -4,7 +4,7 @@
       
       {{ $counter := 1 }}
       {{ range .Site.Params.links }}
-        <a href="{{.url}}" target="_blank" class="tooltip" data-tooltip="{{.text}}" rel="me" aria-label="{{.text}}" data-umami-event="{{.text}}" style="--i: {{ $counter }}">
+        <a href="{{.url}}" target="_blank" class="tooltip" data-tooltip="{{.text}}" rel="me" aria-label="{{.text}}" data-umami-event="{{.text}}" data-umami-event-url="{{.url}}" style="--i: {{ $counter }}">
           <i class="{{.icon}} ri-xl {{ .text }}" style='color: {{.color}}; {{if .opacity}} opacity: {{.opacity}};{{end}}'></i>
         </a>
         {{ $counter = add $counter 1 }}
