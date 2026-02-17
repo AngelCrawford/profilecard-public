@@ -27,7 +27,7 @@ params:
   shareImage      : "images/social.jpg"
   favicon         : "favicon.ico"
   profile         : "images/profile.webp"
-  linkCounter : 10 # WICHTIG! Mobile circle not working, if not set
+  linkCounter : 9 # WICHTIG! Mobile circle not working, if not set
   links:
     - text    : "Mastodon"
       url     : "https://norden.social/@Angel_Crawford_ftw"
@@ -38,11 +38,6 @@ params:
       url     : "https://www.instagram.com/angel_crawford_ftw"
       icon    : "ri-instagram-line"
       color   : "#c13584"
-    - text    : "Threads"
-      url     : "https://www.threads.net/@angel_crawford_ftw"
-      icon    : "ri-threads-line"
-      color   : "#ffffff"
-      opacity : "0.8"
     - text    : "Facebook"
       url     : "https://www.facebook.com/angel.crawford.ftw"
       icon    : "ri-facebook-circle-line"

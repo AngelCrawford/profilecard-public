@@ -49,7 +49,7 @@
 
 <!-- Styles -->
 {{ $sass := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.scss" . }}
-{{ $style := $sass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+{{ $style := $sass | css.Sass | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
 <!-- Scripts (JS in the footer -> baseof.html -->
