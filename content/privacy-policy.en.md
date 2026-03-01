@@ -22,13 +22,7 @@ Additionally, anonymized click events on social media links (e.g. Mastodon, Inst
 
 ## Cookies
 ### Spotify Cookie
-This website sets a single cookie:
-
-| Name | Value | Duration | Purpose |
-|------|-------|----------|---------|
-| `spotifyWidget` | `true` | 13 days | Stores your consent to use the Spotify widget, so the consent popup does not reappear. |
-
-This cookie is only set after you have actively consented to loading the Spotify widget.
+This website sets a single cookie called `spotifyWidget`. It stores the value `true` for 13 days and is used to remember your consent to use the Spotify widget, so the consent popup does not reappear. This cookie is only set after you have actively consented to loading the Spotify widget.
 
 ### Managing Cookies
 You can prevent the storage of cookies by adjusting your browser settings accordingly. However, please note that in this case you may not be able to use all functions of this website to their full extent.

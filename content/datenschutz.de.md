@@ -23,13 +23,7 @@ Zusätzlich werden anonymisierte Klick-Events auf Social-Media-Links (z. B. Mast
 
 ## Cookies
 ### Spotify-Cookie
-Diese Website setzt ein einziges Cookie:
-
-| Name | Wert | Dauer | Zweck |
-|------|------|-------|-------|
-| `spotifyWidget` | `true` | 13 Tage | Speichert Deine Einwilligung zur Nutzung des Spotify-Widgets, damit das Zustimmungs-Popup nicht erneut erscheint. |
-
-Dieses Cookie wird erst gesetzt, nachdem Du dem Laden des Spotify-Widgets aktiv zugestimmt hast.
+Diese Website setzt ein einziges Cookie namens `spotifyWidget`. Es speichert den Wert `true` für 13 Tage und dient dazu, Deine Einwilligung zur Nutzung des Spotify-Widgets zu speichern, damit das Zustimmungs-Popup nicht erneut erscheint. Dieses Cookie wird erst gesetzt, nachdem Du dem Laden des Spotify-Widgets aktiv zugestimmt hast.
 
 ### Cookies verwalten
 Du kannst die Speicherung der Cookies durch eine entsprechende Einstellung Deiner Browser-Software verhindern. Ich weise Dich jedoch darauf hin, dass Du in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich nutzen kannst.
