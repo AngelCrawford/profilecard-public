@@ -8,10 +8,10 @@
   other = "404<br />Page Not Found"
 
 [modalHeader]
-  other = "Allow Google Analytics and Cookies"
+  other = "Allow Spotify and Cookies"
 
 [modalBody]
-  other = "I do not save your personal data. However, if you want to listen to the Spotify playlist, you unfortunately have to agree that Spotify uses Google Analytics and Cookies. I also set a cookie for the widget so that the Popup does not appear constantly.<br />Click on \"Accept\" and get started. \"Cancel\" is of course also possible, but then the player won't work ;)"
+  other = "I do not save your personal data. However, if you want to listen to the Spotify playlist, you need to agree that Spotify uses cookies and its own tracking. I also set a cookie (13 days) for the widget so that this popup does not appear constantly.<br />Click on \"Accept\" and get started. \"Cancel\" is of course also possible, but then the player won't work ;)"
 
 [accept]
   other = "Accept"

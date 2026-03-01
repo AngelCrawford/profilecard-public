@@ -7,7 +7,7 @@ smallBodyText = true
 +++
 
 Es handelt sich hier um eine rein private Website.
-* Ich speicher keine persönliche Daten, siehe [hier](de/datenschutz), was genau ich speichere
+* Ich speichere keine persönlichen Daten, siehe [hier](de/datenschutz), was genau ich speichere
 * Verwende keine Google Dienste
 * Nutze keine Bilder ohne Genehmigung
 * **Fazit:** Meine Daten
@@ -34,7 +34,7 @@ Gebaut mit Hugo CMS und auf Github Pages Veröffentlicht. Du kannst den Code daz
 * [Github Pages](https://pages.github.com/)
 * [Umami](https://umami.is)
 
-### CSS und JS/jQuery
+### CSS und JS
 * [Tooltip](https://codepen.io/redouglas/pen/yyyXjm)
 * [PX-to-REM](https://daniellamb.com/experiments/px-to-rem-calc)
 * Feuerwerk @ https://codepen.io/zystvan/details/LEbNRp

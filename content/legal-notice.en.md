@@ -24,7 +24,7 @@ Mail:
 Built with Hugo CMS and hosted on Github Pages. You can find the Code on [Github](https://github.com/AngelCrawford/profilecard-public).
 * https://angel-crawford.de
 * Languages: Deutsch / English
-* Build with [Hugo](https://gohugo.io)
+* Built with [Hugo](https://gohugo.io)
 
 ## Thanks to
 ### Generally
@@ -33,7 +33,7 @@ Built with Hugo CMS and hosted on Github Pages. You can find the Code on [Github
 * [Github Pages](https://pages.github.com/)
 * [Umami](https://umami.is)
 
-### CSS and JS/jQuery
+### CSS and JS
 * [Tooltip](https://codepen.io/redouglas/pen/yyyXjm)
 * [PX-to-REM](https://daniellamb.com/experiments/px-to-rem-calc)
 * Firework @ https://codepen.io/zystvan/details/LEbNRp
@@ -46,30 +46,28 @@ Built with Hugo CMS and hosted on Github Pages. You can find the Code on [Github
 * [The High Resolution Flag Sprite](https://www.freakflagsprite.com)
 
 ## Terms
-By accessing this Website, accessible from Website.com, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trade mark law.
+By accessing this website, accessible from angel-crawford.de, you are agreeing to be bound by these Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this website are protected by copyright and trademark law.
 
 ## Use License
-Permission is granted to temporarily download one copy of the materials on this Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+Permission is granted to temporarily download one copy of the materials on this website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
 * modify or copy the materials
 * use the materials for any commercial purpose or for any public display
 * remove any copyright or other proprietary notations from the materials or
 * transferring the materials to another person or "mirror" the materials on any other server
 
 ## Disclaimer
-All the materials on this Website are provided “as is”. I make no warranties, may it be expressed or implied, therefore negates all other warranties. Furthermore, I don't make any representations concerning the accuracy or reliability of the use of the materials on its Website or otherwise relating to such materials or any sites linked to this Website.
+All the materials on this website are provided “as is”. I make no warranties, whether expressed or implied, and negate all other warranties. Furthermore, I don't make any representations concerning the accuracy or reliability of the use of the materials on this website or otherwise relating to such materials or any sites linked to this website.
 
-I will not be hold accountable for any damages that will arise with the use or inability to use the materials on this Website.
+I will not be held accountable for any damages that may arise with the use or inability to use the materials on this website.
 
 ## Revisions and Errata
-The materials appearing on this Website may include technical, typographical, or photographic errors. I will not promise that any of the materials in this Website are accurate, complete, or current. I may change the materials contained on its Website at any time without notice.
+The materials appearing on this website may include technical, typographical, or photographic errors. I will not promise that any of the materials on this website are accurate, complete, or current. I may change the materials contained on this website at any time without notice.
 
 ## Links
-I haven't reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by me. The use of any linked website is at the user's own risk.
+I haven't reviewed all of the sites linked to this website and am not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by me. The use of any linked website is at the user's own risk.
 
 ## Site Terms of Use Modifications
-I may revise these Terms of Use for its Website at any time without prior notice. By using this Website, you are agreeing to be bound by the current version of these Terms and Conditions of Use.
+I may revise these Terms of Use for this website at any time without prior notice. By using this website, you are agreeing to be bound by the current version of these Terms and Conditions of Use.
 
 ## Governing Law
-Any claim related to this Website shall be governed by the laws of Country without regards to its conflict of law provisions.
-
-[Quelle](https://www.termsofservicegenerator.net/)
+Any claim related to this website shall be governed by the laws of Germany without regards to its conflict of law provisions.
