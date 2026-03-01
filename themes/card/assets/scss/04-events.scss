@@ -41,6 +41,42 @@
     }
 }
 
+#bunnyears {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    margin-top: -30px;
+    margin-left: 92px;
+
+    @media screen and (max-width: 924px) {
+        left: 50%;
+        margin-left: -241px;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin-left: -236px;
+    }
+
+    @media screen and (max-width: 431px) {
+        margin-left: -114px;
+    }
+
+    svg {
+        width: 117px;
+        height: 90px;
+        animation: ear-wiggle 3s ease-in-out;
+        transform-origin: center bottom;
+    }
+
+    @keyframes ear-wiggle {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(5deg); }
+        50% { transform: rotate(-5deg); }
+        75% { transform: rotate(3deg); }
+        100% { transform: rotate(0deg); }
+    }
+}
+
 // THANKS: https://codepen.io/uchardon/pen/eGjJap?editors=0100
 #ghosty {
     position: absolute;
