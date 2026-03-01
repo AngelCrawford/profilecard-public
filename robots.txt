@@ -1,0 +1,9 @@
+User-agent: *
+
+
+Disallow: /legal-notice/
+
+Disallow: /privacy-policy/
+
+
+Sitemap: https://angel-crawford.de/sitemap.xml
